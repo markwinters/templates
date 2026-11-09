@@ -4,29 +4,488 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Templates</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+<meta name="description" content="Websitetemplates in één huisstijl: van AI-chat en zoekmachine tot sociaal netwerk, webshop en dashboard. Elk template als los HTML-bestand.">
+<meta property="og:title" content="Templates">
+<meta property="og:description" content="Websitetemplates in één huisstijl. Elk template als los HTML-bestand.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='1' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%2300F0FF'/%3E%3Cstop offset='.45' stop-color='%232563EB'/%3E%3Cstop offset='1' stop-color='%237C3AED'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='3' y='3' width='26' height='26' rx='8' fill='url(%23g)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
 <style>
-:root { --bg:#F7F8FA; --ink:#0F1115; --mu:#5B616E; --ln:#E3E5EA; --acc:#7C3AED; }
-@media (prefers-color-scheme: dark) { :root { --bg:#0F1115; --ink:#F2F3F5; --mu:#9AA0AC; --ln:#262A33; --acc:#A78BFA; } }
-* { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 Inter, system-ui, sans-serif; }
-main { max-width:1100px; margin:0 auto; padding:48px 16px; }
-h1 { font-size:40px; line-height:1.1; margin:0 0 8px; }
-p { color:var(--mu); margin:0 0 32px; max-width:640px; }
-h2 { font-size:18px; margin:32px 0 8px; border-bottom:1px solid var(--ln); padding-bottom:6px; }
-h2 small, li small { color:var(--mu); font-weight:400; }
-ul { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:2px 24px; }
-a { color:inherit; text-decoration:none; display:block; padding:6px 0; }
-a:hover { color:var(--acc); }
-.n { font-variant-numeric:tabular-nums; color:var(--mu); font-size:13px; margin-right:4px; }
-li small { display:block; font-size:13px; }
+:root {
+  color-scheme: light;
+  --black: #0F1115; --graphite: #2A2D34; --mist: #E5E7EB; --cloud: #F7F8FA; --white: #FFFFFF;
+  --violet: #7C3AED; --blue: #2563EB; --cyan: #00F0FF;
+  --surface: var(--cloud); --surface-raised: var(--white); --surface-muted: var(--mist);
+  --ink: var(--black); --ink-secondary: var(--graphite); --ink-muted: #636771;
+  --line: var(--mist); --accent: var(--violet); --on-accent: var(--white);
+  --primary: var(--black); --on-primary: var(--white);
+  --shadow-sm: 0 1px 2px #0F11150A, 0 6px 20px #0F11150F;
+  --shadow-float: 0 2px 6px #0F11150D, 0 24px 48px -20px #0F111538;
+  --focus-ring: 0 0 0 2px #F7F8FA, 0 0 0 4px #7C3AED;
+  --gradient-spectrum: linear-gradient(90deg, #7C3AED 0%, #2563EB 50%, #00F0FF 100%);
+  --gradient-text: linear-gradient(90deg, #7C3AED 0%, #2563EB 100%);
+  --gradient-dot: linear-gradient(225deg, #00F0FF 0%, #2563EB 45%, #7C3AED 100%);
+  --gradient-night: linear-gradient(100deg, #2C3046 0%, #0F1115 50%, #262A44 100%);
+  --gradient-mist: linear-gradient(180deg, #FFFFFF 0%, #F7F8FA 55%, #EDEEF3 100%);
+  --blur-glass: 16px;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-6: 24px; --space-8: 32px;
+  --space-12: 48px; --space-16: 64px; --space-24: 96px;
+  --gutter: 72px; --gutter-mobile: 20px; --content-max: 1280px;
+  --radius-sm: 6px; --radius-md: 8px; --radius-lg: 12px; --radius-xl: 20px; --radius-full: 9999px;
+  --font-sans: "SF Pro Display", -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--surface); color: var(--ink); font-family: var(--font-sans); font-size: 16px; line-height: 26px; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid transparent; box-shadow: var(--focus-ring); border-radius: 4px; }
+[hidden] { display: none !important; }
+.skip { position: fixed; top: var(--space-2); left: var(--space-2); z-index: 20; padding: var(--space-2) var(--space-4); border-radius: var(--radius-sm); background: var(--primary); color: var(--on-primary); text-decoration: none; transform: translateY(-200%); }
+.skip:focus { transform: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.display { margin: 0; font-size: 72px; line-height: 74px; font-weight: 500; letter-spacing: -0.035em; text-wrap: balance; }
+.heading { margin: 0; font-size: 28px; line-height: 34px; font-weight: 400; letter-spacing: -0.02em; }
+.title { margin: 0; font-size: 18px; line-height: 24px; font-weight: 500; letter-spacing: -0.01em; }
+.body-lg { font-size: 18px; line-height: 28px; }
+.body-sm { font-size: 14px; line-height: 22px; }
+.eyebrow, .label, .caption { text-transform: uppercase; font-weight: 500; }
+.eyebrow { font-size: 12px; line-height: 16px; letter-spacing: 0.14em; }
+.label { font-size: 12px; line-height: 16px; letter-spacing: 0.08em; }
+.caption { font-size: 11px; line-height: 16px; letter-spacing: 0.12em; }
+p { margin: 0; text-wrap: pretty; }
+.wrap { width: 100%; max-width: var(--content-max); margin: 0 auto; padding-left: max(var(--gutter), env(safe-area-inset-left, 0px)); padding-right: max(var(--gutter), env(safe-area-inset-right, 0px)); }
+.ds-gradient-text { background-image: var(--gradient-text); -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent; }
+.ds-eyebrow { display: flex; align-items: center; gap: var(--space-2); color: var(--ink-muted); margin: 0; }
+.ds-eyebrow--accent { color: var(--accent); }
+.ds-eyebrow__dot { flex: none; width: 8px; height: 8px; border-radius: var(--radius-full); background: var(--gradient-dot); }
+.ds-accent-line { display: block; width: 56px; height: 2px; border-radius: var(--radius-full); background: var(--gradient-spectrum); }
+.ico { display: block; flex: none; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Navigatie */
+.nav { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--surface) 82%, transparent); -webkit-backdrop-filter: blur(var(--blur-glass)); backdrop-filter: blur(var(--blur-glass)); border-bottom: 1px solid transparent; transition: border-color .2s ease-out; }
+.nav.is-stuck { border-bottom-color: var(--line); }
+.nav__inner { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: var(--space-8); padding-block: var(--space-6); }
+.nav__links { display: flex; justify-content: flex-end; gap: var(--space-12); margin: 0; padding: 0; list-style: none; }
+.nav__links a { position: relative; padding: var(--space-2) 0; color: var(--ink-secondary); text-decoration: none; transition: color .2s ease-out; }
+.nav__links a:hover, .nav__links a[aria-current] { color: var(--ink); }
+.nav__links a[aria-current]::after { content: ""; position: absolute; left: 50%; bottom: -4px; width: 4px; height: 4px; margin-left: -2px; border-radius: var(--radius-full); background: var(--accent); }
+
+/* Kop */
+.intro { background: var(--gradient-mist); padding-block: var(--space-16) var(--space-12); }
+.intro__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-8) var(--space-16); align-items: end; }
+.intro__copy { display: flex; flex-direction: column; gap: var(--space-6); }
+.intro__lead { color: var(--ink-muted); max-width: 30em; }
+.intro__stats { display: flex; gap: var(--space-12); margin: 0; padding: 0; list-style: none; }
+.intro__stats li { display: grid; gap: var(--space-1); }
+.intro__stats b { font-size: 32px; line-height: 36px; font-weight: 500; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.intro__stats span { color: var(--ink-muted); }
+
+/* Filters */
+.tools { position: sticky; top: 75px; z-index: 4; background: color-mix(in srgb, var(--surface) 90%, transparent); -webkit-backdrop-filter: blur(var(--blur-glass)); backdrop-filter: blur(var(--blur-glass)); border-bottom: 1px solid var(--line); }
+.tools__inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-4) var(--space-8); align-items: center; padding-block: var(--space-4); }
+.chips { display: flex; gap: var(--space-2); overflow-x: auto; scrollbar-width: none; margin: 0; padding: 2px; list-style: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { display: inline-flex; align-items: center; gap: var(--space-2); height: 34px; padding: 0 var(--space-4); border: 1px solid var(--line); border-radius: var(--radius-full); background: var(--surface-raised); color: var(--ink-secondary); font: inherit; font-size: 14px; white-space: nowrap; cursor: pointer; transition: border-color .2s ease-out, color .2s ease-out, background .2s ease-out; }
+.chip:hover { border-color: var(--accent); color: var(--ink); }
+.chip[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+.chip small { font-size: 12px; opacity: .6; font-variant-numeric: tabular-nums; }
+.find { position: relative; display: flex; align-items: center; }
+.find .ico { position: absolute; left: 12px; color: var(--ink-muted); pointer-events: none; }
+.find input { width: 260px; height: 40px; padding: 0 var(--space-4) 0 38px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface-raised); color: var(--ink); font: inherit; font-size: 16px; }
+.find input::placeholder { color: var(--ink-muted); }
+.find input:focus-visible { outline: 0; border-color: var(--accent); box-shadow: 0 0 0 3px #7C3AED26; }
+
+/* Raster met kaarten */
+.gallery { padding-block: var(--space-12) var(--space-24); }
+.count { margin-bottom: var(--space-6); color: var(--ink-muted); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-6) var(--space-4); margin: 0; padding: 0; list-style: none; }
+.tpl { display: flex; flex-direction: column; width: 100%; height: 100%; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface-raised); color: var(--ink); font: inherit; text-align: left; cursor: pointer; transition: border-color .2s ease-out, transform .2s ease-out, box-shadow .2s ease-out; content-visibility: auto; contain-intrinsic-size: auto 300px; }
+.tpl:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow-float); }
+.tpl:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; box-shadow: none; }
+.tpl__shot { padding: var(--space-3) var(--space-3) 0; background: var(--surface-muted); border-bottom: 1px solid var(--line); }
+.tpl__body { display: grid; gap: var(--space-1); padding: var(--space-4) var(--space-4) var(--space-6); }
+.tpl__meta { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-2); color: var(--ink-muted); }
+.tpl__num { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0; }
+.tpl__new { margin-right: var(--space-2); padding: 1px 6px; border-radius: var(--radius-full); background: var(--gradient-text); color: var(--white); font-family: var(--font-sans); font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+.tpl__like { color: var(--ink-muted); font-size: 14px; line-height: 20px; }
+.tpl__like b { color: var(--accent); font-weight: 500; }
+.empty { padding: var(--space-16) 0; text-align: center; color: var(--ink-muted); }
+.note { margin-top: var(--space-16); padding-top: var(--space-6); border-top: 1px solid var(--line); color: var(--ink-muted); max-width: 46em; }
+
+/* Browserkader rond elke mockup */
+.win { border-radius: 8px 8px 0 0; overflow: hidden; box-shadow: 0 0 0 1px #0F11151A, 0 10px 30px -18px #0F111566; background: var(--white); }
+.win__bar { display: flex; align-items: center; gap: 6px; height: 22px; padding: 0 8px; background: #EEF0F4; border-bottom: 1px solid #E1E4EA; }
+.win__bar i { width: 7px; height: 7px; border-radius: 50%; background: #CFD3DB; }
+.win__url { flex: 1; margin-left: 6px; height: 13px; border-radius: 4px; background: var(--white); color: #8A8F99; font-family: var(--font-mono); font-size: 8px; line-height: 13px; padding: 0 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* Voorbeeld op groot formaat */
+.view { width: min(1120px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); padding: 0; border: 0; border-radius: var(--radius-xl); background: var(--surface-raised); color: var(--ink); box-shadow: var(--shadow-float); overflow: auto; }
+.view::backdrop { background: #0F1115B3; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.view__head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-6); padding: var(--space-6) var(--space-8); border-bottom: 1px solid var(--line); }
+.view__head .c2 { display: grid; gap: var(--space-2); }
+.view__body { padding: var(--space-6) var(--space-8) var(--space-8); background: var(--surface); }
+.view__body .win { border-radius: 10px; }
+.view__body .win__bar { height: 30px; } .view__body .win__url { height: 18px; line-height: 18px; font-size: 11px; }
+.view__foot { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding: var(--space-4) var(--space-8); border-top: 1px solid var(--line); color: var(--ink-muted); }
+.iconbtn { display: inline-grid; place-items: center; flex: none; width: 40px; height: 40px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface-raised); color: var(--ink); cursor: pointer; }
+.iconbtn:hover { border-color: var(--accent); }
+.view__nav { display: flex; gap: var(--space-2); }
+.copy-btn { display: inline-flex; align-items: center; gap: var(--space-2); height: 40px; padding: 0 var(--space-4); border: 1px solid var(--primary); border-radius: var(--radius-sm); background: var(--primary); color: var(--on-primary); font: inherit; font-size: 14px; cursor: pointer; transition: transform .2s ease-out; }
+.copy-btn:hover { transform: translateY(-1px); }
+.copy-btn.is-done { background: #10B981; border-color: #10B981; }
+.copy-btn.is-fail { background: #EF4444; border-color: #EF4444; }
+
+/* Footer */
+.footer__inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: var(--space-6); padding-block: var(--space-12) var(--space-8); color: var(--ink-muted); border-top: 1px solid var(--line); }
+.footer a { color: inherit; text-decoration: none; transition: color .2s ease-out; }
+.footer a:hover { color: var(--ink); }
+.footer__brand { display: flex; align-items: center; gap: var(--space-6); }
+.footer__links { display: flex; gap: var(--space-8); margin: 0; padding: 0; list-style: none; }
+.footer__contact { justify-self: end; }
+
+@media (max-width: 1099px) { .display { font-size: 56px; line-height: 58px; } .intro__grid { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 899px) { .nav__links { gap: var(--space-8); } .tools__inner { grid-template-columns: minmax(0, 1fr); } .find input { width: 100%; } .find { width: 100%; } }
+@media (max-width: 759px) {
+  .wrap { padding-left: max(var(--gutter-mobile), env(safe-area-inset-left, 0px)); padding-right: max(var(--gutter-mobile), env(safe-area-inset-right, 0px)); }
+  .nav__inner { padding-block: var(--space-4); gap: var(--space-4); }
+  .nav__links { gap: var(--space-4); }
+  .tools { top: 59px; }
+  .display { font-size: 40px; line-height: 44px; letter-spacing: -0.03em; }
+  .intro { padding-block: var(--space-12) var(--space-8); }
+  .intro__stats { gap: var(--space-8); }
+  .grid { grid-template-columns: minmax(0, 1fr); }
+  .view__head, .view__body, .view__foot { padding-inline: var(--space-4); }
+  .view__foot { flex-wrap: wrap; }
+  .view__nav { width: 100%; }
+  .copy-btn { flex: 1; justify-content: center; }
+  .footer__inner { grid-template-columns: minmax(0, 1fr); justify-items: start; }
+  .footer__contact { justify-self: start; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } .tpl:hover { transform: none; } }
+.brand { display: inline-flex; align-items: center; gap: var(--space-3); color: var(--ink); text-decoration: none; font-weight: 600; letter-spacing: -0.01em; }
+.brand__mark { width: 22px; height: 22px; border-radius: 7px; background: var(--gradient-dot); }
+.tpl__shot .scr { background: linear-gradient(110deg, var(--surface-muted) 30%, var(--cloud) 50%, var(--surface-muted) 70%); background-size: 200% 100%; }
+.tpl__shot .scr:empty { animation: shimmer 1.4s linear infinite; }
+@keyframes shimmer { to { background-position: -200% 0; } }
+.open-btn { display: inline-flex; align-items: center; gap: var(--space-2); height: 40px; padding: 0 var(--space-4); border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface-raised); color: var(--ink); font-size: 14px; font-weight: 500; text-decoration: none; }
+.open-btn:hover { border-color: var(--accent); }
+.mono { font-family: var(--font-mono); }
+@media (max-width: 759px) { .open-btn { flex: 1; justify-content: center; } .view__nav { flex-wrap: wrap; } }
+@media (prefers-reduced-motion: reduce) { .tpl__shot .scr:empty { animation: none; } }
+</style>
+<style id="mockup-css">
+/* ---------- De mockup zelf: alles schaalt mee met de breedte (cqw) ---------- */
+.scr { container-type: inline-size; aspect-ratio: 16 / 10; overflow: hidden; }
+.s { --c1: #7C3AED; --c2: #2563EB; --c3: #00B8D4; --ok: #10B981; --bad: #EF4444; --warn: #F59E0B;
+  --bg: #F7F8FA; --pn: #FFFFFF; --ln: #E5E7EB; --ink: #0F1115; --mu: #9A9EA8; --sk: #E3E5EA; --sk2: #EEF0F3;
+  display: flex; flex-direction: column; width: 100%; height: 100%; background: var(--bg); color: var(--ink);
+  font-family: var(--font-sans); font-size: 1.55cqw; line-height: 1.35; overflow: hidden; position: relative; }
+.s.dk { --c1: #A07CFF; --c2: #6EA0FF; --c3: #00F0FF; --bg: #0F1115; --pn: #171A22; --ln: #FFFFFF1A; --ink: #F7F8FA; --mu: #7D828E; --sk: #2A2E39; --sk2: #20242D; }
+.s.ac2 { --acc: var(--c2); } .s.ac3 { --acc: var(--c3); } .s { --acc: var(--c1); }
+.s * { box-sizing: border-box; }
+.s b, .s span, .s i { font-style: normal; }
+.r { display: flex; align-items: center; gap: 1cqw; min-width: 0; }
+.c { display: flex; flex-direction: column; gap: 1cqw; min-width: 0; }
+.gr { display: grid; gap: 1.2cqw; min-width: 0; }
+.f1 { flex: 1; min-width: 0; min-height: 0; }
+.p { padding: 2cqw; }
+.pn { background: var(--pn); border: 1px solid var(--ln); border-radius: 1cqw; padding: 1.4cqw; min-width: 0; box-shadow: 0 .15cqw .6cqw #0F11150A; }
+.dk .pn { box-shadow: none; }
+.l { display: block; flex: none; min-width: 0; color: var(--mu); font-size: 1.1cqw; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.l.lt { color: var(--ink); font-size: 1.25cqw; font-weight: 600; }
+.l.la { color: var(--acc); font-weight: 600; }
+.t { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mu { color: var(--mu); font-weight: 400; }
+.sm { font-size: 1.2cqw; } .xs { font-size: 1cqw; } .lg { font-size: 2.6cqw; letter-spacing: -.02em; } .xl { font-size: 4.4cqw; letter-spacing: -.03em; } .xxl { font-size: 8cqw; letter-spacing: -.04em; font-weight: 500; }
+.av { display: block; flex: none; width: 3cqw; height: 3cqw; border-radius: 50%; background: linear-gradient(135deg, var(--c1), var(--c3)); }
+.av.v2 { background: linear-gradient(135deg, var(--c2), var(--c1)); } .av.v3 { background: linear-gradient(135deg, var(--c3), var(--c2)); } .av.v4 { background: linear-gradient(135deg, #F59E0B, var(--c1)); }
+.im { display: block; min-width: 0; border-radius: .8cqw; background: var(--sk); position: relative; overflow: hidden; }
+.g0 { background: radial-gradient(80% 90% at 80% 10%, #7C3AED, transparent 70%), radial-gradient(70% 80% at 10% 100%, #00F0FF, transparent 70%), #2563EB; }
+.g1 { background: linear-gradient(135deg, #2C3046, #0F1115 50%, #7C3AED); }
+.g2 { background: radial-gradient(60% 60% at 30% 30%, #00F0FFAA, transparent 70%), linear-gradient(160deg, #2563EB, #7C3AED); }
+.g3 { background: linear-gradient(180deg, #A5B4FC, #E0E7FF 60%, #C7D2FE); }
+.g4 { background: radial-gradient(70% 70% at 70% 70%, #F59E0B99, transparent 70%), linear-gradient(135deg, #7C3AED, #EC4899); }
+.g5 { background: linear-gradient(200deg, #00F0FF, #2563EB 55%, #0F1115); }
+.bt { display: inline-flex; align-items: center; justify-content: center; gap: .6cqw; flex: none; height: 3cqw; padding: 0 1.6cqw; border-radius: .7cqw; background: var(--acc); color: #fff; font-weight: 600; font-size: 1.2cqw; white-space: nowrap; }
+.dk .bt { color: #0F1115; }
+.bt.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ln); }
+.bt.k { background: var(--ink); color: var(--bg); }
+.bt.rd { border-radius: 3cqw; }
+.in { display: flex; align-items: center; gap: .8cqw; height: 3.4cqw; padding: 0 1.4cqw; border: 1px solid var(--ln); border-radius: .8cqw; background: var(--pn); color: var(--mu); font-size: 1.25cqw; white-space: nowrap; overflow: hidden; min-width: 0; }
+.in.rd { border-radius: 3cqw; }
+.lg-m { display: inline-block; flex: none; width: 2.2cqw; height: 2.2cqw; border-radius: .6cqw; background: var(--gradient-dot); }
+.brand { display: inline-flex; align-items: center; gap: .8cqw; font-weight: 600; white-space: nowrap; }
+.bar { display: flex; align-items: center; gap: 1.4cqw; height: 5.4cqw; padding: 0 2cqw; border-bottom: 1px solid var(--ln); background: var(--pn); flex: none; }
+.side { display: flex; flex-direction: column; gap: 1.1cqw; padding: 1.8cqw; border-right: 1px solid var(--ln); background: var(--pn); flex: none; }
+.dot { display: inline-block; flex: none; width: 1cqw; height: 1cqw; border-radius: 50%; background: var(--acc); }
+.tag { display: inline-flex; align-items: center; height: 2.2cqw; padding: 0 1cqw; border-radius: 2cqw; background: color-mix(in srgb, var(--acc) 14%, transparent); color: var(--acc); font-size: 1cqw; font-weight: 600; white-space: nowrap; }
+.bub { padding: 1cqw 1.4cqw; border-radius: 1.4cqw; background: var(--pn); border: 1px solid var(--ln); max-width: 70%; }
+.bub.me { align-self: flex-end; background: var(--acc); color: #fff; border-color: transparent; }
+.dk .bub.me { color: #0F1115; }
+.ic { display: grid; place-items: center; flex: none; width: 2.2cqw; height: 2.2cqw; border-radius: .6cqw; color: var(--mu); }
+.ic svg { width: 68%; height: 68%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.ic.rd { border-radius: 50%; background: var(--sk2); color: var(--ink); }
+.ic.a { background: var(--acc); color: #fff; }
+.dk .ic.a { color: #0F1115; }
+.ic.cl { color: #fff; }
+.im.ph, .av.ph { background-size: cover; background-position: center; background-repeat: no-repeat; }
+.map { position: absolute; inset: 0; background-color: #E8EEF5;
+  background-image: linear-gradient(90deg, transparent 47%, #FFFFFF 47%, #FFFFFF 50%, transparent 50%), linear-gradient(0deg, transparent 60%, #FFFFFF 60%, #FFFFFF 62.5%, transparent 62.5%), linear-gradient(35deg, transparent 49%, #C7D7EE 49%, #C7D7EE 53%, transparent 53%), linear-gradient(#DCE5EF 1px, transparent 1px), linear-gradient(90deg, #DCE5EF 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 6cqw 6cqw, 6cqw 6cqw; }
+.dk .map { background-color: #1A1E28; background-image: linear-gradient(90deg, transparent 47%, #2A2F3C 47%, #2A2F3C 50%, transparent 50%), linear-gradient(0deg, transparent 60%, #2A2F3C 60%, #2A2F3C 62.5%, transparent 62.5%), linear-gradient(35deg, transparent 49%, #23324A 49%, #23324A 53%, transparent 53%), linear-gradient(#20242E 1px, transparent 1px), linear-gradient(90deg, #20242E 1px, transparent 1px); }
+.pin { position: absolute; width: 2.4cqw; height: 2.4cqw; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--acc); box-shadow: 0 .4cqw 1cqw #0F111540; }
+.price { position: absolute; padding: .3cqw .9cqw; border-radius: 2cqw; background: var(--pn); color: var(--ink); font-weight: 600; font-size: 1.1cqw; box-shadow: 0 .3cqw 1cqw #0F111530; }
+.chk { display: inline-block; flex: none; width: 1.8cqw; height: 1.8cqw; border-radius: 50%; border: .2cqw solid var(--mu); }
+.chk.on { background: var(--acc); border-color: var(--acc); }
+.pill { display: inline-flex; align-items: center; height: 2.6cqw; padding: 0 1.2cqw; border-radius: 3cqw; background: var(--pn); border: 1px solid var(--ln); font-size: 1.15cqw; white-space: nowrap; }
+.pill.on { background: var(--ink); color: var(--bg); border-color: transparent; }
+.prog { height: .8cqw; border-radius: 1cqw; background: var(--sk); overflow: hidden; }
+.prog i { display: block; height: 100%; background: var(--acc); border-radius: inherit; }
+.ov { position: absolute; }
+.sv { display: block; width: 100%; height: 100%; }
+.mono { font-family: var(--font-mono); }
+.live { display: inline-flex; padding: .2cqw .8cqw; border-radius: .4cqw; background: var(--bad); color: #fff; font-weight: 700; font-size: 1cqw; }
+.cell { height: 2.6cqw; border-right: 1px solid var(--ln); border-bottom: 1px solid var(--ln); padding: 0 .6cqw; display: flex; align-items: center; font-size: 1.1cqw; white-space: nowrap; overflow: hidden; }
+.sep { height: 1px; background: var(--ln); flex: none; }
+.tok { display: inline-block; height: 1cqw; border-radius: .3cqw; margin-right: .8cqw; vertical-align: middle; }
 </style>
 </head>
 <body>
-<main>
-<h1>180 templates</h1>
-<p>Websitetemplates in één huisstijl. Elk template is een los HTML-bestand met alle CSS erin. Je kunt het direct openen of kopiëren.</p>
-<section><h2>AI <small>9</small></h2><ul><li><a href="templates/001-peperbus-ai.html"><span class="n">#001</span> Peperbus AI <small>in de stijl van ChatGPT</small></a></li><li><a href="templates/002-sassen-assist.html"><span class="n">#002</span> Sassen Assist <small>in de stijl van Claude</small></a></li><li><a href="templates/003-blauwvinger-gpt.html"><span class="n">#003</span> Blauwvinger GPT <small>in de stijl van Gemini</small></a></li><li><a href="templates/004-ijssel-copilot.html"><span class="n">#004</span> IJssel Copilot <small>in de stijl van Microsoft Copilot</small></a></li><li><a href="templates/005-vecht-vraag.html"><span class="n">#005</span> Vecht Vraag <small>in de stijl van Perplexity</small></a></li><li><a href="templates/006-hanze-beeld.html"><span class="n">#006</span> Hanze Beeld <small>in de stijl van Midjourney</small></a></li><li><a href="templates/007-thorbecke-stem.html"><span class="n">#007</span> Thorbecke Stem <small>in de stijl van ElevenLabs</small></a></li><li><a href="templates/008-zwolle-agent.html"><span class="n">#008</span> Zwolle Agent <small>in de stijl van n8n</small></a></li><li><a href="templates/120-bouwmaat-ai.html"><span class="n">#120</span> Bouwmaat AI <small>in de stijl van Lovable</small></a></li></ul></section><section><h2>Zoeken <small>6</small></h2><ul><li><a href="templates/009-peperbus-zoek.html"><span class="n">#009</span> Peperbus Zoek <small>in de stijl van Google</small></a></li><li><a href="templates/010-grote-markt-zoeken.html"><span class="n">#010</span> Grote Markt Zoeken <small>in de stijl van Bing</small></a></li><li><a href="templates/011-stilte-zoek.html"><span class="n">#011</span> Stilte Zoek <small>in de stijl van DuckDuckGo</small></a></li><li><a href="templates/012-kaartje-zwolle.html"><span class="n">#012</span> Kaartje Zwolle <small>in de stijl van Google Maps</small></a></li><li><a href="templates/013-plaatjes-zoek.html"><span class="n">#013</span> Plaatjes Zoek <small>in de stijl van Google Afbeeldingen</small></a></li><li><a href="templates/014-vertaal-zwols.html"><span class="n">#014</span> Vertaal Zwols <small>in de stijl van Google Translate</small></a></li></ul></section><section><h2>Sociaal <small>15</small></h2><ul><li><a href="templates/015-zwolle-face.html"><span class="n">#015</span> Zwolle Face <small>in de stijl van Facebook</small></a></li><li><a href="templates/016-stadshagen-snaps.html"><span class="n">#016</span> Stadshagen Snaps <small>in de stijl van Instagram</small></a></li><li><a href="templates/017-blauwvinger-post.html"><span class="n">#017</span> Blauwvinger Post <small>in de stijl van X (Twitter)</small></a></li><li><a href="templates/018-hanze-netwerk.html"><span class="n">#018</span> Hanze Netwerk <small>in de stijl van LinkedIn</small></a></li><li><a href="templates/019-diezer-draad.html"><span class="n">#019</span> Diezer Draad <small>in de stijl van Reddit</small></a></li><li><a href="templates/020-zwols-prikbord.html"><span class="n">#020</span> Zwols Prikbord <small>in de stijl van Pinterest</small></a></li><li><a href="templates/021-ittersum-threads.html"><span class="n">#021</span> Ittersum Threads <small>in de stijl van Threads</small></a></li><li><a href="templates/022-peper-clips.html"><span class="n">#022</span> Peper Clips <small>in de stijl van TikTok</small></a></li><li><a href="templates/023-snapjes.html"><span class="n">#023</span> Snapjes <small>in de stijl van Snapchat</small></a></li><li><a href="templates/024-buurtbord.html"><span class="n">#024</span> Buurtbord <small>in de stijl van Nextdoor</small></a></li><li><a href="templates/025-sassen-stories.html"><span class="n">#025</span> Sassen Stories <small>in de stijl van Instagram Stories</small></a></li><li><a href="templates/117-vraagbaak-zwolle.html"><span class="n">#117</span> Vraagbaak Zwolle <small>in de stijl van Quora</small></a></li><li><a href="templates/126-zwolle-stemt.html"><span class="n">#126</span> Zwolle Stemt <small>in de stijl van Strawpoll</small></a></li><li><a href="templates/153-zwolle-helpt.html"><span class="n">#153</span> Zwolle Helpt <small>in de stijl van NLvoorElkaar</small></a></li><li><a href="templates/172-oppas-zwolle.html"><span class="n">#172</span> Oppas Zwolle <small>in de stijl van een oppasplatform</small></a></li></ul></section><section><h2>Video <small>8</small></h2><ul><li><a href="templates/026-zwolletube.html"><span class="n">#026</span> ZwolleTube <small>in de stijl van YouTube</small></a></li><li><a href="templates/027-ijsselflix.html"><span class="n">#027</span> IJsselFlix <small>in de stijl van Netflix</small></a></li><li><a href="templates/028-vecht-live.html"><span class="n">#028</span> Vecht Live <small>in de stijl van Twitch</small></a></li><li><a href="templates/029-hanze-plus.html"><span class="n">#029</span> Hanze Plus <small>in de stijl van Disney+</small></a></li><li><a href="templates/030-korte-clips.html"><span class="n">#030</span> Korte Clips <small>in de stijl van YouTube Shorts</small></a></li><li><a href="templates/031-fundatie-tv.html"><span class="n">#031</span> Fundatie TV <small>in de stijl van Vimeo</small></a></li><li><a href="templates/032-thorbecke-prime.html"><span class="n">#032</span> Thorbecke Prime <small>in de stijl van Prime Video</small></a></li><li><a href="templates/112-monteur-zwolle.html"><span class="n">#112</span> Monteur Zwolle <small>in de stijl van CapCut</small></a></li></ul></section><section><h2>Muziek <small>7</small></h2><ul><li><a href="templates/033-peperbeat.html"><span class="n">#033</span> Peperbeat <small>in de stijl van Spotify</small></a></li><li><a href="templates/034-hanze-sound.html"><span class="n">#034</span> Hanze Sound <small>in de stijl van SoundCloud</small></a></li><li><a href="templates/035-sassen-podcast.html"><span class="n">#035</span> Sassen Podcast <small>in de stijl van Apple Podcasts</small></a></li><li><a href="templates/036-radio-zwolle-plus.html"><span class="n">#036</span> Radio Zwolle Plus <small>in de stijl van online radio</small></a></li><li><a href="templates/037-blauw-muziek.html"><span class="n">#037</span> Blauw Muziek <small>in de stijl van Apple Music</small></a></li><li><a href="templates/155-vecht-vinyl.html"><span class="n">#155</span> Vecht Vinyl <small>in de stijl van Discogs</small></a></li><li><a href="templates/159-muziekhuis-zwolle.html"><span class="n">#159</span> Muziekhuis Zwolle <small>in de stijl van GarageBand</small></a></li></ul></section><section><h2>Shop <small>15</small></h2><ul><li><a href="templates/038-zwolle-bazaar.html"><span class="n">#038</span> Zwolle Bazaar <small>in de stijl van Amazon</small></a></li><li><a href="templates/039-peperpakket.html"><span class="n">#039</span> Peperpakket <small>in de stijl van Bol</small></a></li><li><a href="templates/040-markt-zwolle.html"><span class="n">#040</span> Markt Zwolle <small>in de stijl van Marktplaats</small></a></li><li><a href="templates/041-hanze-huis.html"><span class="n">#041</span> Hanze Huis <small>in de stijl van Funda</small></a></li><li><a href="templates/042-sassen-mode.html"><span class="n">#042</span> Sassen Mode <small>in de stijl van Zalando</small></a></li><li><a href="templates/043-stadsmarkt.html"><span class="n">#043</span> Stadsmarkt <small>in de stijl van Etsy</small></a></li><li><a href="templates/044-coolblauw.html"><span class="n">#044</span> Coolblauw <small>in de stijl van Coolblue</small></a></li><li><a href="templates/045-zwols-veilinghuis.html"><span class="n">#045</span> Zwols Veilinghuis <small>in de stijl van eBay</small></a></li><li><a href="templates/046-kassa-zwolle.html"><span class="n">#046</span> Kassa Zwolle <small>in de stijl van Shopify Checkout</small></a></li><li><a href="templates/047-ijssel-tweedehands.html"><span class="n">#047</span> IJssel Tweedehands <small>in de stijl van Vinted</small></a></li><li><a href="templates/111-pakketje-volgen.html"><span class="n">#111</span> Pakketje Volgen <small>in de stijl van PostNL</small></a></li><li><a href="templates/122-plantje-zwolle.html"><span class="n">#122</span> Plantje Zwolle <small>in de stijl van een plantenwebshop</small></a></li><li><a href="templates/139-fietsbouwer-zwolle.html"><span class="n">#139</span> Fietsbouwer Zwolle <small>in de stijl van een fietsconfigurator</small></a></li><li><a href="templates/164-vecht-vergelijker.html"><span class="n">#164</span> Vecht Vergelijker <small>in de stijl van Tweakers Pricewatch</small></a></li><li><a href="templates/165-hanze-haven.html"><span class="n">#165</span> Hanze Haven <small>in de stijl van een nieuwbouwproject</small></a></li></ul></section><section><h2>Eten <small>8</small></h2><ul><li><a href="templates/048-zwolle-bezorgd.html"><span class="n">#048</span> Zwolle Bezorgd <small>in de stijl van Thuisbezorgd</small></a></li><li><a href="templates/049-peper-pakt.html"><span class="n">#049</span> Peper Pakt <small>in de stijl van Uber Eats</small></a></li><li><a href="templates/050-hanze-kookt.html"><span class="n">#050</span> Hanze Kookt <small>in de stijl van Allerhande</small></a></li><li><a href="templates/051-blauwe-tafel.html"><span class="n">#051</span> Blauwe Tafel <small>in de stijl van TheFork</small></a></li><li><a href="templates/132-weekmenu-zwolle.html"><span class="n">#132</span> Weekmenu Zwolle <small>in de stijl van Mealime</small></a></li><li><a href="templates/135-blauwvinger-brouwerij.html"><span class="n">#135</span> Blauwvinger Brouwerij <small>in de stijl van een brouwerijwebsite</small></a></li><li><a href="templates/152-peper-bestelzuil.html"><span class="n">#152</span> Peper Bestelzuil <small>in de stijl van een bestelzuil</small></a></li><li><a href="templates/178-vecht-wijnen.html"><span class="n">#178</span> Vecht Wijnen <small>in de stijl van Vivino</small></a></li></ul></section><section><h2>Communicatie <small>10</small></h2><ul><li><a href="templates/052-peper-mail.html"><span class="n">#052</span> Peper Mail <small>in de stijl van Gmail</small></a></li><li><a href="templates/053-sassen-post.html"><span class="n">#053</span> Sassen Post <small>in de stijl van Outlook</small></a></li><li><a href="templates/054-zwolle-app.html"><span class="n">#054</span> Zwolle App <small>in de stijl van WhatsApp</small></a></li><li><a href="templates/055-hanze-kanaal.html"><span class="n">#055</span> Hanze Kanaal <small>in de stijl van Slack</small></a></li><li><a href="templates/056-gamehoek.html"><span class="n">#056</span> Gamehoek <small>in de stijl van Discord</small></a></li><li><a href="templates/057-vecht-vergader.html"><span class="n">#057</span> Vecht Vergader <small>in de stijl van Zoom</small></a></li><li><a href="templates/058-ijssel-teams.html"><span class="n">#058</span> IJssel Teams <small>in de stijl van Microsoft Teams</small></a></li><li><a href="templates/059-telegrafie.html"><span class="n">#059</span> Telegrafie <small>in de stijl van Telegram</small></a></li><li><a href="templates/145-sassen-service.html"><span class="n">#145</span> Sassen Service <small>in de stijl van Zendesk</small></a></li><li><a href="templates/157-ijssel-nieuwsbrief.html"><span class="n">#157</span> IJssel Nieuwsbrief <small>in de stijl van Mailchimp</small></a></li></ul></section><section><h2>Productiviteit <small>24</small></h2><ul><li><a href="templates/060-peper-docs.html"><span class="n">#060</span> Peper Docs <small>in de stijl van Google Docs</small></a></li><li><a href="templates/061-sassen-notities.html"><span class="n">#061</span> Sassen Notities <small>in de stijl van Notion</small></a></li><li><a href="templates/062-hanze-sheets.html"><span class="n">#062</span> Hanze Sheets <small>in de stijl van Excel</small></a></li><li><a href="templates/063-zwolle-slides.html"><span class="n">#063</span> Zwolle Slides <small>in de stijl van PowerPoint</small></a></li><li><a href="templates/064-bordje.html"><span class="n">#064</span> Bordje <small>in de stijl van Trello</small></a></li><li><a href="templates/065-takenlijst.html"><span class="n">#065</span> Takenlijst <small>in de stijl van Todoist</small></a></li><li><a href="templates/066-agenda-zwolle.html"><span class="n">#066</span> Agenda Zwolle <small>in de stijl van Google Agenda</small></a></li><li><a href="templates/067-opslag-zwolle.html"><span class="n">#067</span> Opslag Zwolle <small>in de stijl van Google Drive</small></a></li><li><a href="templates/068-thorbecke-taken.html"><span class="n">#068</span> Thorbecke Taken <small>in de stijl van Jira</small></a></li><li><a href="templates/069-ontwerpbord.html"><span class="n">#069</span> Ontwerpbord <small>in de stijl van Figma</small></a></li><li><a href="templates/070-canvas-zwolle.html"><span class="n">#070</span> Canvas Zwolle <small>in de stijl van Canva</small></a></li><li><a href="templates/071-formuliertje.html"><span class="n">#071</span> Formuliertje <small>in de stijl van Typeform</small></a></li><li><a href="templates/072-whiteboard-zwolle.html"><span class="n">#072</span> Whiteboard Zwolle <small>in de stijl van Miro</small></a></li><li><a href="templates/108-fotoalbum-zwolle.html"><span class="n">#108</span> Fotoalbum Zwolle <small>in de stijl van Google Foto&#x27;s</small></a></li><li><a href="templates/113-kluis-zwolle.html"><span class="n">#113</span> Kluis Zwolle <small>in de stijl van 1Password</small></a></li><li><a href="templates/125-kaartje-klaar.html"><span class="n">#125</span> Kaartje Klaar <small>in de stijl van Paperless Post</small></a></li><li><a href="templates/146-stadshagen-werkplek.html"><span class="n">#146</span> Stadshagen Werkplek <small>in de stijl van een werkplekreservering</small></a></li><li><a href="templates/148-fotoboek-zwolle.html"><span class="n">#148</span> Fotoboek Zwolle <small>in de stijl van een fotoboekeditor</small></a></li><li><a href="templates/154-thorbecke-tijdlijn.html"><span class="n">#154</span> Thorbecke Tijdlijn <small>in de stijl van TeamGantt</small></a></li><li><a href="templates/161-peper-focus.html"><span class="n">#161</span> Peper Focus <small>in de stijl van een focustimer</small></a></li><li><a href="templates/162-zwols-zakboekje.html"><span class="n">#162</span> Zwols Zakboekje <small>in de stijl van Streaks</small></a></li><li><a href="templates/168-peper-plattegrond.html"><span class="n">#168</span> Peper Plattegrond <small>in de stijl van Floorplanner</small></a></li><li><a href="templates/174-gedachtenkaart-zwolle.html"><span class="n">#174</span> Gedachtenkaart Zwolle <small>in de stijl van MindMeister</small></a></li><li><a href="templates/180-fotolab-zwolle.html"><span class="n">#180</span> Fotolab Zwolle <small>in de stijl van Lightroom</small></a></li></ul></section><section><h2>Ontwikkelaars <small>14</small></h2><ul><li><a href="templates/073-zwollehub.html"><span class="n">#073</span> ZwolleHub <small>in de stijl van GitHub</small></a></li><li><a href="templates/074-stack-zwolle.html"><span class="n">#074</span> Stack Zwolle <small>in de stijl van Stack Overflow</small></a></li><li><a href="templates/075-code-peper.html"><span class="n">#075</span> Code Peper <small>in de stijl van VS Code</small></a></li><li><a href="templates/076-hanze-host.html"><span class="n">#076</span> Hanze Host <small>in de stijl van Vercel</small></a></li><li><a href="templates/077-status-zwolle.html"><span class="n">#077</span> Status Zwolle <small>in de stijl van een statuspagina</small></a></li><li><a href="templates/078-zwolle-dev-docs.html"><span class="n">#078</span> Zwolle Dev Docs <small>in de stijl van Stripe Docs</small></a></li><li><a href="templates/114-zwolse-nerds.html"><span class="n">#114</span> Zwolse Nerds <small>in de stijl van Hacker News</small></a></li><li><a href="templates/119-statistiek-zwolle.html"><span class="n">#119</span> Statistiek Zwolle <small>in de stijl van Google Analytics</small></a></li><li><a href="templates/129-hanze-nieuws-log.html"><span class="n">#129</span> Hanze Nieuws Log <small>in de stijl van een changelog</small></a></li><li><a href="templates/138-hanze-hackathon.html"><span class="n">#138</span> Hanze Hackathon <small>in de stijl van een conferentiewebsite</small></a></li><li><a href="templates/142-diezer-domeinen.html"><span class="n">#142</span> Diezer Domeinen <small>in de stijl van een domeinregistrar</small></a></li><li><a href="templates/156-diezer-data.html"><span class="n">#156</span> Diezer Data <small>in de stijl van een databaseconsole</small></a></li><li><a href="templates/171-hanze-foutmelder.html"><span class="n">#171</span> Hanze Foutmelder <small>in de stijl van Sentry</small></a></li><li><a href="templates/175-hanze-pakketten.html"><span class="n">#175</span> Hanze Pakketten <small>in de stijl van npm</small></a></li></ul></section><section><h2>Reizen <small>11</small></h2><ul><li><a href="templates/079-zwolle-slaapt.html"><span class="n">#079</span> Zwolle Slaapt <small>in de stijl van Booking.com</small></a></li><li><a href="templates/080-logeer-zwolle.html"><span class="n">#080</span> Logeer Zwolle <small>in de stijl van Airbnb</small></a></li><li><a href="templates/081-ijssel-rides.html"><span class="n">#081</span> IJssel Rides <small>in de stijl van Uber</small></a></li><li><a href="templates/082-spoorzoeker.html"><span class="n">#082</span> Spoorzoeker <small>in de stijl van NS</small></a></li><li><a href="templates/083-vliegveld-zwolle.html"><span class="n">#083</span> Vliegveld Zwolle <small>in de stijl van Skyscanner</small></a></li><li><a href="templates/084-recensies-zwolle.html"><span class="n">#084</span> Recensies Zwolle <small>in de stijl van Tripadvisor</small></a></li><li><a href="templates/127-vecht-verhuur.html"><span class="n">#127</span> Vecht Verhuur <small>in de stijl van een autoverhuurder</small></a></li><li><a href="templates/128-ijssel-radar.html"><span class="n">#128</span> IJssel Radar <small>in de stijl van Flightradar24</small></a></li><li><a href="templates/131-parkeer-peper.html"><span class="n">#131</span> Parkeer Peper <small>in de stijl van een parkeerapp</small></a></li><li><a href="templates/170-vertrekbord-zwolle.html"><span class="n">#170</span> Vertrekbord Zwolle <small>in de stijl van een vertrekbord</small></a></li><li><a href="templates/177-laadpaal-zwolle.html"><span class="n">#177</span> Laadpaal Zwolle <small>in de stijl van PlugShare</small></a></li></ul></section><section><h2>Financiën <small>9</small></h2><ul><li><a href="templates/085-peper-bank.html"><span class="n">#085</span> Peper Bank <small>in de stijl van een bankapp</small></a></li><li><a href="templates/086-hanze-pay.html"><span class="n">#086</span> Hanze Pay <small>in de stijl van PayPal</small></a></li><li><a href="templates/087-blauw-crypto.html"><span class="n">#087</span> Blauw Crypto <small>in de stijl van Coinbase</small></a></li><li><a href="templates/088-beurs-zwolle.html"><span class="n">#088</span> Beurs Zwolle <small>in de stijl van DEGIRO</small></a></li><li><a href="templates/089-tikje-zwolle.html"><span class="n">#089</span> Tikje Zwolle <small>in de stijl van Tikkie</small></a></li><li><a href="templates/109-steun-zwolle.html"><span class="n">#109</span> Steun Zwolle <small>in de stijl van Kickstarter</small></a></li><li><a href="templates/141-hanze-hypotheek.html"><span class="n">#141</span> Hanze Hypotheek <small>in de stijl van een hypotheekcalculator</small></a></li><li><a href="templates/147-factuur-zwolle.html"><span class="n">#147</span> Factuur Zwolle <small>in de stijl van Moneybird</small></a></li><li><a href="templates/169-ijssel-inzicht.html"><span class="n">#169</span> IJssel Inzicht <small>in de stijl van een budget-app</small></a></li></ul></section><section><h2>Media <small>5</small></h2><ul><li><a href="templates/090-zwolse-courant.html"><span class="n">#090</span> Zwolse Courant <small>in de stijl van NU.nl</small></a></li><li><a href="templates/091-weerbericht-zwolle.html"><span class="n">#091</span> Weerbericht Zwolle <small>in de stijl van Buienradar</small></a></li><li><a href="templates/092-zwolle-wiki.html"><span class="n">#092</span> Zwolle Wiki <small>in de stijl van Wikipedia</small></a></li><li><a href="templates/093-blog-zwolle.html"><span class="n">#093</span> Blog Zwolle <small>in de stijl van Medium</small></a></li><li><a href="templates/094-hanze-sport.html"><span class="n">#094</span> Hanze Sport <small>in de stijl van ESPN</small></a></li></ul></section><section><h2>Leren <small>10</small></h2><ul><li><a href="templates/095-leer-zwolle.html"><span class="n">#095</span> Leer Zwolle <small>in de stijl van Duolingo</small></a></li><li><a href="templates/096-hanze-academy.html"><span class="n">#096</span> Hanze Academy <small>in de stijl van Coursera</small></a></li><li><a href="templates/097-quizje.html"><span class="n">#097</span> Quizje <small>in de stijl van Kahoot!</small></a></li><li><a href="templates/123-bieb-zwolle.html"><span class="n">#123</span> Bieb Zwolle <small>in de stijl van een bibliotheekcatalogus</small></a></li><li><a href="templates/130-thorbecke-taal.html"><span class="n">#130</span> Thorbecke Taal <small>in de stijl van een online woordenboek</small></a></li><li><a href="templates/133-hanze-leerplein.html"><span class="n">#133</span> Hanze Leerplein <small>in de stijl van een schoolportaal</small></a></li><li><a href="templates/143-thorbecke-tikt.html"><span class="n">#143</span> Thorbecke Tikt <small>in de stijl van Monkeytype</small></a></li><li><a href="templates/160-sterrenwacht-zwolle.html"><span class="n">#160</span> Sterrenwacht Zwolle <small>in de stijl van Stellarium</small></a></li><li><a href="templates/167-kunstroute-zwolle.html"><span class="n">#167</span> Kunstroute Zwolle <small>in de stijl van een audiotour-app</small></a></li><li><a href="templates/179-overhoor-zwolle.html"><span class="n">#179</span> Overhoor Zwolle <small>in de stijl van Quizlet</small></a></li></ul></section><section><h2>Overig <small>12</small></h2><ul><li><a href="templates/098-sportief-zwolle.html"><span class="n">#098</span> Sportief Zwolle <small>in de stijl van Strava</small></a></li><li><a href="templates/099-date-zwolle.html"><span class="n">#099</span> Date Zwolle <small>in de stijl van Tinder</small></a></li><li><a href="templates/100-linkje-zwolle.html"><span class="n">#100</span> Linkje Zwolle <small>in de stijl van Linktree</small></a></li><li><a href="templates/110-slim-huis-zwolle.html"><span class="n">#110</span> Slim Huis Zwolle <small>in de stijl van Google Home</small></a></li><li><a href="templates/115-energie-zwolle.html"><span class="n">#115</span> Energie Zwolle <small>in de stijl van Toon van Eneco</small></a></li><li><a href="templates/116-huisarts-zwolle.html"><span class="n">#116</span> Huisarts Zwolle <small>in de stijl van een afsprakenapp</small></a></li><li><a href="templates/121-gemeente-zwolle-digitaal.html"><span class="n">#121</span> Gemeente Zwolle Digitaal <small>in de stijl van een gemeentewebsite</small></a></li><li><a href="templates/136-stamboom-zwolle.html"><span class="n">#136</span> Stamboom Zwolle <small>in de stijl van MyHeritage</small></a></li><li><a href="templates/137-afvalwijzer-038.html"><span class="n">#137</span> Afvalwijzer 038 <small>in de stijl van een afvalkalender</small></a></li><li><a href="templates/140-asiel-assendorp.html"><span class="n">#140</span> Asiel Assendorp <small>in de stijl van een dierenasiel</small></a></li><li><a href="templates/149-ijssel-waterstand.html"><span class="n">#149</span> IJssel Waterstand <small>in de stijl van een waterstanden-dashboard</small></a></li><li><a href="templates/176-slaap-zwolle.html"><span class="n">#176</span> Slaap Zwolle <small>in de stijl van Oura</small></a></li></ul></section><section><h2>Werk <small>5</small></h2><ul><li><a href="templates/101-zwolle-vacatures.html"><span class="n">#101</span> Zwolle Vacatures <small>in de stijl van Indeed</small></a></li><li><a href="templates/102-hanze-banen.html"><span class="n">#102</span> Hanze Banen <small>in de stijl van LinkedIn Jobs</small></a></li><li><a href="templates/118-klusjes-zwolle.html"><span class="n">#118</span> Klusjes Zwolle <small>in de stijl van Werkspot</small></a></li><li><a href="templates/163-sassen-cv.html"><span class="n">#163</span> Sassen CV <small>in de stijl van een cv-maker</small></a></li><li><a href="templates/166-blauwvinger-bezorger.html"><span class="n">#166</span> Blauwvinger Bezorger <small>in de stijl van een bezorgersapp</small></a></li></ul></section><section><h2>Vrije tijd <small>12</small></h2><ul><li><a href="templates/103-peper-tickets.html"><span class="n">#103</span> Peper Tickets <small>in de stijl van Ticketmaster</small></a></li><li><a href="templates/104-uitje-zwolle.html"><span class="n">#104</span> Uitje Zwolle <small>in de stijl van Meetup</small></a></li><li><a href="templates/105-spelhal.html"><span class="n">#105</span> Spelhal <small>in de stijl van Steam</small></a></li><li><a href="templates/106-schaakclub-zwolle.html"><span class="n">#106</span> Schaakclub Zwolle <small>in de stijl van Chess.com</small></a></li><li><a href="templates/107-boekenkast-zwolle.html"><span class="n">#107</span> Boekenkast Zwolle <small>in de stijl van Goodreads</small></a></li><li><a href="templates/124-sportplein-stadshagen.html"><span class="n">#124</span> Sportplein Stadshagen <small>in de stijl van een sportschoolrooster</small></a></li><li><a href="templates/134-zwols-woordje.html"><span class="n">#134</span> Zwols Woordje <small>in de stijl van Wordle</small></a></li><li><a href="templates/144-peper-podium.html"><span class="n">#144</span> Peper Podium <small>in de stijl van een theaterwebsite</small></a></li><li><a href="templates/150-pixel-peperbus.html"><span class="n">#150</span> Pixel Peperbus <small>in de stijl van Piskel</small></a></li><li><a href="templates/151-sassen-sudoku.html"><span class="n">#151</span> Sassen Sudoku <small>in de stijl van een sudoku-app</small></a></li><li><a href="templates/158-zwolse-atletische-club.html"><span class="n">#158</span> Zwolse Atletische Club <small>in de stijl van een sportclubwebsite</small></a></li><li><a href="templates/173-peperbus-toernooi.html"><span class="n">#173</span> Peperbus Toernooi <small>in de stijl van Challonge</small></a></li></ul></section>
+<a class="skip label" href="#main">Naar de inhoud</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a class="brand" href="./" aria-label="Templates, naar boven"><span class="brand__mark" aria-hidden="true"></span>Templates</a>
+    <nav aria-label="Hoofdnavigatie">
+      <ul class="nav__links label">
+        <li><a href="#main" aria-current="page">Galerij</a></li>
+        <li><a href="https://github.com/markwinters/templates" rel="noopener">GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <section class="intro" aria-labelledby="intro-title">
+    <div class="wrap intro__grid">
+      <div class="intro__copy">
+        <p class="ds-eyebrow ds-eyebrow--accent eyebrow"><span class="ds-eyebrow__dot" aria-hidden="true"></span>Templates</p>
+        <h1 class="display" id="intro-title"><span id="stat-title">180</span> websites, in <span class="ds-gradient-text">één huisstijl.</span></h1>
+        <span class="ds-accent-line" aria-hidden="true"></span>
+      </div>
+      <div class="intro__copy">
+        <p class="body-lg intro__lead">Van een AI-chat en een zoekmachine tot een sociaal netwerk, webshop, vacaturesite of slim huis. Elk type website dat je kent, opnieuw ontworpen met dezelfde kleuren, vormen en rust. Open een template en kopieer het als los HTML-bestand.</p>
+        <ul class="intro__stats">
+          <li><b id="stat-total">180</b><span class="caption">Templates</span></li>
+          <li><b id="stat-cats">17</b><span class="caption">Categorieën</span></li>
+          <li><b>1</b><span class="caption">Huisstijl</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="tools">
+    <div class="wrap tools__inner">
+      <ul class="chips" id="chips" aria-label="Filter op categorie"></ul>
+      <label class="find">
+        <span class="sr-only">Zoek een template</span>
+        <svg class="ico" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+        <input id="q" type="search" placeholder="Zoek, bijvoorbeeld chat of shop" autocomplete="off">
+      </label>
+    </div>
+  </div>
+
+  <section class="gallery" aria-label="Alle templates">
+    <div class="wrap">
+      <p class="count label" id="count" aria-live="polite">180 templates</p>
+      <ul class="grid" id="grid"></ul>
+      <p class="empty" id="empty" hidden>Geen template gevonden. Probeer een ander woord of kies <i>Alles</i>.</p>
+      <p class="note body-sm">Alle namen en ontwerpen op deze pagina zijn eigen varianten. Ze laten zien hoe een bepaald type website eruitziet in één huisstijl. De genoemde diensten dienen alleen als vergelijking; deze templates zijn er niet aan verbonden en gebruiken hun logo's of beeldmerken niet. De foto's komen van <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> en vallen onder de Unsplash-licentie.</p>
+    </div>
+  </section>
 </main>
+
+<dialog class="view" id="view" aria-labelledby="view-title">
+  <div class="view__head">
+    <div class="c2">
+      <p class="ds-eyebrow ds-eyebrow--accent caption" id="view-cat"></p>
+      <h2 class="heading" id="view-title"></h2>
+      <p class="body-sm" style="color:var(--ink-muted)" id="view-like"></p>
+    </div>
+    <button class="iconbtn" type="button" id="view-close" aria-label="Sluiten"><svg class="ico" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="view__body" id="view-shot"></div>
+  <div class="view__foot body-sm">
+    <span id="view-num" class="mono"></span>
+    <div class="view__nav">
+      <a class="open-btn" id="view-open" href="#" target="_blank" rel="noopener"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v4.5A1.5 1.5 0 0 1 16.5 20h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/></svg>Openen</a>
+      <button class="copy-btn" type="button" id="view-copy"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/></svg><span>Kopieer HTML</span></button>
+      <span class="sr-only" id="view-copy-live" aria-live="polite"></span>
+      <button class="iconbtn" type="button" id="view-prev" aria-label="Vorige template"><svg class="ico" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="iconbtn" type="button" id="view-next" aria-label="Volgende template"><svg class="ico" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+</dialog>
+
+<footer class="footer">
+  <div class="wrap footer__inner body-sm">
+    <div class="footer__brand"><span class="brand__mark" aria-hidden="true"></span><span>© 2026 Templates</span></div>
+    <ul class="footer__links">
+      <li><a href="#main">Galerij</a></li>
+      <li><a href="templates.json">templates.json</a></li>
+    </ul>
+    <div class="footer__contact"><a href="https://github.com/markwinters/templates" rel="noopener">GitHub</a></div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var grid = document.getElementById('grid'), chipsEl = document.getElementById('chips'), q = document.getElementById('q');
+  var countEl = document.getElementById('count'), empty = document.getElementById('empty'), view = document.getElementById('view');
+  var DATA = [], items = [], visible = [], active = 'Alles', cur = null;
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  var pad = function (n) { return ('00' + n).slice(-3); };
+
+  /* Elk template is een los bestand; de mockup halen we eruit en tonen we hier. */
+  var cache = {};
+  var load = function (d) {
+    if (!cache[d.file]) {
+      cache[d.file] = fetch(d.file).then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); }).then(function (text) {
+        var doc = new DOMParser().parseFromString(text, 'text/html'), scr = doc.querySelector('.scr');
+        return { text: text, inner: scr ? scr.innerHTML : '' };
+      });
+      cache[d.file].catch(function () { delete cache[d.file]; });
+    }
+    return cache[d.file];
+  };
+  var win = function (d, inner) {
+    return '<div class="win"><div class="win__bar"><i></i><i></i><i></i><span class="win__url">' + esc(d.file) + '</span></div><div class="scr">' + (inner || '') + '</div></div>';
+  };
+
+  var newest = 0;
+  var isNew = function (d) { return d.n > newest - 10; };
+  var inCat = function (d, c) { return c === 'Alles' || (c === 'Nieuw' ? isNew(d) : d.cat === c); };
+
+  var apply = function () {
+    var term = q.value.trim().toLowerCase();
+    visible = [];
+    items.forEach(function (li) {
+      var d = DATA[+li.dataset.i];
+      var hay = (d.name + ' ' + d.like + ' ' + d.cat + ' ' + pad(d.n)).toLowerCase();
+      var show = inCat(d, active) && (!term || hay.indexOf(term) >= 0);
+      li.hidden = !show;
+      if (show) visible.push(d);
+    });
+    countEl.textContent = visible.length === 1 ? '1 template' : visible.length + ' templates';
+    empty.hidden = visible.length > 0;
+  };
+
+  var observer = 'IntersectionObserver' in window ? new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      observer.unobserve(e.target);
+      var d = DATA[+e.target.dataset.i], scr = e.target.querySelector('.scr');
+      load(d).then(function (r) { scr.innerHTML = r.inner; }, function () {});
+    });
+  }, { rootMargin: '800px 0px' }) : null;
+
+  /* ---------- Groot voorbeeld ---------- */
+  var copyBtn = document.getElementById('view-copy'), copyLabel = copyBtn.querySelector('span'), copyLive = document.getElementById('view-copy-live'), copyTimer = null;
+  var copyState = function (cls, label) {
+    clearTimeout(copyTimer);
+    copyBtn.classList.remove('is-done', 'is-fail');
+    if (cls) copyBtn.classList.add(cls);
+    copyLabel.textContent = label; copyLive.textContent = cls ? label : '';
+    if (cls) copyTimer = setTimeout(function () { copyState('', 'Kopieer HTML'); }, 2000);
+  };
+  var show = function (d) {
+    cur = d;
+    document.getElementById('view-cat').innerHTML = '<span class="ds-eyebrow__dot" aria-hidden="true"></span>' + esc(d.cat);
+    document.getElementById('view-title').textContent = d.name;
+    document.getElementById('view-like').textContent = 'Een ' + (d.dark ? 'donker' : 'licht') + ' template in de stijl van ' + d.like + '.';
+    document.getElementById('view-num').textContent = '#' + pad(d.n) + ' van ' + DATA.length;
+    document.getElementById('view-open').href = d.file;
+    var shot = document.getElementById('view-shot');
+    shot.innerHTML = win(d, '');
+    copyState('', 'Kopieer HTML');
+    load(d).then(function (r) { if (cur === d) shot.querySelector('.scr').innerHTML = r.inner; }, function () {});
+  };
+  var copyText = function (s) {
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(s);
+    return new Promise(function (ok, fail) {
+      var ta = document.createElement('textarea');
+      ta.value = s; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+      view.appendChild(ta); ta.select();
+      var done = false; try { done = document.execCommand('copy'); } catch (e) {}
+      view.removeChild(ta); done ? ok() : fail();
+    });
+  };
+  copyBtn.addEventListener('click', function () {
+    if (!cur) return;
+    load(cur).then(function (r) { return copyText(r.text); }).then(function () { copyState('is-done', 'Gekopieerd ✓'); }, function () { copyState('is-fail', 'Kopiëren mislukt'); });
+  });
+  var step = function (dir) {
+    if (!cur) return;
+    var list = visible.length ? visible : DATA, k = list.indexOf(cur);
+    show(list[(k + dir + list.length) % list.length]);
+  };
+  grid.addEventListener('click', function (e) {
+    var b = e.target.closest('.tpl'); if (!b) return;
+    show(DATA[+b.dataset.i]);
+    if (view.showModal) view.showModal(); else view.setAttribute('open', '');
+  });
+  document.getElementById('view-close').addEventListener('click', function () { view.close(); });
+  document.getElementById('view-prev').addEventListener('click', function () { step(-1); });
+  document.getElementById('view-next').addEventListener('click', function () { step(1); });
+  view.addEventListener('click', function (e) { if (e.target === view) view.close(); });
+  view.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight') step(1); if (e.key === 'ArrowLeft') step(-1); });
+  view.addEventListener('close', function () { if (cur) { var b = grid.querySelector('.tpl[data-i="' + DATA.indexOf(cur) + '"]'); if (b) b.focus(); } });
+
+  /* ---------- Raster, filters en zoeken ---------- */
+  fetch('templates.json').then(function (r) { return r.json(); }).then(function (list) {
+    DATA = list.slice().sort(function (a, b) { return a.n - b.n; });
+    DATA.forEach(function (d) { if (d.n > newest) newest = d.n; });
+    var cats = ['Alles', 'Nieuw'];
+    DATA.forEach(function (d) { if (cats.indexOf(d.cat) < 0) cats.push(d.cat); });
+    document.getElementById('stat-cats').textContent = cats.length - 2;
+    document.getElementById('stat-total').textContent = DATA.length;
+    document.getElementById('stat-title').textContent = DATA.length;
+
+    grid.innerHTML = DATA.map(function (d, i) {
+      return '<li data-i="' + i + '"><button class="tpl" type="button" data-i="' + i + '" aria-label="' + esc(d.name) + ', in de stijl van ' + esc(d.like) + '. Open groot voorbeeld."><div class="tpl__shot" aria-hidden="true">' + win(d, '') + '</div><div class="tpl__body"><div class="tpl__meta"><span class="caption">' + esc(d.cat) + '</span><span class="tpl__num">' + (isNew(d) ? '<span class="tpl__new">Nieuw</span>' : '') + '#' + pad(d.n) + '</span></div><h3 class="title">' + esc(d.name) + '</h3><p class="tpl__like">In de stijl van <b>' + esc(d.like) + '</b></p></div></button></li>';
+    }).join('');
+    chipsEl.innerHTML = cats.map(function (c) {
+      var n = DATA.filter(function (d) { return inCat(d, c); }).length;
+      return '<li><button class="chip" type="button" data-cat="' + esc(c) + '" aria-pressed="' + (c === active) + '">' + esc(c) + ' <small>' + n + '</small></button></li>';
+    }).join('');
+    items = Array.prototype.slice.call(grid.children);
+    items.forEach(function (li) {
+      if (observer) observer.observe(li);
+      else load(DATA[+li.dataset.i]).then(function (r) { li.querySelector('.scr').innerHTML = r.inner; }, function () {});
+    });
+    apply();
+  }, function () {
+    empty.hidden = false;
+    empty.textContent = 'De lijst met templates kon niet worden geladen. Open deze pagina via een webserver, bijvoorbeeld GitHub Pages.';
+  });
+
+  chipsEl.addEventListener('click', function (e) {
+    var b = e.target.closest('.chip'); if (!b) return;
+    active = b.dataset.cat;
+    chipsEl.querySelectorAll('.chip').forEach(function (c) { c.setAttribute('aria-pressed', String(c === b)); });
+    apply();
+  });
+  q.addEventListener('input', apply);
+
+  /* Navigatie krijgt een rand zodra je scrolt */
+  var nav = document.querySelector('.nav');
+  var onScroll = function () { nav.classList.toggle('is-stuck', window.scrollY > 8); };
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+})();
+</script>
 </body>
 </html>

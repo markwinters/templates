@@ -3,7 +3,8 @@
 180 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
-- `index.html` is een overzicht van alle templates per categorie.
+- `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
+- `templates.json` is de lijst die de galerij inleest: per template het nummer, de naam, de categorie, de vergelijkbare dienst, het bestand en of het donker is. Een nieuw template verschijnt in de galerij zodra het hierin staat.
 
 De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `images.unsplash.com`. Laadt een foto niet, dan blijft er een kleurverloop in de huisstijl staan. De namen zijn eigen Zwolse varianten. De genoemde diensten dienen alleen als vergelijking; deze templates zijn er niet aan verbonden.
 

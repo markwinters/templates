@@ -1,0 +1,1442 @@
+[
+ {
+  "n": 1,
+  "name": "Peperbus AI",
+  "cat": "AI",
+  "like": "ChatGPT",
+  "file": "templates/001-peperbus-ai.html",
+  "dark": false
+ },
+ {
+  "n": 2,
+  "name": "Sassen Assist",
+  "cat": "AI",
+  "like": "Claude",
+  "file": "templates/002-sassen-assist.html",
+  "dark": false
+ },
+ {
+  "n": 3,
+  "name": "Blauwvinger GPT",
+  "cat": "AI",
+  "like": "Gemini",
+  "file": "templates/003-blauwvinger-gpt.html",
+  "dark": true
+ },
+ {
+  "n": 4,
+  "name": "IJssel Copilot",
+  "cat": "AI",
+  "like": "Microsoft Copilot",
+  "file": "templates/004-ijssel-copilot.html",
+  "dark": true
+ },
+ {
+  "n": 5,
+  "name": "Vecht Vraag",
+  "cat": "AI",
+  "like": "Perplexity",
+  "file": "templates/005-vecht-vraag.html",
+  "dark": false
+ },
+ {
+  "n": 6,
+  "name": "Hanze Beeld",
+  "cat": "AI",
+  "like": "Midjourney",
+  "file": "templates/006-hanze-beeld.html",
+  "dark": true
+ },
+ {
+  "n": 7,
+  "name": "Thorbecke Stem",
+  "cat": "AI",
+  "like": "ElevenLabs",
+  "file": "templates/007-thorbecke-stem.html",
+  "dark": false
+ },
+ {
+  "n": 8,
+  "name": "Zwolle Agent",
+  "cat": "AI",
+  "like": "n8n",
+  "file": "templates/008-zwolle-agent.html",
+  "dark": false
+ },
+ {
+  "n": 9,
+  "name": "Peperbus Zoek",
+  "cat": "Zoeken",
+  "like": "Google",
+  "file": "templates/009-peperbus-zoek.html",
+  "dark": false
+ },
+ {
+  "n": 10,
+  "name": "Grote Markt Zoeken",
+  "cat": "Zoeken",
+  "like": "Bing",
+  "file": "templates/010-grote-markt-zoeken.html",
+  "dark": false
+ },
+ {
+  "n": 11,
+  "name": "Stilte Zoek",
+  "cat": "Zoeken",
+  "like": "DuckDuckGo",
+  "file": "templates/011-stilte-zoek.html",
+  "dark": false
+ },
+ {
+  "n": 12,
+  "name": "Kaartje Zwolle",
+  "cat": "Zoeken",
+  "like": "Google Maps",
+  "file": "templates/012-kaartje-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 13,
+  "name": "Plaatjes Zoek",
+  "cat": "Zoeken",
+  "like": "Google Afbeeldingen",
+  "file": "templates/013-plaatjes-zoek.html",
+  "dark": false
+ },
+ {
+  "n": 14,
+  "name": "Vertaal Zwols",
+  "cat": "Zoeken",
+  "like": "Google Translate",
+  "file": "templates/014-vertaal-zwols.html",
+  "dark": false
+ },
+ {
+  "n": 15,
+  "name": "Zwolle Face",
+  "cat": "Sociaal",
+  "like": "Facebook",
+  "file": "templates/015-zwolle-face.html",
+  "dark": false
+ },
+ {
+  "n": 16,
+  "name": "Stadshagen Snaps",
+  "cat": "Sociaal",
+  "like": "Instagram",
+  "file": "templates/016-stadshagen-snaps.html",
+  "dark": false
+ },
+ {
+  "n": 17,
+  "name": "Blauwvinger Post",
+  "cat": "Sociaal",
+  "like": "X (Twitter)",
+  "file": "templates/017-blauwvinger-post.html",
+  "dark": true
+ },
+ {
+  "n": 18,
+  "name": "Hanze Netwerk",
+  "cat": "Sociaal",
+  "like": "LinkedIn",
+  "file": "templates/018-hanze-netwerk.html",
+  "dark": false
+ },
+ {
+  "n": 19,
+  "name": "Diezer Draad",
+  "cat": "Sociaal",
+  "like": "Reddit",
+  "file": "templates/019-diezer-draad.html",
+  "dark": false
+ },
+ {
+  "n": 20,
+  "name": "Zwols Prikbord",
+  "cat": "Sociaal",
+  "like": "Pinterest",
+  "file": "templates/020-zwols-prikbord.html",
+  "dark": false
+ },
+ {
+  "n": 21,
+  "name": "Ittersum Threads",
+  "cat": "Sociaal",
+  "like": "Threads",
+  "file": "templates/021-ittersum-threads.html",
+  "dark": false
+ },
+ {
+  "n": 22,
+  "name": "Peper Clips",
+  "cat": "Sociaal",
+  "like": "TikTok",
+  "file": "templates/022-peper-clips.html",
+  "dark": true
+ },
+ {
+  "n": 23,
+  "name": "Snapjes",
+  "cat": "Sociaal",
+  "like": "Snapchat",
+  "file": "templates/023-snapjes.html",
+  "dark": false
+ },
+ {
+  "n": 24,
+  "name": "Buurtbord",
+  "cat": "Sociaal",
+  "like": "Nextdoor",
+  "file": "templates/024-buurtbord.html",
+  "dark": false
+ },
+ {
+  "n": 25,
+  "name": "Sassen Stories",
+  "cat": "Sociaal",
+  "like": "Instagram Stories",
+  "file": "templates/025-sassen-stories.html",
+  "dark": true
+ },
+ {
+  "n": 26,
+  "name": "ZwolleTube",
+  "cat": "Video",
+  "like": "YouTube",
+  "file": "templates/026-zwolletube.html",
+  "dark": false
+ },
+ {
+  "n": 27,
+  "name": "IJsselFlix",
+  "cat": "Video",
+  "like": "Netflix",
+  "file": "templates/027-ijsselflix.html",
+  "dark": true
+ },
+ {
+  "n": 28,
+  "name": "Vecht Live",
+  "cat": "Video",
+  "like": "Twitch",
+  "file": "templates/028-vecht-live.html",
+  "dark": true
+ },
+ {
+  "n": 29,
+  "name": "Hanze Plus",
+  "cat": "Video",
+  "like": "Disney+",
+  "file": "templates/029-hanze-plus.html",
+  "dark": true
+ },
+ {
+  "n": 30,
+  "name": "Korte Clips",
+  "cat": "Video",
+  "like": "YouTube Shorts",
+  "file": "templates/030-korte-clips.html",
+  "dark": true
+ },
+ {
+  "n": 31,
+  "name": "Fundatie TV",
+  "cat": "Video",
+  "like": "Vimeo",
+  "file": "templates/031-fundatie-tv.html",
+  "dark": false
+ },
+ {
+  "n": 32,
+  "name": "Thorbecke Prime",
+  "cat": "Video",
+  "like": "Prime Video",
+  "file": "templates/032-thorbecke-prime.html",
+  "dark": true
+ },
+ {
+  "n": 33,
+  "name": "Peperbeat",
+  "cat": "Muziek",
+  "like": "Spotify",
+  "file": "templates/033-peperbeat.html",
+  "dark": true
+ },
+ {
+  "n": 34,
+  "name": "Hanze Sound",
+  "cat": "Muziek",
+  "like": "SoundCloud",
+  "file": "templates/034-hanze-sound.html",
+  "dark": true
+ },
+ {
+  "n": 35,
+  "name": "Sassen Podcast",
+  "cat": "Muziek",
+  "like": "Apple Podcasts",
+  "file": "templates/035-sassen-podcast.html",
+  "dark": true
+ },
+ {
+  "n": 36,
+  "name": "Radio Zwolle Plus",
+  "cat": "Muziek",
+  "like": "online radio",
+  "file": "templates/036-radio-zwolle-plus.html",
+  "dark": false
+ },
+ {
+  "n": 37,
+  "name": "Blauw Muziek",
+  "cat": "Muziek",
+  "like": "Apple Music",
+  "file": "templates/037-blauw-muziek.html",
+  "dark": true
+ },
+ {
+  "n": 38,
+  "name": "Zwolle Bazaar",
+  "cat": "Shop",
+  "like": "Amazon",
+  "file": "templates/038-zwolle-bazaar.html",
+  "dark": false
+ },
+ {
+  "n": 39,
+  "name": "Peperpakket",
+  "cat": "Shop",
+  "like": "Bol",
+  "file": "templates/039-peperpakket.html",
+  "dark": false
+ },
+ {
+  "n": 40,
+  "name": "Markt Zwolle",
+  "cat": "Shop",
+  "like": "Marktplaats",
+  "file": "templates/040-markt-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 41,
+  "name": "Hanze Huis",
+  "cat": "Shop",
+  "like": "Funda",
+  "file": "templates/041-hanze-huis.html",
+  "dark": false
+ },
+ {
+  "n": 42,
+  "name": "Sassen Mode",
+  "cat": "Shop",
+  "like": "Zalando",
+  "file": "templates/042-sassen-mode.html",
+  "dark": false
+ },
+ {
+  "n": 43,
+  "name": "Stadsmarkt",
+  "cat": "Shop",
+  "like": "Etsy",
+  "file": "templates/043-stadsmarkt.html",
+  "dark": false
+ },
+ {
+  "n": 44,
+  "name": "Coolblauw",
+  "cat": "Shop",
+  "like": "Coolblue",
+  "file": "templates/044-coolblauw.html",
+  "dark": false
+ },
+ {
+  "n": 45,
+  "name": "Zwols Veilinghuis",
+  "cat": "Shop",
+  "like": "eBay",
+  "file": "templates/045-zwols-veilinghuis.html",
+  "dark": false
+ },
+ {
+  "n": 46,
+  "name": "Kassa Zwolle",
+  "cat": "Shop",
+  "like": "Shopify Checkout",
+  "file": "templates/046-kassa-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 47,
+  "name": "IJssel Tweedehands",
+  "cat": "Shop",
+  "like": "Vinted",
+  "file": "templates/047-ijssel-tweedehands.html",
+  "dark": false
+ },
+ {
+  "n": 48,
+  "name": "Zwolle Bezorgd",
+  "cat": "Eten",
+  "like": "Thuisbezorgd",
+  "file": "templates/048-zwolle-bezorgd.html",
+  "dark": false
+ },
+ {
+  "n": 49,
+  "name": "Peper Pakt",
+  "cat": "Eten",
+  "like": "Uber Eats",
+  "file": "templates/049-peper-pakt.html",
+  "dark": true
+ },
+ {
+  "n": 50,
+  "name": "Hanze Kookt",
+  "cat": "Eten",
+  "like": "Allerhande",
+  "file": "templates/050-hanze-kookt.html",
+  "dark": false
+ },
+ {
+  "n": 51,
+  "name": "Blauwe Tafel",
+  "cat": "Eten",
+  "like": "TheFork",
+  "file": "templates/051-blauwe-tafel.html",
+  "dark": false
+ },
+ {
+  "n": 52,
+  "name": "Peper Mail",
+  "cat": "Communicatie",
+  "like": "Gmail",
+  "file": "templates/052-peper-mail.html",
+  "dark": false
+ },
+ {
+  "n": 53,
+  "name": "Sassen Post",
+  "cat": "Communicatie",
+  "like": "Outlook",
+  "file": "templates/053-sassen-post.html",
+  "dark": false
+ },
+ {
+  "n": 54,
+  "name": "Zwolle App",
+  "cat": "Communicatie",
+  "like": "WhatsApp",
+  "file": "templates/054-zwolle-app.html",
+  "dark": false
+ },
+ {
+  "n": 55,
+  "name": "Hanze Kanaal",
+  "cat": "Communicatie",
+  "like": "Slack",
+  "file": "templates/055-hanze-kanaal.html",
+  "dark": false
+ },
+ {
+  "n": 56,
+  "name": "Gamehoek",
+  "cat": "Communicatie",
+  "like": "Discord",
+  "file": "templates/056-gamehoek.html",
+  "dark": true
+ },
+ {
+  "n": 57,
+  "name": "Vecht Vergader",
+  "cat": "Communicatie",
+  "like": "Zoom",
+  "file": "templates/057-vecht-vergader.html",
+  "dark": true
+ },
+ {
+  "n": 58,
+  "name": "IJssel Teams",
+  "cat": "Communicatie",
+  "like": "Microsoft Teams",
+  "file": "templates/058-ijssel-teams.html",
+  "dark": true
+ },
+ {
+  "n": 59,
+  "name": "Telegrafie",
+  "cat": "Communicatie",
+  "like": "Telegram",
+  "file": "templates/059-telegrafie.html",
+  "dark": true
+ },
+ {
+  "n": 60,
+  "name": "Peper Docs",
+  "cat": "Productiviteit",
+  "like": "Google Docs",
+  "file": "templates/060-peper-docs.html",
+  "dark": false
+ },
+ {
+  "n": 61,
+  "name": "Sassen Notities",
+  "cat": "Productiviteit",
+  "like": "Notion",
+  "file": "templates/061-sassen-notities.html",
+  "dark": false
+ },
+ {
+  "n": 62,
+  "name": "Hanze Sheets",
+  "cat": "Productiviteit",
+  "like": "Excel",
+  "file": "templates/062-hanze-sheets.html",
+  "dark": false
+ },
+ {
+  "n": 63,
+  "name": "Zwolle Slides",
+  "cat": "Productiviteit",
+  "like": "PowerPoint",
+  "file": "templates/063-zwolle-slides.html",
+  "dark": false
+ },
+ {
+  "n": 64,
+  "name": "Bordje",
+  "cat": "Productiviteit",
+  "like": "Trello",
+  "file": "templates/064-bordje.html",
+  "dark": false
+ },
+ {
+  "n": 65,
+  "name": "Takenlijst",
+  "cat": "Productiviteit",
+  "like": "Todoist",
+  "file": "templates/065-takenlijst.html",
+  "dark": false
+ },
+ {
+  "n": 66,
+  "name": "Agenda Zwolle",
+  "cat": "Productiviteit",
+  "like": "Google Agenda",
+  "file": "templates/066-agenda-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 67,
+  "name": "Opslag Zwolle",
+  "cat": "Productiviteit",
+  "like": "Google Drive",
+  "file": "templates/067-opslag-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 68,
+  "name": "Thorbecke Taken",
+  "cat": "Productiviteit",
+  "like": "Jira",
+  "file": "templates/068-thorbecke-taken.html",
+  "dark": false
+ },
+ {
+  "n": 69,
+  "name": "Ontwerpbord",
+  "cat": "Productiviteit",
+  "like": "Figma",
+  "file": "templates/069-ontwerpbord.html",
+  "dark": false
+ },
+ {
+  "n": 70,
+  "name": "Canvas Zwolle",
+  "cat": "Productiviteit",
+  "like": "Canva",
+  "file": "templates/070-canvas-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 71,
+  "name": "Formuliertje",
+  "cat": "Productiviteit",
+  "like": "Typeform",
+  "file": "templates/071-formuliertje.html",
+  "dark": false
+ },
+ {
+  "n": 72,
+  "name": "Whiteboard Zwolle",
+  "cat": "Productiviteit",
+  "like": "Miro",
+  "file": "templates/072-whiteboard-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 73,
+  "name": "ZwolleHub",
+  "cat": "Ontwikkelaars",
+  "like": "GitHub",
+  "file": "templates/073-zwollehub.html",
+  "dark": false
+ },
+ {
+  "n": 74,
+  "name": "Stack Zwolle",
+  "cat": "Ontwikkelaars",
+  "like": "Stack Overflow",
+  "file": "templates/074-stack-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 75,
+  "name": "Code Peper",
+  "cat": "Ontwikkelaars",
+  "like": "VS Code",
+  "file": "templates/075-code-peper.html",
+  "dark": true
+ },
+ {
+  "n": 76,
+  "name": "Hanze Host",
+  "cat": "Ontwikkelaars",
+  "like": "Vercel",
+  "file": "templates/076-hanze-host.html",
+  "dark": true
+ },
+ {
+  "n": 77,
+  "name": "Status Zwolle",
+  "cat": "Ontwikkelaars",
+  "like": "een statuspagina",
+  "file": "templates/077-status-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 78,
+  "name": "Zwolle Dev Docs",
+  "cat": "Ontwikkelaars",
+  "like": "Stripe Docs",
+  "file": "templates/078-zwolle-dev-docs.html",
+  "dark": false
+ },
+ {
+  "n": 79,
+  "name": "Zwolle Slaapt",
+  "cat": "Reizen",
+  "like": "Booking.com",
+  "file": "templates/079-zwolle-slaapt.html",
+  "dark": false
+ },
+ {
+  "n": 80,
+  "name": "Logeer Zwolle",
+  "cat": "Reizen",
+  "like": "Airbnb",
+  "file": "templates/080-logeer-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 81,
+  "name": "IJssel Rides",
+  "cat": "Reizen",
+  "like": "Uber",
+  "file": "templates/081-ijssel-rides.html",
+  "dark": false
+ },
+ {
+  "n": 82,
+  "name": "Spoorzoeker",
+  "cat": "Reizen",
+  "like": "NS",
+  "file": "templates/082-spoorzoeker.html",
+  "dark": false
+ },
+ {
+  "n": 83,
+  "name": "Vliegveld Zwolle",
+  "cat": "Reizen",
+  "like": "Skyscanner",
+  "file": "templates/083-vliegveld-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 84,
+  "name": "Recensies Zwolle",
+  "cat": "Reizen",
+  "like": "Tripadvisor",
+  "file": "templates/084-recensies-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 85,
+  "name": "Peper Bank",
+  "cat": "Financiën",
+  "like": "een bankapp",
+  "file": "templates/085-peper-bank.html",
+  "dark": false
+ },
+ {
+  "n": 86,
+  "name": "Hanze Pay",
+  "cat": "Financiën",
+  "like": "PayPal",
+  "file": "templates/086-hanze-pay.html",
+  "dark": false
+ },
+ {
+  "n": 87,
+  "name": "Blauw Crypto",
+  "cat": "Financiën",
+  "like": "Coinbase",
+  "file": "templates/087-blauw-crypto.html",
+  "dark": true
+ },
+ {
+  "n": 88,
+  "name": "Beurs Zwolle",
+  "cat": "Financiën",
+  "like": "DEGIRO",
+  "file": "templates/088-beurs-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 89,
+  "name": "Tikje Zwolle",
+  "cat": "Financiën",
+  "like": "Tikkie",
+  "file": "templates/089-tikje-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 90,
+  "name": "Zwolse Courant",
+  "cat": "Media",
+  "like": "NU.nl",
+  "file": "templates/090-zwolse-courant.html",
+  "dark": false
+ },
+ {
+  "n": 91,
+  "name": "Weerbericht Zwolle",
+  "cat": "Media",
+  "like": "Buienradar",
+  "file": "templates/091-weerbericht-zwolle.html",
+  "dark": true
+ },
+ {
+  "n": 92,
+  "name": "Zwolle Wiki",
+  "cat": "Media",
+  "like": "Wikipedia",
+  "file": "templates/092-zwolle-wiki.html",
+  "dark": false
+ },
+ {
+  "n": 93,
+  "name": "Blog Zwolle",
+  "cat": "Media",
+  "like": "Medium",
+  "file": "templates/093-blog-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 94,
+  "name": "Hanze Sport",
+  "cat": "Media",
+  "like": "ESPN",
+  "file": "templates/094-hanze-sport.html",
+  "dark": false
+ },
+ {
+  "n": 95,
+  "name": "Leer Zwolle",
+  "cat": "Leren",
+  "like": "Duolingo",
+  "file": "templates/095-leer-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 96,
+  "name": "Hanze Academy",
+  "cat": "Leren",
+  "like": "Coursera",
+  "file": "templates/096-hanze-academy.html",
+  "dark": false
+ },
+ {
+  "n": 97,
+  "name": "Quizje",
+  "cat": "Leren",
+  "like": "Kahoot!",
+  "file": "templates/097-quizje.html",
+  "dark": false
+ },
+ {
+  "n": 98,
+  "name": "Sportief Zwolle",
+  "cat": "Overig",
+  "like": "Strava",
+  "file": "templates/098-sportief-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 99,
+  "name": "Date Zwolle",
+  "cat": "Overig",
+  "like": "Tinder",
+  "file": "templates/099-date-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 100,
+  "name": "Linkje Zwolle",
+  "cat": "Overig",
+  "like": "Linktree",
+  "file": "templates/100-linkje-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 101,
+  "name": "Zwolle Vacatures",
+  "cat": "Werk",
+  "like": "Indeed",
+  "file": "templates/101-zwolle-vacatures.html",
+  "dark": false
+ },
+ {
+  "n": 102,
+  "name": "Hanze Banen",
+  "cat": "Werk",
+  "like": "LinkedIn Jobs",
+  "file": "templates/102-hanze-banen.html",
+  "dark": false
+ },
+ {
+  "n": 103,
+  "name": "Peper Tickets",
+  "cat": "Vrije tijd",
+  "like": "Ticketmaster",
+  "file": "templates/103-peper-tickets.html",
+  "dark": false
+ },
+ {
+  "n": 104,
+  "name": "Uitje Zwolle",
+  "cat": "Vrije tijd",
+  "like": "Meetup",
+  "file": "templates/104-uitje-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 105,
+  "name": "Spelhal",
+  "cat": "Vrije tijd",
+  "like": "Steam",
+  "file": "templates/105-spelhal.html",
+  "dark": true
+ },
+ {
+  "n": 106,
+  "name": "Schaakclub Zwolle",
+  "cat": "Vrije tijd",
+  "like": "Chess.com",
+  "file": "templates/106-schaakclub-zwolle.html",
+  "dark": true
+ },
+ {
+  "n": 107,
+  "name": "Boekenkast Zwolle",
+  "cat": "Vrije tijd",
+  "like": "Goodreads",
+  "file": "templates/107-boekenkast-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 108,
+  "name": "Fotoalbum Zwolle",
+  "cat": "Productiviteit",
+  "like": "Google Foto's",
+  "file": "templates/108-fotoalbum-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 109,
+  "name": "Steun Zwolle",
+  "cat": "Financiën",
+  "like": "Kickstarter",
+  "file": "templates/109-steun-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 110,
+  "name": "Slim Huis Zwolle",
+  "cat": "Overig",
+  "like": "Google Home",
+  "file": "templates/110-slim-huis-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 111,
+  "name": "Pakketje Volgen",
+  "cat": "Shop",
+  "like": "PostNL",
+  "file": "templates/111-pakketje-volgen.html",
+  "dark": false
+ },
+ {
+  "n": 112,
+  "name": "Monteur Zwolle",
+  "cat": "Video",
+  "like": "CapCut",
+  "file": "templates/112-monteur-zwolle.html",
+  "dark": true
+ },
+ {
+  "n": 113,
+  "name": "Kluis Zwolle",
+  "cat": "Productiviteit",
+  "like": "1Password",
+  "file": "templates/113-kluis-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 114,
+  "name": "Zwolse Nerds",
+  "cat": "Ontwikkelaars",
+  "like": "Hacker News",
+  "file": "templates/114-zwolse-nerds.html",
+  "dark": false
+ },
+ {
+  "n": 115,
+  "name": "Energie Zwolle",
+  "cat": "Overig",
+  "like": "Toon van Eneco",
+  "file": "templates/115-energie-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 116,
+  "name": "Huisarts Zwolle",
+  "cat": "Overig",
+  "like": "een afsprakenapp",
+  "file": "templates/116-huisarts-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 117,
+  "name": "Vraagbaak Zwolle",
+  "cat": "Sociaal",
+  "like": "Quora",
+  "file": "templates/117-vraagbaak-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 118,
+  "name": "Klusjes Zwolle",
+  "cat": "Werk",
+  "like": "Werkspot",
+  "file": "templates/118-klusjes-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 119,
+  "name": "Statistiek Zwolle",
+  "cat": "Ontwikkelaars",
+  "like": "Google Analytics",
+  "file": "templates/119-statistiek-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 120,
+  "name": "Bouwmaat AI",
+  "cat": "AI",
+  "like": "Lovable",
+  "file": "templates/120-bouwmaat-ai.html",
+  "dark": false
+ },
+ {
+  "n": 121,
+  "name": "Gemeente Zwolle Digitaal",
+  "cat": "Overig",
+  "like": "een gemeentewebsite",
+  "file": "templates/121-gemeente-zwolle-digitaal.html",
+  "dark": false
+ },
+ {
+  "n": 122,
+  "name": "Plantje Zwolle",
+  "cat": "Shop",
+  "like": "een plantenwebshop",
+  "file": "templates/122-plantje-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 123,
+  "name": "Bieb Zwolle",
+  "cat": "Leren",
+  "like": "een bibliotheekcatalogus",
+  "file": "templates/123-bieb-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 124,
+  "name": "Sportplein Stadshagen",
+  "cat": "Vrije tijd",
+  "like": "een sportschoolrooster",
+  "file": "templates/124-sportplein-stadshagen.html",
+  "dark": false
+ },
+ {
+  "n": 125,
+  "name": "Kaartje Klaar",
+  "cat": "Productiviteit",
+  "like": "Paperless Post",
+  "file": "templates/125-kaartje-klaar.html",
+  "dark": false
+ },
+ {
+  "n": 126,
+  "name": "Zwolle Stemt",
+  "cat": "Sociaal",
+  "like": "Strawpoll",
+  "file": "templates/126-zwolle-stemt.html",
+  "dark": false
+ },
+ {
+  "n": 127,
+  "name": "Vecht Verhuur",
+  "cat": "Reizen",
+  "like": "een autoverhuurder",
+  "file": "templates/127-vecht-verhuur.html",
+  "dark": false
+ },
+ {
+  "n": 128,
+  "name": "IJssel Radar",
+  "cat": "Reizen",
+  "like": "Flightradar24",
+  "file": "templates/128-ijssel-radar.html",
+  "dark": true
+ },
+ {
+  "n": 129,
+  "name": "Hanze Nieuws Log",
+  "cat": "Ontwikkelaars",
+  "like": "een changelog",
+  "file": "templates/129-hanze-nieuws-log.html",
+  "dark": false
+ },
+ {
+  "n": 130,
+  "name": "Thorbecke Taal",
+  "cat": "Leren",
+  "like": "een online woordenboek",
+  "file": "templates/130-thorbecke-taal.html",
+  "dark": false
+ },
+ {
+  "n": 131,
+  "name": "Parkeer Peper",
+  "cat": "Reizen",
+  "like": "een parkeerapp",
+  "file": "templates/131-parkeer-peper.html",
+  "dark": false
+ },
+ {
+  "n": 132,
+  "name": "Weekmenu Zwolle",
+  "cat": "Eten",
+  "like": "Mealime",
+  "file": "templates/132-weekmenu-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 133,
+  "name": "Hanze Leerplein",
+  "cat": "Leren",
+  "like": "een schoolportaal",
+  "file": "templates/133-hanze-leerplein.html",
+  "dark": false
+ },
+ {
+  "n": 134,
+  "name": "Zwols Woordje",
+  "cat": "Vrije tijd",
+  "like": "Wordle",
+  "file": "templates/134-zwols-woordje.html",
+  "dark": false
+ },
+ {
+  "n": 135,
+  "name": "Blauwvinger Brouwerij",
+  "cat": "Eten",
+  "like": "een brouwerijwebsite",
+  "file": "templates/135-blauwvinger-brouwerij.html",
+  "dark": false
+ },
+ {
+  "n": 136,
+  "name": "Stamboom Zwolle",
+  "cat": "Overig",
+  "like": "MyHeritage",
+  "file": "templates/136-stamboom-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 137,
+  "name": "Afvalwijzer 038",
+  "cat": "Overig",
+  "like": "een afvalkalender",
+  "file": "templates/137-afvalwijzer-038.html",
+  "dark": false
+ },
+ {
+  "n": 138,
+  "name": "Hanze Hackathon",
+  "cat": "Ontwikkelaars",
+  "like": "een conferentiewebsite",
+  "file": "templates/138-hanze-hackathon.html",
+  "dark": false
+ },
+ {
+  "n": 139,
+  "name": "Fietsbouwer Zwolle",
+  "cat": "Shop",
+  "like": "een fietsconfigurator",
+  "file": "templates/139-fietsbouwer-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 140,
+  "name": "Asiel Assendorp",
+  "cat": "Overig",
+  "like": "een dierenasiel",
+  "file": "templates/140-asiel-assendorp.html",
+  "dark": false
+ },
+ {
+  "n": 141,
+  "name": "Hanze Hypotheek",
+  "cat": "Financiën",
+  "like": "een hypotheekcalculator",
+  "file": "templates/141-hanze-hypotheek.html",
+  "dark": false
+ },
+ {
+  "n": 142,
+  "name": "Diezer Domeinen",
+  "cat": "Ontwikkelaars",
+  "like": "een domeinregistrar",
+  "file": "templates/142-diezer-domeinen.html",
+  "dark": false
+ },
+ {
+  "n": 143,
+  "name": "Thorbecke Tikt",
+  "cat": "Leren",
+  "like": "Monkeytype",
+  "file": "templates/143-thorbecke-tikt.html",
+  "dark": true
+ },
+ {
+  "n": 144,
+  "name": "Peper Podium",
+  "cat": "Vrije tijd",
+  "like": "een theaterwebsite",
+  "file": "templates/144-peper-podium.html",
+  "dark": false
+ },
+ {
+  "n": 145,
+  "name": "Sassen Service",
+  "cat": "Communicatie",
+  "like": "Zendesk",
+  "file": "templates/145-sassen-service.html",
+  "dark": false
+ },
+ {
+  "n": 146,
+  "name": "Stadshagen Werkplek",
+  "cat": "Productiviteit",
+  "like": "een werkplekreservering",
+  "file": "templates/146-stadshagen-werkplek.html",
+  "dark": false
+ },
+ {
+  "n": 147,
+  "name": "Factuur Zwolle",
+  "cat": "Financiën",
+  "like": "Moneybird",
+  "file": "templates/147-factuur-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 148,
+  "name": "Fotoboek Zwolle",
+  "cat": "Productiviteit",
+  "like": "een fotoboekeditor",
+  "file": "templates/148-fotoboek-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 149,
+  "name": "IJssel Waterstand",
+  "cat": "Overig",
+  "like": "een waterstanden-dashboard",
+  "file": "templates/149-ijssel-waterstand.html",
+  "dark": false
+ },
+ {
+  "n": 150,
+  "name": "Pixel Peperbus",
+  "cat": "Vrije tijd",
+  "like": "Piskel",
+  "file": "templates/150-pixel-peperbus.html",
+  "dark": false
+ },
+ {
+  "n": 151,
+  "name": "Sassen Sudoku",
+  "cat": "Vrije tijd",
+  "like": "een sudoku-app",
+  "file": "templates/151-sassen-sudoku.html",
+  "dark": false
+ },
+ {
+  "n": 152,
+  "name": "Peper Bestelzuil",
+  "cat": "Eten",
+  "like": "een bestelzuil",
+  "file": "templates/152-peper-bestelzuil.html",
+  "dark": false
+ },
+ {
+  "n": 153,
+  "name": "Zwolle Helpt",
+  "cat": "Sociaal",
+  "like": "NLvoorElkaar",
+  "file": "templates/153-zwolle-helpt.html",
+  "dark": false
+ },
+ {
+  "n": 154,
+  "name": "Thorbecke Tijdlijn",
+  "cat": "Productiviteit",
+  "like": "TeamGantt",
+  "file": "templates/154-thorbecke-tijdlijn.html",
+  "dark": false
+ },
+ {
+  "n": 155,
+  "name": "Vecht Vinyl",
+  "cat": "Muziek",
+  "like": "Discogs",
+  "file": "templates/155-vecht-vinyl.html",
+  "dark": false
+ },
+ {
+  "n": 156,
+  "name": "Diezer Data",
+  "cat": "Ontwikkelaars",
+  "like": "een databaseconsole",
+  "file": "templates/156-diezer-data.html",
+  "dark": true
+ },
+ {
+  "n": 157,
+  "name": "IJssel Nieuwsbrief",
+  "cat": "Communicatie",
+  "like": "Mailchimp",
+  "file": "templates/157-ijssel-nieuwsbrief.html",
+  "dark": false
+ },
+ {
+  "n": 158,
+  "name": "Zwolse Atletische Club",
+  "cat": "Vrije tijd",
+  "like": "een sportclubwebsite",
+  "file": "templates/158-zwolse-atletische-club.html",
+  "dark": false
+ },
+ {
+  "n": 159,
+  "name": "Muziekhuis Zwolle",
+  "cat": "Muziek",
+  "like": "GarageBand",
+  "file": "templates/159-muziekhuis-zwolle.html",
+  "dark": true
+ },
+ {
+  "n": 160,
+  "name": "Sterrenwacht Zwolle",
+  "cat": "Leren",
+  "like": "Stellarium",
+  "file": "templates/160-sterrenwacht-zwolle.html",
+  "dark": true
+ },
+ {
+  "n": 161,
+  "name": "Peper Focus",
+  "cat": "Productiviteit",
+  "like": "een focustimer",
+  "file": "templates/161-peper-focus.html",
+  "dark": true
+ },
+ {
+  "n": 162,
+  "name": "Zwols Zakboekje",
+  "cat": "Productiviteit",
+  "like": "Streaks",
+  "file": "templates/162-zwols-zakboekje.html",
+  "dark": false
+ },
+ {
+  "n": 163,
+  "name": "Sassen CV",
+  "cat": "Werk",
+  "like": "een cv-maker",
+  "file": "templates/163-sassen-cv.html",
+  "dark": false
+ },
+ {
+  "n": 164,
+  "name": "Vecht Vergelijker",
+  "cat": "Shop",
+  "like": "Tweakers Pricewatch",
+  "file": "templates/164-vecht-vergelijker.html",
+  "dark": false
+ },
+ {
+  "n": 165,
+  "name": "Hanze Haven",
+  "cat": "Shop",
+  "like": "een nieuwbouwproject",
+  "file": "templates/165-hanze-haven.html",
+  "dark": false
+ },
+ {
+  "n": 166,
+  "name": "Blauwvinger Bezorger",
+  "cat": "Werk",
+  "like": "een bezorgersapp",
+  "file": "templates/166-blauwvinger-bezorger.html",
+  "dark": false
+ },
+ {
+  "n": 167,
+  "name": "Kunstroute Zwolle",
+  "cat": "Leren",
+  "like": "een audiotour-app",
+  "file": "templates/167-kunstroute-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 168,
+  "name": "Peper Plattegrond",
+  "cat": "Productiviteit",
+  "like": "Floorplanner",
+  "file": "templates/168-peper-plattegrond.html",
+  "dark": false
+ },
+ {
+  "n": 169,
+  "name": "IJssel Inzicht",
+  "cat": "Financiën",
+  "like": "een budget-app",
+  "file": "templates/169-ijssel-inzicht.html",
+  "dark": false
+ },
+ {
+  "n": 170,
+  "name": "Vertrekbord Zwolle",
+  "cat": "Reizen",
+  "like": "een vertrekbord",
+  "file": "templates/170-vertrekbord-zwolle.html",
+  "dark": true
+ },
+ {
+  "n": 171,
+  "name": "Hanze Foutmelder",
+  "cat": "Ontwikkelaars",
+  "like": "Sentry",
+  "file": "templates/171-hanze-foutmelder.html",
+  "dark": false
+ },
+ {
+  "n": 172,
+  "name": "Oppas Zwolle",
+  "cat": "Sociaal",
+  "like": "een oppasplatform",
+  "file": "templates/172-oppas-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 173,
+  "name": "Peperbus Toernooi",
+  "cat": "Vrije tijd",
+  "like": "Challonge",
+  "file": "templates/173-peperbus-toernooi.html",
+  "dark": false
+ },
+ {
+  "n": 174,
+  "name": "Gedachtenkaart Zwolle",
+  "cat": "Productiviteit",
+  "like": "MindMeister",
+  "file": "templates/174-gedachtenkaart-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 175,
+  "name": "Hanze Pakketten",
+  "cat": "Ontwikkelaars",
+  "like": "npm",
+  "file": "templates/175-hanze-pakketten.html",
+  "dark": false
+ },
+ {
+  "n": 176,
+  "name": "Slaap Zwolle",
+  "cat": "Overig",
+  "like": "Oura",
+  "file": "templates/176-slaap-zwolle.html",
+  "dark": true
+ },
+ {
+  "n": 177,
+  "name": "Laadpaal Zwolle",
+  "cat": "Reizen",
+  "like": "PlugShare",
+  "file": "templates/177-laadpaal-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 178,
+  "name": "Vecht Wijnen",
+  "cat": "Eten",
+  "like": "Vivino",
+  "file": "templates/178-vecht-wijnen.html",
+  "dark": false
+ },
+ {
+  "n": 179,
+  "name": "Overhoor Zwolle",
+  "cat": "Leren",
+  "like": "Quizlet",
+  "file": "templates/179-overhoor-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 180,
+  "name": "Fotolab Zwolle",
+  "cat": "Productiviteit",
+  "like": "Lightroom",
+  "file": "templates/180-fotolab-zwolle.html",
+  "dark": true
+ }
+]

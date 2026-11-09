@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZwolleHub</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+:root {
+  --font-sans: "SF Pro Display", -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --gradient-spectrum: linear-gradient(90deg, #7C3AED 0%, #2563EB 50%, #00F0FF 100%);
+  --gradient-dot: linear-gradient(225deg, #00F0FF 0%, #2563EB 45%, #7C3AED 100%);
+  --gradient-night: linear-gradient(100deg, #2C3046 0%, #0F1115 50%, #262A44 100%);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #0F1115; }
+body { display: grid; place-items: center; -webkit-font-smoothing: antialiased; }
+/* Het template vult het venster in de verhouding 16:10 */
+.scr { width: min(100vw, 160vh); }
+
+/* ---------- De mockup zelf: alles schaalt mee met de breedte (cqw) ---------- */
+.scr { container-type: inline-size; aspect-ratio: 16 / 10; overflow: hidden; }
+.s { --c1: #7C3AED; --c2: #2563EB; --c3: #00B8D4; --ok: #10B981; --bad: #EF4444; --warn: #F59E0B;
+  --bg: #F7F8FA; --pn: #FFFFFF; --ln: #E5E7EB; --ink: #0F1115; --mu: #9A9EA8; --sk: #E3E5EA; --sk2: #EEF0F3;
+  display: flex; flex-direction: column; width: 100%; height: 100%; background: var(--bg); color: var(--ink);
+  font-family: var(--font-sans); font-size: 1.55cqw; line-height: 1.35; overflow: hidden; position: relative; }
+.s.dk { --c1: #A07CFF; --c2: #6EA0FF; --c3: #00F0FF; --bg: #0F1115; --pn: #171A22; --ln: #FFFFFF1A; --ink: #F7F8FA; --mu: #7D828E; --sk: #2A2E39; --sk2: #20242D; }
+.s.ac2 { --acc: var(--c2); } .s.ac3 { --acc: var(--c3); } .s { --acc: var(--c1); }
+.s * { box-sizing: border-box; }
+.s b, .s span, .s i { font-style: normal; }
+.r { display: flex; align-items: center; gap: 1cqw; min-width: 0; }
+.c { display: flex; flex-direction: column; gap: 1cqw; min-width: 0; }
+.gr { display: grid; gap: 1.2cqw; min-width: 0; }
+.f1 { flex: 1; min-width: 0; min-height: 0; }
+.p { padding: 2cqw; }
+.pn { background: var(--pn); border: 1px solid var(--ln); border-radius: 1cqw; padding: 1.4cqw; min-width: 0; box-shadow: 0 .15cqw .6cqw #0F11150A; }
+.dk .pn { box-shadow: none; }
+.l { display: block; flex: none; min-width: 0; color: var(--mu); font-size: 1.1cqw; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.l.lt { color: var(--ink); font-size: 1.25cqw; font-weight: 600; }
+.l.la { color: var(--acc); font-weight: 600; }
+.t { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mu { color: var(--mu); font-weight: 400; }
+.sm { font-size: 1.2cqw; } .xs { font-size: 1cqw; } .lg { font-size: 2.6cqw; letter-spacing: -.02em; } .xl { font-size: 4.4cqw; letter-spacing: -.03em; } .xxl { font-size: 8cqw; letter-spacing: -.04em; font-weight: 500; }
+.av { display: block; flex: none; width: 3cqw; height: 3cqw; border-radius: 50%; background: linear-gradient(135deg, var(--c1), var(--c3)); }
+.av.v2 { background: linear-gradient(135deg, var(--c2), var(--c1)); } .av.v3 { background: linear-gradient(135deg, var(--c3), var(--c2)); } .av.v4 { background: linear-gradient(135deg, #F59E0B, var(--c1)); }
+.im { display: block; min-width: 0; border-radius: .8cqw; background: var(--sk); position: relative; overflow: hidden; }
+.g0 { background: radial-gradient(80% 90% at 80% 10%, #7C3AED, transparent 70%), radial-gradient(70% 80% at 10% 100%, #00F0FF, transparent 70%), #2563EB; }
+.g1 { background: linear-gradient(135deg, #2C3046, #0F1115 50%, #7C3AED); }
+.g2 { background: radial-gradient(60% 60% at 30% 30%, #00F0FFAA, transparent 70%), linear-gradient(160deg, #2563EB, #7C3AED); }
+.g3 { background: linear-gradient(180deg, #A5B4FC, #E0E7FF 60%, #C7D2FE); }
+.g4 { background: radial-gradient(70% 70% at 70% 70%, #F59E0B99, transparent 70%), linear-gradient(135deg, #7C3AED, #EC4899); }
+.g5 { background: linear-gradient(200deg, #00F0FF, #2563EB 55%, #0F1115); }
+.bt { display: inline-flex; align-items: center; justify-content: center; gap: .6cqw; flex: none; height: 3cqw; padding: 0 1.6cqw; border-radius: .7cqw; background: var(--acc); color: #fff; font-weight: 600; font-size: 1.2cqw; white-space: nowrap; }
+.dk .bt { color: #0F1115; }
+.bt.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ln); }
+.bt.k { background: var(--ink); color: var(--bg); }
+.bt.rd { border-radius: 3cqw; }
+.in { display: flex; align-items: center; gap: .8cqw; height: 3.4cqw; padding: 0 1.4cqw; border: 1px solid var(--ln); border-radius: .8cqw; background: var(--pn); color: var(--mu); font-size: 1.25cqw; white-space: nowrap; overflow: hidden; min-width: 0; }
+.in.rd { border-radius: 3cqw; }
+.lg-m { display: inline-block; flex: none; width: 2.2cqw; height: 2.2cqw; border-radius: .6cqw; background: var(--gradient-dot); }
+.brand { display: inline-flex; align-items: center; gap: .8cqw; font-weight: 600; white-space: nowrap; }
+.bar { display: flex; align-items: center; gap: 1.4cqw; height: 5.4cqw; padding: 0 2cqw; border-bottom: 1px solid var(--ln); background: var(--pn); flex: none; }
+.side { display: flex; flex-direction: column; gap: 1.1cqw; padding: 1.8cqw; border-right: 1px solid var(--ln); background: var(--pn); flex: none; }
+.dot { display: inline-block; flex: none; width: 1cqw; height: 1cqw; border-radius: 50%; background: var(--acc); }
+.tag { display: inline-flex; align-items: center; height: 2.2cqw; padding: 0 1cqw; border-radius: 2cqw; background: color-mix(in srgb, var(--acc) 14%, transparent); color: var(--acc); font-size: 1cqw; font-weight: 600; white-space: nowrap; }
+.bub { padding: 1cqw 1.4cqw; border-radius: 1.4cqw; background: var(--pn); border: 1px solid var(--ln); max-width: 70%; }
+.bub.me { align-self: flex-end; background: var(--acc); color: #fff; border-color: transparent; }
+.dk .bub.me { color: #0F1115; }
+.ic { display: grid; place-items: center; flex: none; width: 2.2cqw; height: 2.2cqw; border-radius: .6cqw; color: var(--mu); }
+.ic svg { width: 68%; height: 68%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.ic.rd { border-radius: 50%; background: var(--sk2); color: var(--ink); }
+.ic.a { background: var(--acc); color: #fff; }
+.dk .ic.a { color: #0F1115; }
+.ic.cl { color: #fff; }
+.im.ph, .av.ph { background-size: cover; background-position: center; background-repeat: no-repeat; }
+.map { position: absolute; inset: 0; background-color: #E8EEF5;
+  background-image: linear-gradient(90deg, transparent 47%, #FFFFFF 47%, #FFFFFF 50%, transparent 50%), linear-gradient(0deg, transparent 60%, #FFFFFF 60%, #FFFFFF 62.5%, transparent 62.5%), linear-gradient(35deg, transparent 49%, #C7D7EE 49%, #C7D7EE 53%, transparent 53%), linear-gradient(#DCE5EF 1px, transparent 1px), linear-gradient(90deg, #DCE5EF 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 6cqw 6cqw, 6cqw 6cqw; }
+.dk .map { background-color: #1A1E28; background-image: linear-gradient(90deg, transparent 47%, #2A2F3C 47%, #2A2F3C 50%, transparent 50%), linear-gradient(0deg, transparent 60%, #2A2F3C 60%, #2A2F3C 62.5%, transparent 62.5%), linear-gradient(35deg, transparent 49%, #23324A 49%, #23324A 53%, transparent 53%), linear-gradient(#20242E 1px, transparent 1px), linear-gradient(90deg, #20242E 1px, transparent 1px); }
+.pin { position: absolute; width: 2.4cqw; height: 2.4cqw; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--acc); box-shadow: 0 .4cqw 1cqw #0F111540; }
+.price { position: absolute; padding: .3cqw .9cqw; border-radius: 2cqw; background: var(--pn); color: var(--ink); font-weight: 600; font-size: 1.1cqw; box-shadow: 0 .3cqw 1cqw #0F111530; }
+.chk { display: inline-block; flex: none; width: 1.8cqw; height: 1.8cqw; border-radius: 50%; border: .2cqw solid var(--mu); }
+.chk.on { background: var(--acc); border-color: var(--acc); }
+.pill { display: inline-flex; align-items: center; height: 2.6cqw; padding: 0 1.2cqw; border-radius: 3cqw; background: var(--pn); border: 1px solid var(--ln); font-size: 1.15cqw; white-space: nowrap; }
+.pill.on { background: var(--ink); color: var(--bg); border-color: transparent; }
+.prog { height: .8cqw; border-radius: 1cqw; background: var(--sk); overflow: hidden; }
+.prog i { display: block; height: 100%; background: var(--acc); border-radius: inherit; }
+.ov { position: absolute; }
+.sv { display: block; width: 100%; height: 100%; }
+.mono { font-family: var(--font-mono); }
+.live { display: inline-flex; padding: .2cqw .8cqw; border-radius: .4cqw; background: var(--bad); color: #fff; font-weight: 700; font-size: 1cqw; }
+.cell { height: 2.6cqw; border-right: 1px solid var(--ln); border-bottom: 1px solid var(--ln); padding: 0 .6cqw; display: flex; align-items: center; font-size: 1.1cqw; white-space: nowrap; overflow: hidden; }
+.sep { height: 1px; background: var(--ln); flex: none; }
+.tok { display: inline-block; height: 1cqw; border-radius: .3cqw; margin-right: .8cqw; vertical-align: middle; }
+</style>
+</head>
+<body>
+<!-- ZwolleHub (#073) · in de stijl van GitHub -->
+<div class="scr"><div class="s  ac2"><div class="c" style="height:100%;gap:0"><div class="c" style="padding:1.6cqw 3cqw 0;gap:1.6cqw;background:var(--pn);border-bottom:1px solid var(--ln)"><div class="r" style=""><span class="brand"><i class="lg-m"></i></span><span class="sm">studio-ijssel / <b>raredec</b></span><span class="tag">Public</span><span class="f1"></span><div class="in " style="width:20%">Typ / om te zoeken</div><i class="av ph" style="width: 2.4cqw; height: 2.4cqw; background-image: url(&quot;https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;crop=faces&amp;q=60&quot;), linear-gradient(135deg, rgb(124, 58, 237), rgb(0, 184, 212));"></i></div><div class="r" style="gap:2.4cqw;align-items:flex-end"><span class="sm" style="font-weight:600;border-bottom:.3cqw solid var(--warn);padding-bottom:.8cqw">&lt;&gt; Code</span><span class="sm" style="color:var(--mu)">Issues 12</span><span class="sm" style="color:var(--mu)">Pull requests 3</span><span class="sm" style="color:var(--mu)">Actions</span><span class="sm" style="color:var(--mu)">Projects</span><span class="sm" style="color:var(--mu)">Insights</span></div></div><div class="gr" style="grid-template-columns:1fr 26%;flex:1;padding:2cqw 3cqw;gap:3cqw;overflow:hidden"><div class="c" style="gap:1.2cqw"><div class="r" style=""><span class="pill">⑂ main ▾</span><span class="sm mu">4 branches</span><span class="f1"></span><span class="bt" style="background:var(--ok)">Code ▾</span></div><div class="pn" style="padding:0;overflow:hidden"><div class="r" style="padding:1cqw 1.4cqw;background:var(--sk2)"><i class="av ph" style="width: 2cqw; height: 2cqw; background-image: url(&quot;https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&amp;fit=crop&amp;w=160&amp;h=160&amp;crop=faces&amp;q=60&quot;), linear-gradient(135deg, rgb(124, 58, 237), rgb(0, 184, 212));"></i><b class="xs">mark</b><span class="xs mu">Voeg dagelijkse kaart toe</span><span class="f1"></span><span class="xs mu mono">a1b2c3d · 2u</span></div><div class="r" style="padding:.9cqw 1.4cqw;border-top:1px solid var(--ln)"><span style="color:var(--c2)">▰</span><span class="xs" style="width:30%">src</span><span class="xs mu f1">Nieuwe kaartlogica</span><span class="xs mu">1 dagen</span></div><div class="r" style="padding:.9cqw 1.4cqw;border-top:1px solid var(--ln)"><span style="color:var(--c2)">▰</span><span class="xs" style="width:30%">public</span><span class="xs mu f1">Iconen bijgewerkt</span><span class="xs mu">2 dagen</span></div><div class="r" style="padding:.9cqw 1.4cqw;border-top:1px solid var(--ln)"><span style="color:var(--c2)">▰</span><span class="xs" style="width:30%">tests</span><span class="xs mu f1">Meer tests</span><span class="xs mu">3 dagen</span></div><div class="r" style="padding:.9cqw 1.4cqw;border-top:1px solid var(--ln)"><span style="color:var(--mu)">▭</span><span class="xs" style="width:30%">README.md</span><span class="xs mu f1">Uitleg aangevuld</span><span class="xs mu">4 dagen</span></div><div class="r" style="padding:.9cqw 1.4cqw;border-top:1px solid var(--ln)"><span style="color:var(--mu)">▭</span><span class="xs" style="width:30%">package.json</span><span class="xs mu f1">Versie 1.4</span><span class="xs mu">5 dagen</span></div><div class="r" style="padding:.9cqw 1.4cqw;border-top:1px solid var(--ln)"><span style="color:var(--mu)">▭</span><span class="xs" style="width:30%">index.html</span><span class="xs mu f1">Favicon</span><span class="xs mu">6 dagen</span></div></div><div class="pn" style="display:grid;gap:.8cqw"><b class="sm">README.md</b><b class="lg">Raredec</b><span class="l " style="width:90%">Een nieuwe fietsbrug verbindt Stadshagen sneller met de binnenstad en het station van Zwolle.</span><span class="l " style="width:53%">Concert in Hedon vanavond</span></div></div><div class="c" style="gap:1cqw"><b class="sm">Over</b><span class="l " style="width:90%">In de grachten rond de oude stad vaart een fluisterboot langs de mooiste plekken van Zwolle.</span><span class="l " style="width:70%">Wie door de Diezerstraat slentert, vindt kleine winkels, koffiebars en de oudste boekhandel van de stad.</span><div class="r" style=""><span class="tag">cards</span><span class="tag">game</span><span class="tag">zwolle</span></div><span class="xs mu">★ 1,2k sterren · 👁 48 · ⑂ 96 forks</span><div class="sep"></div><b class="sm">Talen</b><div class="r" style="gap:0;height:.8cqw;border-radius:1cqw;overflow:hidden"><i style="flex:6;height:100%;background:var(--c2);display:block"></i><i style="flex:3;height:100%;background:var(--warn);display:block"></i><i style="flex:1;height:100%;background:var(--c1);display:block"></i></div></div></div></div></div></div>
+</body>
+</html>

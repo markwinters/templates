@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peperbeat</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+:root {
+  --font-sans: "SF Pro Display", -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --gradient-spectrum: linear-gradient(90deg, #7C3AED 0%, #2563EB 50%, #00F0FF 100%);
+  --gradient-dot: linear-gradient(225deg, #00F0FF 0%, #2563EB 45%, #7C3AED 100%);
+  --gradient-night: linear-gradient(100deg, #2C3046 0%, #0F1115 50%, #262A44 100%);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #0F1115; }
+body { display: grid; place-items: center; -webkit-font-smoothing: antialiased; }
+/* Het template vult het venster in de verhouding 16:10 */
+.scr { width: min(100vw, 160vh); }
+
+/* ---------- De mockup zelf: alles schaalt mee met de breedte (cqw) ---------- */
+.scr { container-type: inline-size; aspect-ratio: 16 / 10; overflow: hidden; }
+.s { --c1: #7C3AED; --c2: #2563EB; --c3: #00B8D4; --ok: #10B981; --bad: #EF4444; --warn: #F59E0B;
+  --bg: #F7F8FA; --pn: #FFFFFF; --ln: #E5E7EB; --ink: #0F1115; --mu: #9A9EA8; --sk: #E3E5EA; --sk2: #EEF0F3;
+  display: flex; flex-direction: column; width: 100%; height: 100%; background: var(--bg); color: var(--ink);
+  font-family: var(--font-sans); font-size: 1.55cqw; line-height: 1.35; overflow: hidden; position: relative; }
+.s.dk { --c1: #A07CFF; --c2: #6EA0FF; --c3: #00F0FF; --bg: #0F1115; --pn: #171A22; --ln: #FFFFFF1A; --ink: #F7F8FA; --mu: #7D828E; --sk: #2A2E39; --sk2: #20242D; }
+.s.ac2 { --acc: var(--c2); } .s.ac3 { --acc: var(--c3); } .s { --acc: var(--c1); }
+.s * { box-sizing: border-box; }
+.s b, .s span, .s i { font-style: normal; }
+.r { display: flex; align-items: center; gap: 1cqw; min-width: 0; }
+.c { display: flex; flex-direction: column; gap: 1cqw; min-width: 0; }
+.gr { display: grid; gap: 1.2cqw; min-width: 0; }
+.f1 { flex: 1; min-width: 0; min-height: 0; }
+.p { padding: 2cqw; }
+.pn { background: var(--pn); border: 1px solid var(--ln); border-radius: 1cqw; padding: 1.4cqw; min-width: 0; box-shadow: 0 .15cqw .6cqw #0F11150A; }
+.dk .pn { box-shadow: none; }
+.l { display: block; flex: none; min-width: 0; color: var(--mu); font-size: 1.1cqw; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.l.lt { color: var(--ink); font-size: 1.25cqw; font-weight: 600; }
+.l.la { color: var(--acc); font-weight: 600; }
+.t { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mu { color: var(--mu); font-weight: 400; }
+.sm { font-size: 1.2cqw; } .xs { font-size: 1cqw; } .lg { font-size: 2.6cqw; letter-spacing: -.02em; } .xl { font-size: 4.4cqw; letter-spacing: -.03em; } .xxl { font-size: 8cqw; letter-spacing: -.04em; font-weight: 500; }
+.av { display: block; flex: none; width: 3cqw; height: 3cqw; border-radius: 50%; background: linear-gradient(135deg, var(--c1), var(--c3)); }
+.av.v2 { background: linear-gradient(135deg, var(--c2), var(--c1)); } .av.v3 { background: linear-gradient(135deg, var(--c3), var(--c2)); } .av.v4 { background: linear-gradient(135deg, #F59E0B, var(--c1)); }
+.im { display: block; min-width: 0; border-radius: .8cqw; background: var(--sk); position: relative; overflow: hidden; }
+.g0 { background: radial-gradient(80% 90% at 80% 10%, #7C3AED, transparent 70%), radial-gradient(70% 80% at 10% 100%, #00F0FF, transparent 70%), #2563EB; }
+.g1 { background: linear-gradient(135deg, #2C3046, #0F1115 50%, #7C3AED); }
+.g2 { background: radial-gradient(60% 60% at 30% 30%, #00F0FFAA, transparent 70%), linear-gradient(160deg, #2563EB, #7C3AED); }
+.g3 { background: linear-gradient(180deg, #A5B4FC, #E0E7FF 60%, #C7D2FE); }
+.g4 { background: radial-gradient(70% 70% at 70% 70%, #F59E0B99, transparent 70%), linear-gradient(135deg, #7C3AED, #EC4899); }
+.g5 { background: linear-gradient(200deg, #00F0FF, #2563EB 55%, #0F1115); }
+.bt { display: inline-flex; align-items: center; justify-content: center; gap: .6cqw; flex: none; height: 3cqw; padding: 0 1.6cqw; border-radius: .7cqw; background: var(--acc); color: #fff; font-weight: 600; font-size: 1.2cqw; white-space: nowrap; }
+.dk .bt { color: #0F1115; }
+.bt.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ln); }
+.bt.k { background: var(--ink); color: var(--bg); }
+.bt.rd { border-radius: 3cqw; }
+.in { display: flex; align-items: center; gap: .8cqw; height: 3.4cqw; padding: 0 1.4cqw; border: 1px solid var(--ln); border-radius: .8cqw; background: var(--pn); color: var(--mu); font-size: 1.25cqw; white-space: nowrap; overflow: hidden; min-width: 0; }
+.in.rd { border-radius: 3cqw; }
+.lg-m { display: inline-block; flex: none; width: 2.2cqw; height: 2.2cqw; border-radius: .6cqw; background: var(--gradient-dot); }
+.brand { display: inline-flex; align-items: center; gap: .8cqw; font-weight: 600; white-space: nowrap; }
+.bar { display: flex; align-items: center; gap: 1.4cqw; height: 5.4cqw; padding: 0 2cqw; border-bottom: 1px solid var(--ln); background: var(--pn); flex: none; }
+.side { display: flex; flex-direction: column; gap: 1.1cqw; padding: 1.8cqw; border-right: 1px solid var(--ln); background: var(--pn); flex: none; }
+.dot { display: inline-block; flex: none; width: 1cqw; height: 1cqw; border-radius: 50%; background: var(--acc); }
+.tag { display: inline-flex; align-items: center; height: 2.2cqw; padding: 0 1cqw; border-radius: 2cqw; background: color-mix(in srgb, var(--acc) 14%, transparent); color: var(--acc); font-size: 1cqw; font-weight: 600; white-space: nowrap; }
+.bub { padding: 1cqw 1.4cqw; border-radius: 1.4cqw; background: var(--pn); border: 1px solid var(--ln); max-width: 70%; }
+.bub.me { align-self: flex-end; background: var(--acc); color: #fff; border-color: transparent; }
+.dk .bub.me { color: #0F1115; }
+.ic { display: grid; place-items: center; flex: none; width: 2.2cqw; height: 2.2cqw; border-radius: .6cqw; color: var(--mu); }
+.ic svg { width: 68%; height: 68%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.ic.rd { border-radius: 50%; background: var(--sk2); color: var(--ink); }
+.ic.a { background: var(--acc); color: #fff; }
+.dk .ic.a { color: #0F1115; }
+.ic.cl { color: #fff; }
+.im.ph, .av.ph { background-size: cover; background-position: center; background-repeat: no-repeat; }
+.map { position: absolute; inset: 0; background-color: #E8EEF5;
+  background-image: linear-gradient(90deg, transparent 47%, #FFFFFF 47%, #FFFFFF 50%, transparent 50%), linear-gradient(0deg, transparent 60%, #FFFFFF 60%, #FFFFFF 62.5%, transparent 62.5%), linear-gradient(35deg, transparent 49%, #C7D7EE 49%, #C7D7EE 53%, transparent 53%), linear-gradient(#DCE5EF 1px, transparent 1px), linear-gradient(90deg, #DCE5EF 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 6cqw 6cqw, 6cqw 6cqw; }
+.dk .map { background-color: #1A1E28; background-image: linear-gradient(90deg, transparent 47%, #2A2F3C 47%, #2A2F3C 50%, transparent 50%), linear-gradient(0deg, transparent 60%, #2A2F3C 60%, #2A2F3C 62.5%, transparent 62.5%), linear-gradient(35deg, transparent 49%, #23324A 49%, #23324A 53%, transparent 53%), linear-gradient(#20242E 1px, transparent 1px), linear-gradient(90deg, #20242E 1px, transparent 1px); }
+.pin { position: absolute; width: 2.4cqw; height: 2.4cqw; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--acc); box-shadow: 0 .4cqw 1cqw #0F111540; }
+.price { position: absolute; padding: .3cqw .9cqw; border-radius: 2cqw; background: var(--pn); color: var(--ink); font-weight: 600; font-size: 1.1cqw; box-shadow: 0 .3cqw 1cqw #0F111530; }
+.chk { display: inline-block; flex: none; width: 1.8cqw; height: 1.8cqw; border-radius: 50%; border: .2cqw solid var(--mu); }
+.chk.on { background: var(--acc); border-color: var(--acc); }
+.pill { display: inline-flex; align-items: center; height: 2.6cqw; padding: 0 1.2cqw; border-radius: 3cqw; background: var(--pn); border: 1px solid var(--ln); font-size: 1.15cqw; white-space: nowrap; }
+.pill.on { background: var(--ink); color: var(--bg); border-color: transparent; }
+.prog { height: .8cqw; border-radius: 1cqw; background: var(--sk); overflow: hidden; }
+.prog i { display: block; height: 100%; background: var(--acc); border-radius: inherit; }
+.ov { position: absolute; }
+.sv { display: block; width: 100%; height: 100%; }
+.mono { font-family: var(--font-mono); }
+.live { display: inline-flex; padding: .2cqw .8cqw; border-radius: .4cqw; background: var(--bad); color: #fff; font-weight: 700; font-size: 1cqw; }
+.cell { height: 2.6cqw; border-right: 1px solid var(--ln); border-bottom: 1px solid var(--ln); padding: 0 .6cqw; display: flex; align-items: center; font-size: 1.1cqw; white-space: nowrap; overflow: hidden; }
+.sep { height: 1px; background: var(--ln); flex: none; }
+.tok { display: inline-block; height: 1cqw; border-radius: .3cqw; margin-right: .8cqw; vertical-align: middle; }
+</style>
+</head>
+<body>
+<!-- Peperbeat (#033) · in de stijl van Spotify -->
+<div class="scr"><div class="s dk ac3"><div class="c" style="height:100%;gap:0"><div class="r" style="flex:1;padding:.8cqw;gap:.8cqw;align-items:stretch;min-height:0"><div class="c" style="width:24%;gap:.8cqw;height:100%"><div class="pn" style="display:grid;gap:1.2cqw"><div class="r" style=""><i class="ic a" style=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v14H4zM4 10h16M8 3v5M16 3v5"></path></svg></i><span class="sm" style="font-weight:600">Home</span></div><div class="r" style=""><i class="ic " style=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"></path></svg></i><span class="sm" style="color:var(--mu)">Ontdekken</span></div></div><div class="pn" style="display:grid;gap:1.2cqw;flex:1"><b class="t sm">Bibliotheek</b><div class="r" style=""><i class="im g1 ph" style="width: 4cqw; height: 4cqw; flex: 0 0 auto; background-image: url(&quot;https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&amp;fit=crop&amp;w=640&amp;q=60&quot;), linear-gradient(135deg, rgb(44, 48, 70), rgb(15, 17, 21) 50%, rgb(124, 58, 237));"></i><div class="c" style="flex:1;gap:.5cqw"><span class="l lt" style="width:70%">Een nieuwe fietsbrug verbindt Stadshagen sneller met de binnenstad en het station van Zwolle.</span><span class="l " style="width:45%">Concert in Hedon vanavond</span></div></div><div class="r" style=""><i class="im g2 ph" style="width: 4cqw; height: 4cqw; flex: 0 0 auto; background-image: url(&quot;https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&amp;fit=crop&amp;w=640&amp;q=60&quot;), radial-gradient(60% 60% at 30% 30%, rgba(0, 240, 255, 0.667), transparent 70%), linear-gradient(160deg, rgb(37, 99, 235), rgb(124, 58, 237));"></i><div class="c" style="flex:1;gap:.5cqw"><span class="l lt" style="width:70%">In de grachten rond de oude stad vaart een fluisterboot langs de mooiste plekken van Zwolle.</span><span class="l " style="width:45%">Uitzicht vanaf de Peperbus</span></div></div><div class="r" style=""><i class="im g3 ph" style="width: 4cqw; height: 4cqw; flex: 0 0 auto; background-image: url(&quot;https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&amp;fit=crop&amp;w=640&amp;q=60&quot;), linear-gradient(rgb(165, 180, 252), rgb(224, 231, 255) 60%, rgb(199, 210, 254));"></i><div class="c" style="flex:1;gap:.5cqw"><span class="l lt" style="width:70%">De Blauwvingers danken hun naam aan de koperen munten die ooit blauw kleurden op hun vingers.</span><span class="l " style="width:45%">Thorbecke en de Hanzestad</span></div></div><div class="r" style=""><i class="im g4 ph" style="width: 4cqw; height: 4cqw; flex: 0 0 auto; background-image: url(&quot;https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&amp;fit=crop&amp;w=640&amp;q=60&quot;), radial-gradient(70% 70% at 70% 70%, rgba(245, 158, 11, 0.6), transparent 70%), linear-gradient(135deg, rgb(124, 58, 237), rgb(236, 72, 153));"></i><div class="c" style="flex:1;gap:.5cqw"><span class="l lt" style="width:70%">De Peperbus is al eeuwen het baken van Zwolle; vanaf de top zie je de hele Hanzestad liggen.</span><span class="l " style="width:45%">Lente in het Ter Pelkwijkpark</span></div></div><div class="r" style=""><i class="im g5 ph" style="width: 4cqw; height: 4cqw; flex: 0 0 auto; background-image: url(&quot;https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&amp;fit=crop&amp;w=640&amp;q=60&quot;), linear-gradient(200deg, rgb(0, 240, 255), rgb(37, 99, 235) 55%, rgb(15, 17, 21));"></i><div class="c" style="flex:1;gap:.5cqw"><span class="l lt" style="width:70%">Museum de Fundatie trekt bezoekers uit het hele land met kunst onder het opvallende ei op het dak.</span><span class="l " style="width:45%">Nieuwe collectie voor de herfst</span></div></div></div></div><div class="c" style="flex:1;gap:1.4cqw;border-radius:1cqw;background:var(--pn);overflow:hidden"><div class="r" style="align-items:flex-end;gap:2cqw;padding:2.4cqw;background:linear-gradient(180deg,color-mix(in srgb,var(--acc) 45%,transparent),transparent)"><i class="im g2 ph" style="width: 14cqw; height: 14cqw; flex: 0 0 auto; box-shadow: rgba(0, 0, 0, 0.4) 0px 1cqw 3cqw; background-image: url(&quot;https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&amp;fit=crop&amp;w=640&amp;q=60&quot;), radial-gradient(60% 60% at 30% 30%, rgba(0, 240, 255, 0.667), transparent 70%), linear-gradient(160deg, rgb(37, 99, 235), rgb(124, 58, 237));"></i><div class="c" style="gap:.6cqw"><span class="xs">Playlist</span><b class="xl">Zwolle by Night</b><span class="xs mu">Peperbeat · 42 nummers, 2 u 31 min</span></div></div><div class="r" style="padding:0 2.4cqw;gap:2cqw"><i style="width:4cqw;height:4cqw;border-radius:50%;background:var(--acc);display:block"></i><i class="ic " style=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></i><i class="ic " style=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 6a2.5 2.5 0 1 0 0 .1M8 12a2.5 2.5 0 1 0 0 .1M16 18a2.5 2.5 0 1 0 0 .1M10 11l4-3M10 13l4 3"></path></svg></i></div><div class="c" style="padding:0 2.4cqw;gap:1cqw"><div class="r" style=""><span class="xs mu" style="width:2cqw">1</span><i class="im g2 ph" style="width: 3cqw; height: 3cqw; flex: 0 0 auto; background-image: url(&quot;https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&amp;fit=crop&amp;w=640&amp;q=60&quot;), radial-gradient(60% 60% at 30% 30%, rgba(0, 240, 255, 0.667), transparent 70%), linear-gradient(160deg, rgb(37, 99, 235), rgb(124, 58, 237));"></i><div class="c" style="flex:1;gap:.4cqw"><span class="l lt" style="width:40%">Rondvaart door de grachten</span><span class="l " style="width:25%">Lunch in de Diezerstraat</span></div><span class="l " style="width:15%">4,8 ★</span><span class="xs mu">3:12</span></div><div class="r" style=""><span class="xs mu" style="width:2cqw">2</span><i class="im g3 ph" style="width: 3cqw; height: 3cqw; flex: 0 0 auto; background-image: url(&quot;https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&amp;fit=crop&amp;w=640&amp;q=60&quot;), linear-gradient(rgb(165, 180, 252), rgb(224, 231, 255) 60%, rgb(199, 210, 254));"></i><div class="c" style="flex:1;gap:.4cqw"><span class="l la" style="width:37%">Zondag naar de Sassenpoort</span><span class="l " style="width:25%">Vandaag besteld, morgen in huis</span></div><span class="l " style="width:15%">Live</span><span class="xs mu">3:19</span></div><div class="r" style=""><span class="xs mu" style="width:2cqw">3</span><i class="im g4 ph" style="width: 3cqw; height: 3cqw; flex: 0 0 auto; background-image: url(&quot;https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&amp;fit=crop&amp;w=640&amp;q=60&quot;), radial-gradient(70% 70% at 70% 70%, rgba(245, 158, 11, 0.6), transparent 70%), linear-gradient(135deg, rgb(124, 58, 237), rgb(236, 72, 153));"></i><div class="c" style="flex:1;gap:.4cqw"><span class="l lt" style="width:34%">Koffie bij de Grote Markt</span><span class="l " style="width:25%">Nieuw in Museum de Fundatie</span></div><span class="l " style="width:15%">3 reacties</span><span class="xs mu">3:26</span></div><div class="r" style=""><span class="xs mu" style="width:2cqw">4</span><i class="im g5 ph" style="width: 3cqw; height: 3cqw; flex: 0 0 auto; background-image: url(&quot;https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&amp;fit=crop&amp;w=640&amp;q=60&quot;), linear-gradient(200deg, rgb(0, 240, 255), rgb(37, 99, 235) 55%, rgb(15, 17, 21));"></i><div class="c" style="flex:1;gap:.4cqw"><span class="l lt" style="width:31%">Fietsroute naar Hattem</span><span class="l " style="width:25%">Markt op de Melkmarkt</span></div><span class="l " style="width:15%">Opgeslagen</span><span class="xs mu">3:33</span></div><div class="r" style=""><span class="xs mu" style="width:2cqw">5</span><i class="im g0 ph" style="width: 3cqw; height: 3cqw; flex: 0 0 auto; background-image: url(&quot;https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&amp;fit=crop&amp;w=640&amp;q=60&quot;), radial-gradient(80% 90% at 80% 10%, rgb(124, 58, 237), transparent 70%), radial-gradient(70% 80% at 10% 100%, rgb(0, 240, 255), transparent 70%), linear-gradient(rgb(37, 99, 235), rgb(37, 99, 235));"></i><div class="c" style="flex:1;gap:.4cqw"><span class="l lt" style="width:28%">Vers van de bakker</span><span class="l " style="width:25%">Uitzicht vanaf de Peperbus</span></div><span class="l " style="width:15%">18 °C</span><span class="xs mu">3:40</span></div></div></div></div><div class="r" style="height:8cqw;padding:0 2cqw;flex:none"><div class="r" style="width:25%"><i class="im g3 ph" style="width: 4cqw; height: 4cqw; background-image: url(&quot;https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&amp;fit=crop&amp;w=640&amp;q=60&quot;), linear-gradient(rgb(165, 180, 252), rgb(224, 231, 255) 60%, rgb(199, 210, 254));"></i><div class="c" style="flex:1;gap:.5cqw"><span class="l lt" style="width:60%">Een rustige ochtend langs de IJssel, met mist boven het water en de eerste fietsers op de brug.</span><span class="l " style="width:40%">Werken vanuit Stadshagen</span></div></div><div class="c" style="flex:1;align-items:center;gap:.8cqw;padding:0 6cqw"><div class="r" style="gap:2cqw;justify-content:center"><i class="ic rd" style=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"></path></svg></i><i style="width:3.2cqw;height:3.2cqw;border-radius:50%;background:var(--ink);display:block"></i><i class="ic rd" style=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zM3 7l9 6 9-6"></path></svg></i></div><div class="prog" style="width:100%"><i style="width:35%"></i></div></div><div class="r" style="width:25%;justify-content:flex-end"><i class="ic " style=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"></path></svg></i><div class="prog" style="width:8cqw"><i style="width:60%"></i></div></div></div></div></div></div>
+</body>
+</html>

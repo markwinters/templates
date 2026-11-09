@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thorbecke Stem</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+:root {
+  --font-sans: "SF Pro Display", -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --gradient-spectrum: linear-gradient(90deg, #7C3AED 0%, #2563EB 50%, #00F0FF 100%);
+  --gradient-dot: linear-gradient(225deg, #00F0FF 0%, #2563EB 45%, #7C3AED 100%);
+  --gradient-night: linear-gradient(100deg, #2C3046 0%, #0F1115 50%, #262A44 100%);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #0F1115; }
+body { display: grid; place-items: center; -webkit-font-smoothing: antialiased; }
+/* Het template vult het venster in de verhouding 16:10 */
+.scr { width: min(100vw, 160vh); }
+
+/* ---------- De mockup zelf: alles schaalt mee met de breedte (cqw) ---------- */
+.scr { container-type: inline-size; aspect-ratio: 16 / 10; overflow: hidden; }
+.s { --c1: #7C3AED; --c2: #2563EB; --c3: #00B8D4; --ok: #10B981; --bad: #EF4444; --warn: #F59E0B;
+  --bg: #F7F8FA; --pn: #FFFFFF; --ln: #E5E7EB; --ink: #0F1115; --mu: #9A9EA8; --sk: #E3E5EA; --sk2: #EEF0F3;
+  display: flex; flex-direction: column; width: 100%; height: 100%; background: var(--bg); color: var(--ink);
+  font-family: var(--font-sans); font-size: 1.55cqw; line-height: 1.35; overflow: hidden; position: relative; }
+.s.dk { --c1: #A07CFF; --c2: #6EA0FF; --c3: #00F0FF; --bg: #0F1115; --pn: #171A22; --ln: #FFFFFF1A; --ink: #F7F8FA; --mu: #7D828E; --sk: #2A2E39; --sk2: #20242D; }
+.s.ac2 { --acc: var(--c2); } .s.ac3 { --acc: var(--c3); } .s { --acc: var(--c1); }
+.s * { box-sizing: border-box; }
+.s b, .s span, .s i { font-style: normal; }
+.r { display: flex; align-items: center; gap: 1cqw; min-width: 0; }
+.c { display: flex; flex-direction: column; gap: 1cqw; min-width: 0; }
+.gr { display: grid; gap: 1.2cqw; min-width: 0; }
+.f1 { flex: 1; min-width: 0; min-height: 0; }
+.p { padding: 2cqw; }
+.pn { background: var(--pn); border: 1px solid var(--ln); border-radius: 1cqw; padding: 1.4cqw; min-width: 0; box-shadow: 0 .15cqw .6cqw #0F11150A; }
+.dk .pn { box-shadow: none; }
+.l { display: block; flex: none; min-width: 0; color: var(--mu); font-size: 1.1cqw; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.l.lt { color: var(--ink); font-size: 1.25cqw; font-weight: 600; }
+.l.la { color: var(--acc); font-weight: 600; }
+.t { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mu { color: var(--mu); font-weight: 400; }
+.sm { font-size: 1.2cqw; } .xs { font-size: 1cqw; } .lg { font-size: 2.6cqw; letter-spacing: -.02em; } .xl { font-size: 4.4cqw; letter-spacing: -.03em; } .xxl { font-size: 8cqw; letter-spacing: -.04em; font-weight: 500; }
+.av { display: block; flex: none; width: 3cqw; height: 3cqw; border-radius: 50%; background: linear-gradient(135deg, var(--c1), var(--c3)); }
+.av.v2 { background: linear-gradient(135deg, var(--c2), var(--c1)); } .av.v3 { background: linear-gradient(135deg, var(--c3), var(--c2)); } .av.v4 { background: linear-gradient(135deg, #F59E0B, var(--c1)); }
+.im { display: block; min-width: 0; border-radius: .8cqw; background: var(--sk); position: relative; overflow: hidden; }
+.g0 { background: radial-gradient(80% 90% at 80% 10%, #7C3AED, transparent 70%), radial-gradient(70% 80% at 10% 100%, #00F0FF, transparent 70%), #2563EB; }
+.g1 { background: linear-gradient(135deg, #2C3046, #0F1115 50%, #7C3AED); }
+.g2 { background: radial-gradient(60% 60% at 30% 30%, #00F0FFAA, transparent 70%), linear-gradient(160deg, #2563EB, #7C3AED); }
+.g3 { background: linear-gradient(180deg, #A5B4FC, #E0E7FF 60%, #C7D2FE); }
+.g4 { background: radial-gradient(70% 70% at 70% 70%, #F59E0B99, transparent 70%), linear-gradient(135deg, #7C3AED, #EC4899); }
+.g5 { background: linear-gradient(200deg, #00F0FF, #2563EB 55%, #0F1115); }
+.bt { display: inline-flex; align-items: center; justify-content: center; gap: .6cqw; flex: none; height: 3cqw; padding: 0 1.6cqw; border-radius: .7cqw; background: var(--acc); color: #fff; font-weight: 600; font-size: 1.2cqw; white-space: nowrap; }
+.dk .bt { color: #0F1115; }
+.bt.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ln); }
+.bt.k { background: var(--ink); color: var(--bg); }
+.bt.rd { border-radius: 3cqw; }
+.in { display: flex; align-items: center; gap: .8cqw; height: 3.4cqw; padding: 0 1.4cqw; border: 1px solid var(--ln); border-radius: .8cqw; background: var(--pn); color: var(--mu); font-size: 1.25cqw; white-space: nowrap; overflow: hidden; min-width: 0; }
+.in.rd { border-radius: 3cqw; }
+.lg-m { display: inline-block; flex: none; width: 2.2cqw; height: 2.2cqw; border-radius: .6cqw; background: var(--gradient-dot); }
+.brand { display: inline-flex; align-items: center; gap: .8cqw; font-weight: 600; white-space: nowrap; }
+.bar { display: flex; align-items: center; gap: 1.4cqw; height: 5.4cqw; padding: 0 2cqw; border-bottom: 1px solid var(--ln); background: var(--pn); flex: none; }
+.side { display: flex; flex-direction: column; gap: 1.1cqw; padding: 1.8cqw; border-right: 1px solid var(--ln); background: var(--pn); flex: none; }
+.dot { display: inline-block; flex: none; width: 1cqw; height: 1cqw; border-radius: 50%; background: var(--acc); }
+.tag { display: inline-flex; align-items: center; height: 2.2cqw; padding: 0 1cqw; border-radius: 2cqw; background: color-mix(in srgb, var(--acc) 14%, transparent); color: var(--acc); font-size: 1cqw; font-weight: 600; white-space: nowrap; }
+.bub { padding: 1cqw 1.4cqw; border-radius: 1.4cqw; background: var(--pn); border: 1px solid var(--ln); max-width: 70%; }
+.bub.me { align-self: flex-end; background: var(--acc); color: #fff; border-color: transparent; }
+.dk .bub.me { color: #0F1115; }
+.ic { display: grid; place-items: center; flex: none; width: 2.2cqw; height: 2.2cqw; border-radius: .6cqw; color: var(--mu); }
+.ic svg { width: 68%; height: 68%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.ic.rd { border-radius: 50%; background: var(--sk2); color: var(--ink); }
+.ic.a { background: var(--acc); color: #fff; }
+.dk .ic.a { color: #0F1115; }
+.ic.cl { color: #fff; }
+.im.ph, .av.ph { background-size: cover; background-position: center; background-repeat: no-repeat; }
+.map { position: absolute; inset: 0; background-color: #E8EEF5;
+  background-image: linear-gradient(90deg, transparent 47%, #FFFFFF 47%, #FFFFFF 50%, transparent 50%), linear-gradient(0deg, transparent 60%, #FFFFFF 60%, #FFFFFF 62.5%, transparent 62.5%), linear-gradient(35deg, transparent 49%, #C7D7EE 49%, #C7D7EE 53%, transparent 53%), linear-gradient(#DCE5EF 1px, transparent 1px), linear-gradient(90deg, #DCE5EF 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 6cqw 6cqw, 6cqw 6cqw; }
+.dk .map { background-color: #1A1E28; background-image: linear-gradient(90deg, transparent 47%, #2A2F3C 47%, #2A2F3C 50%, transparent 50%), linear-gradient(0deg, transparent 60%, #2A2F3C 60%, #2A2F3C 62.5%, transparent 62.5%), linear-gradient(35deg, transparent 49%, #23324A 49%, #23324A 53%, transparent 53%), linear-gradient(#20242E 1px, transparent 1px), linear-gradient(90deg, #20242E 1px, transparent 1px); }
+.pin { position: absolute; width: 2.4cqw; height: 2.4cqw; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--acc); box-shadow: 0 .4cqw 1cqw #0F111540; }
+.price { position: absolute; padding: .3cqw .9cqw; border-radius: 2cqw; background: var(--pn); color: var(--ink); font-weight: 600; font-size: 1.1cqw; box-shadow: 0 .3cqw 1cqw #0F111530; }
+.chk { display: inline-block; flex: none; width: 1.8cqw; height: 1.8cqw; border-radius: 50%; border: .2cqw solid var(--mu); }
+.chk.on { background: var(--acc); border-color: var(--acc); }
+.pill { display: inline-flex; align-items: center; height: 2.6cqw; padding: 0 1.2cqw; border-radius: 3cqw; background: var(--pn); border: 1px solid var(--ln); font-size: 1.15cqw; white-space: nowrap; }
+.pill.on { background: var(--ink); color: var(--bg); border-color: transparent; }
+.prog { height: .8cqw; border-radius: 1cqw; background: var(--sk); overflow: hidden; }
+.prog i { display: block; height: 100%; background: var(--acc); border-radius: inherit; }
+.ov { position: absolute; }
+.sv { display: block; width: 100%; height: 100%; }
+.mono { font-family: var(--font-mono); }
+.live { display: inline-flex; padding: .2cqw .8cqw; border-radius: .4cqw; background: var(--bad); color: #fff; font-weight: 700; font-size: 1cqw; }
+.cell { height: 2.6cqw; border-right: 1px solid var(--ln); border-bottom: 1px solid var(--ln); padding: 0 .6cqw; display: flex; align-items: center; font-size: 1.1cqw; white-space: nowrap; overflow: hidden; }
+.sep { height: 1px; background: var(--ln); flex: none; }
+.tok { display: inline-block; height: 1cqw; border-radius: .3cqw; margin-right: .8cqw; vertical-align: middle; }
+</style>
+</head>
+<body>
+<!-- Thorbecke Stem (#007) · in de stijl van ElevenLabs -->
+<div class="scr"><div class="s  ac1"><div class="r" style="height:100%;gap:0"><div class="side" style="width:18cqw;height:100%"><span class="brand"><i class="lg-m"></i>Thorbecke Stem</span><span></span><div class="r" style=""><i class="ic a" style=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21a8 8 0 0 1 16 0"></path></svg></i><span class="sm" style="font-weight:600">Home</span></div><div class="r" style=""><i class="ic " style=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg></i><span class="sm" style="color:var(--mu)">Ontdekken</span></div><div class="r" style=""><i class="ic " style=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"></path></svg></i><span class="sm" style="color:var(--mu)">Berichten</span></div><div class="r" style=""><i class="ic " style=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"></path></svg></i><span class="sm" style="color:var(--mu)">Meldingen</span></div><div class="r" style=""><i class="ic " style=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM19 12l2-1-1-3-2 .2-1.3-1.3.2-2-3-1-1 2h-2l-1-2-3 1 .2 2L5.8 7.2 3.8 7l-1 3 2 1v2l-2 1 1 3 2-.2 1.3 1.3-.2 2 3 1 1-2h2l1 2 3-1-.2-2 1.3-1.3 2 .2 1-3-2-1z"></path></svg></i><span class="sm" style="color:var(--mu)">Opgeslagen</span></div><div class="r" style=""><i class="ic " style=""><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h6l2 2h10v11H3z"></path></svg></i><span class="sm" style="color:var(--mu)">Profiel</span></div></div><div class="c" style="flex:1;padding:2.4cqw;gap:1.6cqw"><div class="r" style=""><b class="t lg">Tekst naar spraak</b><span class="f1"></span><span class="tag">Stem: Anouk</span></div><div class="pn" style="flex:1;padding:2cqw"><div style="font-size:2cqw;line-height:1.5">Welkom in Zwolle, de stad van de Peperbus en de Blauwvingers. Loop mee langs de IJssel…</div></div><div class="pn" style=""><div style="height:7cqw"><div class="r" style="height:100%;gap:.3cqw"><i style="flex:1;height:20%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:85.49988862714812%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:47.33246612160987%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:75.54888093966395%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:55.64680106831649%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:79.90922675740941%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:61.99248125561254%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:63.088226734222%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:83.54970889138974%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:43.80443438783682%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:83.6838495127734%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:40.93994154885193%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:79.98757400856016%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:32.51819572544457%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:90.3079067446318%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:41.5435012413301%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:78.75638369904345%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:67.13824039845785%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:63.70164606989575%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:72.39967337397324%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:63.74496116720143%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:74.58000031001151%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:43.68029609001546%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:91.13601792743799%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:22.44159544099189%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:85.76519018717565%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:44.959235971293026%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:76.42573777682036%;background:var(--acc);border-radius:1cqw;display:block"></i><i style="flex:1;height:53.499527269505954%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:81.33941240800948%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:60.213750550602484%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:64.97677170117207%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:82.25763542882166%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:46.02593245854104%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:82.96423164120208%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:43.34687722105349%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:79.8881969559622%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:30.085651681069887%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:90.83536950653203%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:39.2468785425887%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:79.87566084135747%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:65.13004309447282%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:65.33841354436527%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:70.81325302504258%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:65.790531696867%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:73.52070096196223%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:45.99883639729465%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:90.67418088617889%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:24.87914606832741%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:85.9314831017142%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:42.564537196915225%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:77.20911819650854%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:51.30669700315886%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:82.6878610411845%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:58.36840064870564%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:66.80074668416317%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:80.88230379550748%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:48.20431525909892%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:82.15024526852744%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:45.7350153467124%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:79.68960748150438%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:27.64633923459353%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:91.26536398926433%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:36.91837093946694%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:80.9056860932648%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:63.0669616567383%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:66.90007216534283%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:69.1525938178724%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:67.7801239093352%;background:var(--sk);border-radius:1cqw;display:block"></i><i style="flex:1;height:72.3727377597316%;background:var(--sk);border-radius:1cqw;display:block"></i></div></div></div><div class="r" style=""><span class="sm mu">Stabiliteit</span><div class="prog" style="width:20cqw"><i style="width:70%"></i></div><span class="sm mu">Helderheid</span><div class="prog" style="width:20cqw"><i style="width:45%"></i></div><span class="f1"></span><span class="bt ">Genereer</span></div></div></div></div></div>
+</body>
+</html>

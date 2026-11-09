@@ -1438,5 +1438,85 @@
   "like": "Lightroom",
   "file": "templates/180-fotolab-zwolle.html",
   "dark": true
+ },
+ {
+  "n": 181,
+  "name": "Sassen Salon",
+  "cat": "Overig",
+  "like": "Treatwell",
+  "file": "templates/181-sassen-salon.html",
+  "dark": false
+ },
+ {
+  "n": 182,
+  "name": "Hanze Huiswerk",
+  "cat": "Leren",
+  "like": "Google Classroom",
+  "file": "templates/182-hanze-huiswerk.html",
+  "dark": false
+ },
+ {
+  "n": 183,
+  "name": "Diezer Kassa",
+  "cat": "Shop",
+  "like": "een kassasysteem",
+  "file": "templates/183-diezer-kassa.html",
+  "dark": true
+ },
+ {
+  "n": 184,
+  "name": "Thorbecke Uren",
+  "cat": "Werk",
+  "like": "Toggl Track",
+  "file": "templates/184-thorbecke-uren.html",
+  "dark": false
+ },
+ {
+  "n": 185,
+  "name": "IJssel Filmlog",
+  "cat": "Media",
+  "like": "Letterboxd",
+  "file": "templates/185-ijssel-filmlog.html",
+  "dark": true
+ },
+ {
+  "n": 186,
+  "name": "Fietsroute Zwolle",
+  "cat": "Reizen",
+  "like": "Komoot",
+  "file": "templates/186-fietsroute-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 187,
+  "name": "Blauwvinger Beats",
+  "cat": "Muziek",
+  "like": "een DJ-app",
+  "file": "templates/187-blauwvinger-beats.html",
+  "dark": true
+ },
+ {
+  "n": 188,
+  "name": "Afspraakje Zwolle",
+  "cat": "Communicatie",
+  "like": "Calendly",
+  "file": "templates/188-afspraakje-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 189,
+  "name": "Aangifte Zwolle",
+  "cat": "Financiën",
+  "like": "een belastingaangifte-app",
+  "file": "templates/189-aangifte-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 190,
+  "name": "Notulist AI",
+  "cat": "AI",
+  "like": "Otter.ai",
+  "file": "templates/190-notulist-ai.html",
+  "dark": true
  }
 ]

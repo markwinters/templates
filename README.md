@@ -1,6 +1,6 @@
 # templates
 
-180 websitetemplates in één huisstijl.
+190 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -190,3 +190,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 178 | [Vecht Wijnen](templates/178-vecht-wijnen.html) | Eten | Vivino |
 | 179 | [Overhoor Zwolle](templates/179-overhoor-zwolle.html) | Leren | Quizlet |
 | 180 | [Fotolab Zwolle](templates/180-fotolab-zwolle.html) | Productiviteit | Lightroom |
+| 181 | [Sassen Salon](templates/181-sassen-salon.html) | Overig | Treatwell |
+| 182 | [Hanze Huiswerk](templates/182-hanze-huiswerk.html) | Leren | Google Classroom |
+| 183 | [Diezer Kassa](templates/183-diezer-kassa.html) | Shop | een kassasysteem |
+| 184 | [Thorbecke Uren](templates/184-thorbecke-uren.html) | Werk | Toggl Track |
+| 185 | [IJssel Filmlog](templates/185-ijssel-filmlog.html) | Media | Letterboxd |
+| 186 | [Fietsroute Zwolle](templates/186-fietsroute-zwolle.html) | Reizen | Komoot |
+| 187 | [Blauwvinger Beats](templates/187-blauwvinger-beats.html) | Muziek | een DJ-app |
+| 188 | [Afspraakje Zwolle](templates/188-afspraakje-zwolle.html) | Communicatie | Calendly |
+| 189 | [Aangifte Zwolle](templates/189-aangifte-zwolle.html) | Financiën | een belastingaangifte-app |
+| 190 | [Notulist AI](templates/190-notulist-ai.html) | AI | Otter.ai |

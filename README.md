@@ -1,6 +1,6 @@
 # templates
 
-190 websitetemplates in één huisstijl.
+200 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -200,3 +200,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 188 | [Afspraakje Zwolle](templates/188-afspraakje-zwolle.html) | Communicatie | Calendly |
 | 189 | [Aangifte Zwolle](templates/189-aangifte-zwolle.html) | Financiën | een belastingaangifte-app |
 | 190 | [Notulist AI](templates/190-notulist-ai.html) | AI | Otter.ai |
+| 191 | [Kieskompas Zwolle](templates/191-kieskompas-zwolle.html) | Overig | StemWijzer |
+| 192 | [IJssel Occasions](templates/192-ijssel-occasions.html) | Shop | AutoScout24 |
+| 193 | [Vecht Vogels](templates/193-vecht-vogels.html) | Leren | Merlin Bird ID |
+| 194 | [Peper Pipelines](templates/194-peper-pipelines.html) | Ontwikkelaars | GitHub Actions |
+| 195 | [Sassen Sterk](templates/195-sassen-sterk.html) | Vrije tijd | Strong |
+| 196 | [Boodschappen Zwolle](templates/196-boodschappen-zwolle.html) | Eten | Bring! |
+| 197 | [IJsselfestival](templates/197-ijsselfestival.html) | Muziek | een festivalapp |
+| 198 | [Delen Zwolle](templates/198-delen-zwolle.html) | Financiën | Splitwise |
+| 199 | [Sassen Schrijft](templates/199-sassen-schrijft.html) | AI | Grammarly |
+| 200 | [IJssel Intranet](templates/200-ijssel-intranet.html) | Communicatie | een intranet |

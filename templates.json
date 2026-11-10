@@ -1518,5 +1518,85 @@
   "like": "Otter.ai",
   "file": "templates/190-notulist-ai.html",
   "dark": true
+ },
+ {
+  "n": 191,
+  "name": "Kieskompas Zwolle",
+  "cat": "Overig",
+  "like": "StemWijzer",
+  "file": "templates/191-kieskompas-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 192,
+  "name": "IJssel Occasions",
+  "cat": "Shop",
+  "like": "AutoScout24",
+  "file": "templates/192-ijssel-occasions.html",
+  "dark": false
+ },
+ {
+  "n": 193,
+  "name": "Vecht Vogels",
+  "cat": "Leren",
+  "like": "Merlin Bird ID",
+  "file": "templates/193-vecht-vogels.html",
+  "dark": true
+ },
+ {
+  "n": 194,
+  "name": "Peper Pipelines",
+  "cat": "Ontwikkelaars",
+  "like": "GitHub Actions",
+  "file": "templates/194-peper-pipelines.html",
+  "dark": true
+ },
+ {
+  "n": 195,
+  "name": "Sassen Sterk",
+  "cat": "Vrije tijd",
+  "like": "Strong",
+  "file": "templates/195-sassen-sterk.html",
+  "dark": true
+ },
+ {
+  "n": 196,
+  "name": "Boodschappen Zwolle",
+  "cat": "Eten",
+  "like": "Bring!",
+  "file": "templates/196-boodschappen-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 197,
+  "name": "IJsselfestival",
+  "cat": "Muziek",
+  "like": "een festivalapp",
+  "file": "templates/197-ijsselfestival.html",
+  "dark": true
+ },
+ {
+  "n": 198,
+  "name": "Delen Zwolle",
+  "cat": "Financiën",
+  "like": "Splitwise",
+  "file": "templates/198-delen-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 199,
+  "name": "Sassen Schrijft",
+  "cat": "AI",
+  "like": "Grammarly",
+  "file": "templates/199-sassen-schrijft.html",
+  "dark": false
+ },
+ {
+  "n": 200,
+  "name": "IJssel Intranet",
+  "cat": "Communicatie",
+  "like": "een intranet",
+  "file": "templates/200-ijssel-intranet.html",
+  "dark": false
  }
 ]

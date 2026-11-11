@@ -1,6 +1,6 @@
 # templates
 
-200 websitetemplates in één huisstijl.
+210 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -210,3 +210,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 198 | [Delen Zwolle](templates/198-delen-zwolle.html) | Financiën | Splitwise |
 | 199 | [Sassen Schrijft](templates/199-sassen-schrijft.html) | AI | Grammarly |
 | 200 | [IJssel Intranet](templates/200-ijssel-intranet.html) | Communicatie | een intranet |
+| 201 | [Kamer in Zwolle](templates/201-kamer-in-zwolle.html) | Overig | Kamernet |
+| 202 | [Klaverjas Zwolle](templates/202-klaverjas-zwolle.html) | Vrije tijd | een kaartspel-app |
+| 203 | [IJssel Vrijstaand](templates/203-ijssel-vrijstaand.html) | AI | remove.bg |
+| 204 | [Hanze Request](templates/204-hanze-request.html) | Ontwikkelaars | Postman |
+| 205 | [Blauwvinger Lezen](templates/205-blauwvinger-lezen.html) | Media | Kindle |
+| 206 | [IJsseldelta Camping](templates/206-ijsseldelta-camping.html) | Reizen | een campingsite |
+| 207 | [Hanze Maaltijdbox](templates/207-hanze-maaltijdbox.html) | Eten | HelloFresh |
+| 208 | [Mijn Pensioen Zwolle](templates/208-mijn-pensioen-zwolle.html) | Financiën | Mijnpensioenoverzicht |
+| 209 | [Sassen Rooster](templates/209-sassen-rooster.html) | Werk | een personeelsplanner |
+| 210 | [Diezer Chat](templates/210-diezer-chat.html) | Communicatie | Intercom Messenger |

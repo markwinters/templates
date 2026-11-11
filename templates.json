@@ -1598,5 +1598,85 @@
   "like": "een intranet",
   "file": "templates/200-ijssel-intranet.html",
   "dark": false
+ },
+ {
+  "n": 201,
+  "name": "Kamer in Zwolle",
+  "cat": "Overig",
+  "like": "Kamernet",
+  "file": "templates/201-kamer-in-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 202,
+  "name": "Klaverjas Zwolle",
+  "cat": "Vrije tijd",
+  "like": "een kaartspel-app",
+  "file": "templates/202-klaverjas-zwolle.html",
+  "dark": true
+ },
+ {
+  "n": 203,
+  "name": "IJssel Vrijstaand",
+  "cat": "AI",
+  "like": "remove.bg",
+  "file": "templates/203-ijssel-vrijstaand.html",
+  "dark": false
+ },
+ {
+  "n": 204,
+  "name": "Hanze Request",
+  "cat": "Ontwikkelaars",
+  "like": "Postman",
+  "file": "templates/204-hanze-request.html",
+  "dark": true
+ },
+ {
+  "n": 205,
+  "name": "Blauwvinger Lezen",
+  "cat": "Media",
+  "like": "Kindle",
+  "file": "templates/205-blauwvinger-lezen.html",
+  "dark": false
+ },
+ {
+  "n": 206,
+  "name": "IJsseldelta Camping",
+  "cat": "Reizen",
+  "like": "een campingsite",
+  "file": "templates/206-ijsseldelta-camping.html",
+  "dark": false
+ },
+ {
+  "n": 207,
+  "name": "Hanze Maaltijdbox",
+  "cat": "Eten",
+  "like": "HelloFresh",
+  "file": "templates/207-hanze-maaltijdbox.html",
+  "dark": false
+ },
+ {
+  "n": 208,
+  "name": "Mijn Pensioen Zwolle",
+  "cat": "Financiën",
+  "like": "Mijnpensioenoverzicht",
+  "file": "templates/208-mijn-pensioen-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 209,
+  "name": "Sassen Rooster",
+  "cat": "Werk",
+  "like": "een personeelsplanner",
+  "file": "templates/209-sassen-rooster.html",
+  "dark": false
+ },
+ {
+  "n": 210,
+  "name": "Diezer Chat",
+  "cat": "Communicatie",
+  "like": "Intercom Messenger",
+  "file": "templates/210-diezer-chat.html",
+  "dark": true
  }
 ]

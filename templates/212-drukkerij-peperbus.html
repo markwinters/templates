@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drukkerij Peperbus</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+:root {
+  --font-sans: "SF Pro Display", -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --gradient-spectrum: linear-gradient(90deg, #7C3AED 0%, #2563EB 50%, #00F0FF 100%);
+  --gradient-dot: linear-gradient(225deg, #00F0FF 0%, #2563EB 45%, #7C3AED 100%);
+  --gradient-night: linear-gradient(100deg, #2C3046 0%, #0F1115 50%, #262A44 100%);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #0F1115; }
+body { display: grid; place-items: center; -webkit-font-smoothing: antialiased; }
+/* Het template vult het venster in de verhouding 16:10 */
+.scr { width: min(100vw, 160vh); }
+
+/* ---------- De mockup zelf: alles schaalt mee met de breedte (cqw) ---------- */
+.scr { container-type: inline-size; aspect-ratio: 16 / 10; overflow: hidden; }
+.s { --c1: #7C3AED; --c2: #2563EB; --c3: #00B8D4; --ok: #10B981; --bad: #EF4444; --warn: #F59E0B;
+  --bg: #F7F8FA; --pn: #FFFFFF; --ln: #E5E7EB; --ink: #0F1115; --mu: #9A9EA8; --sk: #E3E5EA; --sk2: #EEF0F3;
+  display: flex; flex-direction: column; width: 100%; height: 100%; background: var(--bg); color: var(--ink);
+  font-family: var(--font-sans); font-size: 1.55cqw; line-height: 1.35; overflow: hidden; position: relative; }
+.s.dk { --c1: #A07CFF; --c2: #6EA0FF; --c3: #00F0FF; --bg: #0F1115; --pn: #171A22; --ln: #FFFFFF1A; --ink: #F7F8FA; --mu: #7D828E; --sk: #2A2E39; --sk2: #20242D; }
+.s.ac2 { --acc: var(--c2); } .s.ac3 { --acc: var(--c3); } .s { --acc: var(--c1); }
+.s * { box-sizing: border-box; }
+.s b, .s span, .s i { font-style: normal; }
+.r { display: flex; align-items: center; gap: 1cqw; min-width: 0; }
+.c { display: flex; flex-direction: column; gap: 1cqw; min-width: 0; }
+.gr { display: grid; gap: 1.2cqw; min-width: 0; }
+.f1 { flex: 1; min-width: 0; min-height: 0; }
+.p { padding: 2cqw; }
+.pn { background: var(--pn); border: 1px solid var(--ln); border-radius: 1cqw; padding: 1.4cqw; min-width: 0; box-shadow: 0 .15cqw .6cqw #0F11150A; }
+.dk .pn { box-shadow: none; }
+.l { display: block; flex: none; min-width: 0; color: var(--mu); font-size: 1.1cqw; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.l.lt { color: var(--ink); font-size: 1.25cqw; font-weight: 600; }
+.l.la { color: var(--acc); font-weight: 600; }
+.t { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mu { color: var(--mu); font-weight: 400; }
+.sm { font-size: 1.2cqw; } .xs { font-size: 1cqw; } .lg { font-size: 2.6cqw; letter-spacing: -.02em; } .xl { font-size: 4.4cqw; letter-spacing: -.03em; } .xxl { font-size: 8cqw; letter-spacing: -.04em; font-weight: 500; }
+.av { display: block; flex: none; width: 3cqw; height: 3cqw; border-radius: 50%; background: linear-gradient(135deg, var(--c1), var(--c3)); }
+.av.v2 { background: linear-gradient(135deg, var(--c2), var(--c1)); } .av.v3 { background: linear-gradient(135deg, var(--c3), var(--c2)); } .av.v4 { background: linear-gradient(135deg, #F59E0B, var(--c1)); }
+.im { display: block; min-width: 0; border-radius: .8cqw; background: var(--sk); position: relative; overflow: hidden; }
+.g0 { background: radial-gradient(80% 90% at 80% 10%, #7C3AED, transparent 70%), radial-gradient(70% 80% at 10% 100%, #00F0FF, transparent 70%), #2563EB; }
+.g1 { background: linear-gradient(135deg, #2C3046, #0F1115 50%, #7C3AED); }
+.g2 { background: radial-gradient(60% 60% at 30% 30%, #00F0FFAA, transparent 70%), linear-gradient(160deg, #2563EB, #7C3AED); }
+.g3 { background: linear-gradient(180deg, #A5B4FC, #E0E7FF 60%, #C7D2FE); }
+.g4 { background: radial-gradient(70% 70% at 70% 70%, #F59E0B99, transparent 70%), linear-gradient(135deg, #7C3AED, #EC4899); }
+.g5 { background: linear-gradient(200deg, #00F0FF, #2563EB 55%, #0F1115); }
+.bt { display: inline-flex; align-items: center; justify-content: center; gap: .6cqw; flex: none; height: 3cqw; padding: 0 1.6cqw; border-radius: .7cqw; background: var(--acc); color: #fff; font-weight: 600; font-size: 1.2cqw; white-space: nowrap; }
+.dk .bt { color: #0F1115; }
+.bt.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ln); }
+.bt.k { background: var(--ink); color: var(--bg); }
+.bt.rd { border-radius: 3cqw; }
+.in { display: flex; align-items: center; gap: .8cqw; height: 3.4cqw; padding: 0 1.4cqw; border: 1px solid var(--ln); border-radius: .8cqw; background: var(--pn); color: var(--mu); font-size: 1.25cqw; white-space: nowrap; overflow: hidden; min-width: 0; }
+.in.rd { border-radius: 3cqw; }
+.lg-m { display: inline-block; flex: none; width: 2.2cqw; height: 2.2cqw; border-radius: .6cqw; background: var(--gradient-dot); }
+.brand { display: inline-flex; align-items: center; gap: .8cqw; font-weight: 600; white-space: nowrap; }
+.bar { display: flex; align-items: center; gap: 1.4cqw; height: 5.4cqw; padding: 0 2cqw; border-bottom: 1px solid var(--ln); background: var(--pn); flex: none; }
+.side { display: flex; flex-direction: column; gap: 1.1cqw; padding: 1.8cqw; border-right: 1px solid var(--ln); background: var(--pn); flex: none; }
+.dot { display: inline-block; flex: none; width: 1cqw; height: 1cqw; border-radius: 50%; background: var(--acc); }
+.tag { display: inline-flex; align-items: center; height: 2.2cqw; padding: 0 1cqw; border-radius: 2cqw; background: color-mix(in srgb, var(--acc) 14%, transparent); color: var(--acc); font-size: 1cqw; font-weight: 600; white-space: nowrap; }
+.bub { padding: 1cqw 1.4cqw; border-radius: 1.4cqw; background: var(--pn); border: 1px solid var(--ln); max-width: 70%; }
+.bub.me { align-self: flex-end; background: var(--acc); color: #fff; border-color: transparent; }
+.dk .bub.me { color: #0F1115; }
+.ic { display: grid; place-items: center; flex: none; width: 2.2cqw; height: 2.2cqw; border-radius: .6cqw; color: var(--mu); }
+.ic svg { width: 68%; height: 68%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.ic.rd { border-radius: 50%; background: var(--sk2); color: var(--ink); }
+.ic.a { background: var(--acc); color: #fff; }
+.dk .ic.a { color: #0F1115; }
+.ic.cl { color: #fff; }
+.im.ph, .av.ph { background-size: cover; background-position: center; background-repeat: no-repeat; }
+.map { position: absolute; inset: 0; background-color: #E8EEF5;
+  background-image: linear-gradient(90deg, transparent 47%, #FFFFFF 47%, #FFFFFF 50%, transparent 50%), linear-gradient(0deg, transparent 60%, #FFFFFF 60%, #FFFFFF 62.5%, transparent 62.5%), linear-gradient(35deg, transparent 49%, #C7D7EE 49%, #C7D7EE 53%, transparent 53%), linear-gradient(#DCE5EF 1px, transparent 1px), linear-gradient(90deg, #DCE5EF 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 6cqw 6cqw, 6cqw 6cqw; }
+.dk .map { background-color: #1A1E28; background-image: linear-gradient(90deg, transparent 47%, #2A2F3C 47%, #2A2F3C 50%, transparent 50%), linear-gradient(0deg, transparent 60%, #2A2F3C 60%, #2A2F3C 62.5%, transparent 62.5%), linear-gradient(35deg, transparent 49%, #23324A 49%, #23324A 53%, transparent 53%), linear-gradient(#20242E 1px, transparent 1px), linear-gradient(90deg, #20242E 1px, transparent 1px); }
+.pin { position: absolute; width: 2.4cqw; height: 2.4cqw; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--acc); box-shadow: 0 .4cqw 1cqw #0F111540; }
+.price { position: absolute; padding: .3cqw .9cqw; border-radius: 2cqw; background: var(--pn); color: var(--ink); font-weight: 600; font-size: 1.1cqw; box-shadow: 0 .3cqw 1cqw #0F111530; }
+.chk { display: inline-block; flex: none; width: 1.8cqw; height: 1.8cqw; border-radius: 50%; border: .2cqw solid var(--mu); }
+.chk.on { background: var(--acc); border-color: var(--acc); }
+.pill { display: inline-flex; align-items: center; height: 2.6cqw; padding: 0 1.2cqw; border-radius: 3cqw; background: var(--pn); border: 1px solid var(--ln); font-size: 1.15cqw; white-space: nowrap; }
+.pill.on { background: var(--ink); color: var(--bg); border-color: transparent; }
+.prog { height: .8cqw; border-radius: 1cqw; background: var(--sk); overflow: hidden; }
+.prog i { display: block; height: 100%; background: var(--acc); border-radius: inherit; }
+.ov { position: absolute; }
+.sv { display: block; width: 100%; height: 100%; }
+.mono { font-family: var(--font-mono); }
+.live { display: inline-flex; padding: .2cqw .8cqw; border-radius: .4cqw; background: var(--bad); color: #fff; font-weight: 700; font-size: 1cqw; }
+.cell { height: 2.6cqw; border-right: 1px solid var(--ln); border-bottom: 1px solid var(--ln); padding: 0 .6cqw; display: flex; align-items: center; font-size: 1.1cqw; white-space: nowrap; overflow: hidden; }
+.sep { height: 1px; background: var(--ln); flex: none; }
+.tok { display: inline-block; height: 1cqw; border-radius: .3cqw; margin-right: .8cqw; vertical-align: middle; }
+</style>
+</head>
+<body>
+<!-- Drukkerij Peperbus (#212) · in de stijl van Vistaprint -->
+<div class="scr"><div class="s ac1"><div class="bar"><span class="brand" style=""><i class="lg-m"></i>Drukkerij Peperbus</span><span class="sm">Visitekaartjes</span><span class="sm mu">Flyers</span><span class="sm mu">Stickers</span><span class="sm mu">Posters</span><span class="f1"></span><span class="ic rd" style=""><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg></span><span class="bt">Bestellen</span></div><div class="r f1" style="align-items:stretch;gap:0;min-height:0"><div class="side" style="width:20%;gap:.9cqw"><span class="xs mu">ONTWERP</span><div class="r sm" style="gap:.8cqw;padding:.5cqw .6cqw;border-radius:.6cqw;background:var(--sk2);font-weight:600"><span class="ic " style=""><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></svg></span>Tekst</div><div class="r sm" style="gap:.8cqw;padding:.5cqw .6cqw;border-radius:.6cqw;"><span class="ic " style=""><svg viewBox="0 0 24 24"><path d="m3 19 6-10 4 6 3-4 5 8z"/></svg></span>Afbeeldingen</div><div class="r sm" style="gap:.8cqw;padding:.5cqw .6cqw;border-radius:.6cqw;"><span class="ic " style=""><svg viewBox="0 0 24 24"><path d="m12 4 2.4 5 5.6.6-4.2 3.8 1.2 5.6L12 16.3 7 19l1.2-5.6L4 9.6 9.6 9z"/></svg></span>Vormen</div><div class="r sm" style="gap:.8cqw;padding:.5cqw .6cqw;border-radius:.6cqw;"><span class="ic " style=""><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></span>Achtergrond</div><div class="r sm" style="gap:.8cqw;padding:.5cqw .6cqw;border-radius:.6cqw;"><span class="ic " style=""><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg></span>Sjablonen</div><span class="xs mu" style="margin-top:.6cqw">LETTERTYPE</span><div class="in" style="color:var(--ink)">Inter<span class="f1"></span>▾</div><div class="r" style="gap:.5cqw"><div class="in f1" style="color:var(--ink)">11 pt</div><span class="ic rd"><b>B</b></span><span class="ic rd"><i>I</i></span></div><span class="xs mu">KLEUR</span><div class="r" style="gap:.5cqw"><i style="display:block;width:2.4cqw;height:2.4cqw;border-radius:50%;background:#0F1115;"></i><i style="display:block;width:2.4cqw;height:2.4cqw;border-radius:50%;background:#7C3AED;box-shadow:0 0 0 .2cqw var(--pn),0 0 0 .4cqw var(--acc)"></i><i style="display:block;width:2.4cqw;height:2.4cqw;border-radius:50%;background:#C2410C;"></i><i style="display:block;width:2.4cqw;height:2.4cqw;border-radius:50%;background:#047857;"></i><i style="display:block;width:2.4cqw;height:2.4cqw;border-radius:50%;background:#F59E0B;"></i></div></div><div class="c f1" style="align-items:center;justify-content:center;gap:1.6cqw;background:var(--sk2);position:relative"><div class="r" style="gap:.6cqw;position:absolute;top:1.6cqw"><span class="pill on">Voorkant</span><span class="pill">Achterkant</span></div><div style="width:46cqw;aspect-ratio:85/55;border-radius:.6cqw;background:#fff;box-shadow:0 1.6cqw 3cqw #0F111530;position:relative;outline:1px dashed #EF444480;outline-offset:1.2cqw;display:grid;grid-template-columns:1fr 1.3fr;color:#0F1115;overflow:hidden"><div style="background:linear-gradient(160deg,#7C3AED,#2563EB);display:grid;place-items:center"><div class="c" style="align-items:center;gap:.6cqw;color:#fff"><i style="display:block;width:6cqw;height:6cqw;border-radius:1.4cqw;background:#FFFFFF33;box-shadow:inset 0 0 0 .3cqw #fff"></i><b class="sm" style="letter-spacing:.2em">STUDIO IJSSEL</b></div></div><div class="c" style="padding:2.6cqw;gap:.4cqw;justify-content:center"><b style="font-size:2.2cqw">Lotte Visser</b><span class="sm" style="color:#7C3AED">Webontwerper</span><span style="height:1.2cqw"></span><span class="xs" style="color:#4B5563">06 12 34 56 78</span><span class="xs" style="color:#4B5563">lotte@studioijssel.nl</span><span class="xs" style="color:#4B5563">Thorbeckegracht 12, Zwolle</span></div><div class="ov" style="left:55%;top:30%;width:34%;height:14%;outline:.2cqw solid var(--acc);border-radius:.2cqw"></div></div><span class="xs mu">85 × 55 mm · de rode stippellijn is de snijmarge</span><div class="r" style="gap:.6cqw;position:absolute;bottom:1.6cqw"><span class="pill">−</span><span class="pill">100%</span><span class="pill">+</span></div></div><div class="c" style="width:26%;padding:2cqw;gap:1.1cqw;background:var(--pn);border-left:1px solid var(--ln)"><b class="sm">Papier en oplage</b><div class="pn r" style="gap:1cqw;padding:1cqw;"><span class="chk"></span><div class="c f1" style="gap:0"><b class="sm">Standaard 350 g</b><span class="xs mu">mat, voordelig</span></div></div><div class="pn r" style="gap:1cqw;padding:1cqw;outline:.25cqw solid var(--acc)"><span class="chk on"></span><div class="c f1" style="gap:0"><b class="sm">Luxe 450 g</b><span class="xs mu">mat met zachte toplaag</span></div></div><div class="pn r" style="gap:1cqw;padding:1cqw;"><span class="chk"></span><div class="c f1" style="gap:0"><b class="sm">Gerecycled 400 g</b><span class="xs mu">naturel, milieuvriendelijk</span></div></div><div class="r" style="gap:.5cqw"><span class="pill">100</span><span class="pill on">250</span><span class="pill">500</span><span class="pill">1000</span></div><span class="f1"></span><div class="sep"></div><div class="r xs mu"><span class="f1">250 stuks · Luxe 450 g</span><span>dubbelzijdig</span></div><div class="r"><b class="lg f1">€ 34,95</b><span class="xs mu">incl. btw</span></div><span class="xs" style="color:var(--ok)">✓ Morgen in huis bij bestelling voor 18:00</span><span class="bt">In winkelwagen</span></div></div></div></div>
+</body>
+</html>

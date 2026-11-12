@@ -1,6 +1,6 @@
 # templates
 
-210 websitetemplates in één huisstijl.
+220 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -220,3 +220,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 208 | [Mijn Pensioen Zwolle](templates/208-mijn-pensioen-zwolle.html) | Financiën | Mijnpensioenoverzicht |
 | 209 | [Sassen Rooster](templates/209-sassen-rooster.html) | Werk | een personeelsplanner |
 | 210 | [Diezer Chat](templates/210-diezer-chat.html) | Communicatie | Intercom Messenger |
+| 211 | [Mijn Zorg Zwolle](templates/211-mijn-zorg-zwolle.html) | Overig | een patiëntenportaal |
+| 212 | [Drukkerij Peperbus](templates/212-drukkerij-peperbus.html) | Shop | Vistaprint |
+| 213 | [Kinderdag Zwolle](templates/213-kinderdag-zwolle.html) | Communicatie | een ouderapp |
+| 214 | [Vlaggetje](templates/214-vlaggetje.html) | Ontwikkelaars | LaunchDarkly |
+| 215 | [Hanze Film AI](templates/215-hanze-film-ai.html) | AI | Runway |
+| 216 | [Rondvaart Zwolle](templates/216-rondvaart-zwolle.html) | Reizen | een rondvaartsite |
+| 217 | [Zwolse Tijdlijn](templates/217-zwolse-tijdlijn.html) | Media | een liveblog |
+| 218 | [Rijschool IJssel](templates/218-rijschool-ijssel.html) | Leren | een rijschoolapp |
+| 219 | [Schatzoeker Zwolle](templates/219-schatzoeker-zwolle.html) | Vrije tijd | Geocaching |
+| 220 | [Sassen Verzekert](templates/220-sassen-verzekert.html) | Financiën | een verzekeringsapp |

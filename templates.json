@@ -1758,5 +1758,85 @@
   "like": "een verzekeringsapp",
   "file": "templates/220-sassen-verzekert.html",
   "dark": false
+ },
+ {
+  "n": 221,
+  "name": "Hanze Huisdier",
+  "cat": "Overig",
+  "like": "een huisdierenapp",
+  "file": "templates/221-hanze-huisdier.html",
+  "dark": false
+ },
+ {
+  "n": 222,
+  "name": "Diezer Retour",
+  "cat": "Shop",
+  "like": "een retourportaal",
+  "file": "templates/222-diezer-retour.html",
+  "dark": false
+ },
+ {
+  "n": 223,
+  "name": "Peperbus Pizza",
+  "cat": "Eten",
+  "like": "een pizzabouwer",
+  "file": "templates/223-peperbus-pizza.html",
+  "dark": true
+ },
+ {
+  "n": 224,
+  "name": "IJssel Telefoniste",
+  "cat": "AI",
+  "like": "een AI-telefoonassistent",
+  "file": "templates/224-ijssel-telefoniste.html",
+  "dark": true
+ },
+ {
+  "n": 225,
+  "name": "Thorbecke Logs",
+  "cat": "Ontwikkelaars",
+  "like": "Datadog Logs",
+  "file": "templates/225-thorbecke-logs.html",
+  "dark": true
+ },
+ {
+  "n": 226,
+  "name": "Pianoles Zwolle",
+  "cat": "Leren",
+  "like": "Simply Piano",
+  "file": "templates/226-pianoles-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 227,
+  "name": "Bus 038",
+  "cat": "Reizen",
+  "like": "9292",
+  "file": "templates/227-bus-038.html",
+  "dark": false
+ },
+ {
+  "n": 228,
+  "name": "Escaperoom Sassenpoort",
+  "cat": "Vrije tijd",
+  "like": "een escaperoom-site",
+  "file": "templates/228-escaperoom-sassenpoort.html",
+  "dark": true
+ },
+ {
+  "n": 229,
+  "name": "Hanze Werving",
+  "cat": "Werk",
+  "like": "Recruitee",
+  "file": "templates/229-hanze-werving.html",
+  "dark": false
+ },
+ {
+  "n": 230,
+  "name": "Zwolle Ruilt",
+  "cat": "Sociaal",
+  "like": "een ruilplatform",
+  "file": "templates/230-zwolle-ruilt.html",
+  "dark": false
  }
 ]

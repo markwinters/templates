@@ -1,6 +1,6 @@
 # templates
 
-220 websitetemplates in één huisstijl.
+230 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -230,3 +230,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 218 | [Rijschool IJssel](templates/218-rijschool-ijssel.html) | Leren | een rijschoolapp |
 | 219 | [Schatzoeker Zwolle](templates/219-schatzoeker-zwolle.html) | Vrije tijd | Geocaching |
 | 220 | [Sassen Verzekert](templates/220-sassen-verzekert.html) | Financiën | een verzekeringsapp |
+| 221 | [Hanze Huisdier](templates/221-hanze-huisdier.html) | Overig | een huisdierenapp |
+| 222 | [Diezer Retour](templates/222-diezer-retour.html) | Shop | een retourportaal |
+| 223 | [Peperbus Pizza](templates/223-peperbus-pizza.html) | Eten | een pizzabouwer |
+| 224 | [IJssel Telefoniste](templates/224-ijssel-telefoniste.html) | AI | een AI-telefoonassistent |
+| 225 | [Thorbecke Logs](templates/225-thorbecke-logs.html) | Ontwikkelaars | Datadog Logs |
+| 226 | [Pianoles Zwolle](templates/226-pianoles-zwolle.html) | Leren | Simply Piano |
+| 227 | [Bus 038](templates/227-bus-038.html) | Reizen | 9292 |
+| 228 | [Escaperoom Sassenpoort](templates/228-escaperoom-sassenpoort.html) | Vrije tijd | een escaperoom-site |
+| 229 | [Hanze Werving](templates/229-hanze-werving.html) | Werk | Recruitee |
+| 230 | [Zwolle Ruilt](templates/230-zwolle-ruilt.html) | Sociaal | een ruilplatform |

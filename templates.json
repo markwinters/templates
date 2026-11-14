@@ -1838,5 +1838,85 @@
   "like": "een ruilplatform",
   "file": "templates/230-zwolle-ruilt.html",
   "dark": false
+ },
+ {
+  "n": 231,
+  "name": "Hanze Huurder",
+  "cat": "Overig",
+  "like": "een huurdersportaal",
+  "file": "templates/231-hanze-huurder.html",
+  "dark": false
+ },
+ {
+  "n": 232,
+  "name": "Sassen Sieraden",
+  "cat": "Shop",
+  "like": "een sieradenwebshop",
+  "file": "templates/232-sassen-sieraden.html",
+  "dark": false
+ },
+ {
+  "n": 233,
+  "name": "Thorbecke Koffie",
+  "cat": "Eten",
+  "like": "een koffieabonnement",
+  "file": "templates/233-thorbecke-koffie.html",
+  "dark": true
+ },
+ {
+  "n": 234,
+  "name": "Hanze Slides AI",
+  "cat": "AI",
+  "like": "Gamma",
+  "file": "templates/234-hanze-slides-ai.html",
+  "dark": false
+ },
+ {
+  "n": 235,
+  "name": "Hanze Cluster",
+  "cat": "Ontwikkelaars",
+  "like": "Kubernetes Dashboard",
+  "file": "templates/235-hanze-cluster.html",
+  "dark": true
+ },
+ {
+  "n": 236,
+  "name": "Rekenrace Zwolle",
+  "cat": "Leren",
+  "like": "een rekenspel",
+  "file": "templates/236-rekenrace-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 237,
+  "name": "Deelfiets Zwolle",
+  "cat": "Reizen",
+  "like": "Donkey Republic",
+  "file": "templates/237-deelfiets-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 238,
+  "name": "Bowlingcentrum Peperbus",
+  "cat": "Vrije tijd",
+  "like": "een bowlingscorebord",
+  "file": "templates/238-bowlingcentrum-peperbus.html",
+  "dark": true
+ },
+ {
+  "n": 239,
+  "name": "Teken Zwolle",
+  "cat": "Productiviteit",
+  "like": "DocuSign",
+  "file": "templates/239-teken-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 240,
+  "name": "TV Zwolle Gids",
+  "cat": "Media",
+  "like": "een tv-gids",
+  "file": "templates/240-tv-zwolle-gids.html",
+  "dark": true
  }
 ]

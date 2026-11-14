@@ -1,6 +1,6 @@
 # templates
 
-230 websitetemplates in één huisstijl.
+240 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -240,3 +240,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 228 | [Escaperoom Sassenpoort](templates/228-escaperoom-sassenpoort.html) | Vrije tijd | een escaperoom-site |
 | 229 | [Hanze Werving](templates/229-hanze-werving.html) | Werk | Recruitee |
 | 230 | [Zwolle Ruilt](templates/230-zwolle-ruilt.html) | Sociaal | een ruilplatform |
+| 231 | [Hanze Huurder](templates/231-hanze-huurder.html) | Overig | een huurdersportaal |
+| 232 | [Sassen Sieraden](templates/232-sassen-sieraden.html) | Shop | een sieradenwebshop |
+| 233 | [Thorbecke Koffie](templates/233-thorbecke-koffie.html) | Eten | een koffieabonnement |
+| 234 | [Hanze Slides AI](templates/234-hanze-slides-ai.html) | AI | Gamma |
+| 235 | [Hanze Cluster](templates/235-hanze-cluster.html) | Ontwikkelaars | Kubernetes Dashboard |
+| 236 | [Rekenrace Zwolle](templates/236-rekenrace-zwolle.html) | Leren | een rekenspel |
+| 237 | [Deelfiets Zwolle](templates/237-deelfiets-zwolle.html) | Reizen | Donkey Republic |
+| 238 | [Bowlingcentrum Peperbus](templates/238-bowlingcentrum-peperbus.html) | Vrije tijd | een bowlingscorebord |
+| 239 | [Teken Zwolle](templates/239-teken-zwolle.html) | Productiviteit | DocuSign |
+| 240 | [TV Zwolle Gids](templates/240-tv-zwolle-gids.html) | Media | een tv-gids |

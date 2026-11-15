@@ -1918,5 +1918,85 @@
   "like": "een tv-gids",
   "file": "templates/240-tv-zwolle-gids.html",
   "dark": true
+ },
+ {
+  "n": 241,
+  "name": "Gevonden Zwolle",
+  "cat": "Overig",
+  "like": "een gevonden-voorwerpenpagina",
+  "file": "templates/241-gevonden-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 242,
+  "name": "Peperbus Brillen",
+  "cat": "Shop",
+  "like": "een brillenwebshop",
+  "file": "templates/242-peperbus-brillen.html",
+  "dark": false
+ },
+ {
+  "n": 243,
+  "name": "Sassen Calorie",
+  "cat": "Eten",
+  "like": "MyFitnessPal",
+  "file": "templates/243-sassen-calorie.html",
+  "dark": false
+ },
+ {
+  "n": 244,
+  "name": "IJssel Muziek AI",
+  "cat": "AI",
+  "like": "Suno",
+  "file": "templates/244-ijssel-muziek-ai.html",
+  "dark": true
+ },
+ {
+  "n": 245,
+  "name": "Peper Review",
+  "cat": "Ontwikkelaars",
+  "like": "een code-review-tool",
+  "file": "templates/245-peper-review.html",
+  "dark": true
+ },
+ {
+  "n": 246,
+  "name": "Examenbundel Zwolle",
+  "cat": "Leren",
+  "like": "een examentrainer",
+  "file": "templates/246-examenbundel-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 247,
+  "name": "Tank Zwolle",
+  "cat": "Reizen",
+  "like": "een brandstofprijzen-app",
+  "file": "templates/247-tank-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 248,
+  "name": "Volkstuin Zwolle",
+  "cat": "Vrije tijd",
+  "like": "een moestuinplanner",
+  "file": "templates/248-volkstuin-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 249,
+  "name": "Sassen Stemmer",
+  "cat": "Muziek",
+  "like": "een gitaar-app",
+  "file": "templates/249-sassen-stemmer.html",
+  "dark": true
+ },
+ {
+  "n": 250,
+  "name": "Zwolse Scanner",
+  "cat": "Productiviteit",
+  "like": "een scanner-app",
+  "file": "templates/250-zwolse-scanner.html",
+  "dark": true
  }
 ]

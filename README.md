@@ -1,6 +1,6 @@
 # templates
 
-240 websitetemplates in één huisstijl.
+250 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -250,3 +250,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 238 | [Bowlingcentrum Peperbus](templates/238-bowlingcentrum-peperbus.html) | Vrije tijd | een bowlingscorebord |
 | 239 | [Teken Zwolle](templates/239-teken-zwolle.html) | Productiviteit | DocuSign |
 | 240 | [TV Zwolle Gids](templates/240-tv-zwolle-gids.html) | Media | een tv-gids |
+| 241 | [Gevonden Zwolle](templates/241-gevonden-zwolle.html) | Overig | een gevonden-voorwerpenpagina |
+| 242 | [Peperbus Brillen](templates/242-peperbus-brillen.html) | Shop | een brillenwebshop |
+| 243 | [Sassen Calorie](templates/243-sassen-calorie.html) | Eten | MyFitnessPal |
+| 244 | [IJssel Muziek AI](templates/244-ijssel-muziek-ai.html) | AI | Suno |
+| 245 | [Peper Review](templates/245-peper-review.html) | Ontwikkelaars | een code-review-tool |
+| 246 | [Examenbundel Zwolle](templates/246-examenbundel-zwolle.html) | Leren | een examentrainer |
+| 247 | [Tank Zwolle](templates/247-tank-zwolle.html) | Reizen | een brandstofprijzen-app |
+| 248 | [Volkstuin Zwolle](templates/248-volkstuin-zwolle.html) | Vrije tijd | een moestuinplanner |
+| 249 | [Sassen Stemmer](templates/249-sassen-stemmer.html) | Muziek | een gitaar-app |
+| 250 | [Zwolse Scanner](templates/250-zwolse-scanner.html) | Productiviteit | een scanner-app |

@@ -1,6 +1,6 @@
 # templates
 
-250 websitetemplates in één huisstijl.
+260 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -260,3 +260,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 248 | [Volkstuin Zwolle](templates/248-volkstuin-zwolle.html) | Vrije tijd | een moestuinplanner |
 | 249 | [Sassen Stemmer](templates/249-sassen-stemmer.html) | Muziek | een gitaar-app |
 | 250 | [Zwolse Scanner](templates/250-zwolse-scanner.html) | Productiviteit | een scanner-app |
+| 251 | [Welkom bij Hanze](templates/251-welkom-bij-hanze.html) | Werk | een bezoekersregistratie |
+| 252 | [Sassen Wonen](templates/252-sassen-wonen.html) | Shop | een meubelwebshop |
+| 253 | [Restjes Zwolle](templates/253-restjes-zwolle.html) | Eten | Too Good To Go |
+| 254 | [IJssel Data AI](templates/254-ijssel-data-ai.html) | AI | Julius |
+| 255 | [Hanze Hooks](templates/255-hanze-hooks.html) | Ontwikkelaars | een webhook-tester |
+| 256 | [Hanze Studieplanner](templates/256-hanze-studieplanner.html) | Leren | een studieplanner |
+| 257 | [IJssel Bootverhuur](templates/257-ijssel-bootverhuur.html) | Reizen | een bootverhuur |
+| 258 | [Peperbus Puzzel](templates/258-peperbus-puzzel.html) | Vrije tijd | een kruiswoordpuzzel |
+| 259 | [Wachtrij Zwolle](templates/259-wachtrij-zwolle.html) | Overig | een wachtrij-app |
+| 260 | [Zwolle Fotowedstrijd](templates/260-zwolle-fotowedstrijd.html) | Sociaal | een fotowedstrijd |

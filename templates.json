@@ -1998,5 +1998,85 @@
   "like": "een scanner-app",
   "file": "templates/250-zwolse-scanner.html",
   "dark": true
+ },
+ {
+  "n": 251,
+  "name": "Welkom bij Hanze",
+  "cat": "Werk",
+  "like": "een bezoekersregistratie",
+  "file": "templates/251-welkom-bij-hanze.html",
+  "dark": false
+ },
+ {
+  "n": 252,
+  "name": "Sassen Wonen",
+  "cat": "Shop",
+  "like": "een meubelwebshop",
+  "file": "templates/252-sassen-wonen.html",
+  "dark": false
+ },
+ {
+  "n": 253,
+  "name": "Restjes Zwolle",
+  "cat": "Eten",
+  "like": "Too Good To Go",
+  "file": "templates/253-restjes-zwolle.html",
+  "dark": false
+ },
+ {
+  "n": 254,
+  "name": "IJssel Data AI",
+  "cat": "AI",
+  "like": "Julius",
+  "file": "templates/254-ijssel-data-ai.html",
+  "dark": true
+ },
+ {
+  "n": 255,
+  "name": "Hanze Hooks",
+  "cat": "Ontwikkelaars",
+  "like": "een webhook-tester",
+  "file": "templates/255-hanze-hooks.html",
+  "dark": true
+ },
+ {
+  "n": 256,
+  "name": "Hanze Studieplanner",
+  "cat": "Leren",
+  "like": "een studieplanner",
+  "file": "templates/256-hanze-studieplanner.html",
+  "dark": false
+ },
+ {
+  "n": 257,
+  "name": "IJssel Bootverhuur",
+  "cat": "Reizen",
+  "like": "een bootverhuur",
+  "file": "templates/257-ijssel-bootverhuur.html",
+  "dark": false
+ },
+ {
+  "n": 258,
+  "name": "Peperbus Puzzel",
+  "cat": "Vrije tijd",
+  "like": "een kruiswoordpuzzel",
+  "file": "templates/258-peperbus-puzzel.html",
+  "dark": false
+ },
+ {
+  "n": 259,
+  "name": "Wachtrij Zwolle",
+  "cat": "Overig",
+  "like": "een wachtrij-app",
+  "file": "templates/259-wachtrij-zwolle.html",
+  "dark": true
+ },
+ {
+  "n": 260,
+  "name": "Zwolle Fotowedstrijd",
+  "cat": "Sociaal",
+  "like": "een fotowedstrijd",
+  "file": "templates/260-zwolle-fotowedstrijd.html",
+  "dark": true
  }
 ]

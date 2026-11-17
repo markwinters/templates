@@ -2078,5 +2078,85 @@
   "like": "een fotowedstrijd",
   "file": "templates/260-zwolle-fotowedstrijd.html",
   "dark": true
+ },
+ {
+  "n": 261,
+  "name": "Zwolle Zorgt",
+  "cat": "Overig",
+  "like": "een mantelzorgapp",
+  "file": "templates/261-zwolle-zorgt.html",
+  "dark": false
+ },
+ {
+  "n": 262,
+  "name": "Bloemist Sassen",
+  "cat": "Shop",
+  "like": "een bloemenwebshop",
+  "file": "templates/262-bloemist-sassen.html",
+  "dark": false
+ },
+ {
+  "n": 263,
+  "name": "Peperbus Proeverij",
+  "cat": "Eten",
+  "like": "een digitale wijnkaart",
+  "file": "templates/263-peperbus-proeverij.html",
+  "dark": true
+ },
+ {
+  "n": 264,
+  "name": "Hanze Vertaal AI",
+  "cat": "AI",
+  "like": "DeepL",
+  "file": "templates/264-hanze-vertaal-ai.html",
+  "dark": false
+ },
+ {
+  "n": 265,
+  "name": "IJssel Uptime",
+  "cat": "Ontwikkelaars",
+  "like": "UptimeRobot",
+  "file": "templates/265-ijssel-uptime.html",
+  "dark": true
+ },
+ {
+  "n": 266,
+  "name": "Thorbecke Typen",
+  "cat": "Leren",
+  "like": "een typcursus",
+  "file": "templates/266-thorbecke-typen.html",
+  "dark": false
+ },
+ {
+  "n": 267,
+  "name": "Zwolle Weekendje Weg",
+  "cat": "Reizen",
+  "like": "Airbnb",
+  "file": "templates/267-zwolle-weekendje-weg.html",
+  "dark": false
+ },
+ {
+  "n": 268,
+  "name": "Sassen Schaakpuzzel",
+  "cat": "Vrije tijd",
+  "like": "een schaakpuzzel-app",
+  "file": "templates/268-sassen-schaakpuzzel.html",
+  "dark": true
+ },
+ {
+  "n": 269,
+  "name": "Zwolle Fotoprint",
+  "cat": "Productiviteit",
+  "like": "een fotoprintdienst",
+  "file": "templates/269-zwolle-fotoprint.html",
+  "dark": false
+ },
+ {
+  "n": 270,
+  "name": "Hanze Podcast Studio",
+  "cat": "Muziek",
+  "like": "Riverside",
+  "file": "templates/270-hanze-podcast-studio.html",
+  "dark": true
  }
 ]

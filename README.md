@@ -1,6 +1,6 @@
 # templates
 
-260 websitetemplates in één huisstijl.
+270 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -270,3 +270,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 258 | [Peperbus Puzzel](templates/258-peperbus-puzzel.html) | Vrije tijd | een kruiswoordpuzzel |
 | 259 | [Wachtrij Zwolle](templates/259-wachtrij-zwolle.html) | Overig | een wachtrij-app |
 | 260 | [Zwolle Fotowedstrijd](templates/260-zwolle-fotowedstrijd.html) | Sociaal | een fotowedstrijd |
+| 261 | [Zwolle Zorgt](templates/261-zwolle-zorgt.html) | Overig | een mantelzorgapp |
+| 262 | [Bloemist Sassen](templates/262-bloemist-sassen.html) | Shop | een bloemenwebshop |
+| 263 | [Peperbus Proeverij](templates/263-peperbus-proeverij.html) | Eten | een digitale wijnkaart |
+| 264 | [Hanze Vertaal AI](templates/264-hanze-vertaal-ai.html) | AI | DeepL |
+| 265 | [IJssel Uptime](templates/265-ijssel-uptime.html) | Ontwikkelaars | UptimeRobot |
+| 266 | [Thorbecke Typen](templates/266-thorbecke-typen.html) | Leren | een typcursus |
+| 267 | [Zwolle Weekendje Weg](templates/267-zwolle-weekendje-weg.html) | Reizen | Airbnb |
+| 268 | [Sassen Schaakpuzzel](templates/268-sassen-schaakpuzzel.html) | Vrije tijd | een schaakpuzzel-app |
+| 269 | [Zwolle Fotoprint](templates/269-zwolle-fotoprint.html) | Productiviteit | een fotoprintdienst |
+| 270 | [Hanze Podcast Studio](templates/270-hanze-podcast-studio.html) | Muziek | Riverside |

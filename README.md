@@ -1,6 +1,6 @@
 # templates
 
-270 websitetemplates in één huisstijl.
+280 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -280,3 +280,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 268 | [Sassen Schaakpuzzel](templates/268-sassen-schaakpuzzel.html) | Vrije tijd | een schaakpuzzel-app |
 | 269 | [Zwolle Fotoprint](templates/269-zwolle-fotoprint.html) | Productiviteit | een fotoprintdienst |
 | 270 | [Hanze Podcast Studio](templates/270-hanze-podcast-studio.html) | Muziek | Riverside |
+| 271 | [Peperbus Parkeren](templates/271-peperbus-parkeren.html) | Reizen | een parkeergarage-app |
+| 272 | [Sassen Speelgoed](templates/272-sassen-speelgoed.html) | Shop | een speelgoedwinkel |
+| 273 | [IJssel Smaakmaker](templates/273-ijssel-smaakmaker.html) | AI | een AI-receptenapp |
+| 274 | [Hanze Lighthouse](templates/274-hanze-lighthouse.html) | Ontwikkelaars | PageSpeed Insights |
+| 275 | [Zwolle Bijles](templates/275-zwolle-bijles.html) | Leren | een bijlesplatform |
+| 276 | [Vecht Vissen](templates/276-vecht-vissen.html) | Vrije tijd | een visapp |
+| 277 | [IJssel Groepsreis](templates/277-ijssel-groepsreis.html) | Reizen | een groepsreisplanner |
+| 278 | [Thorbecke Thermostaat](templates/278-thorbecke-thermostaat.html) | Overig | een slimme thermostaat |
+| 279 | [Hanze Notulen](templates/279-hanze-notulen.html) | Productiviteit | een vergaderapp |
+| 280 | [Zwolse Buurtradio](templates/280-zwolse-buurtradio.html) | Muziek | een lokale radiozender |

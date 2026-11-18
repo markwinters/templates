@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hanze Lighthouse</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+:root {
+  --font-sans: "SF Pro Display", -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --gradient-spectrum: linear-gradient(90deg, #7C3AED 0%, #2563EB 50%, #00F0FF 100%);
+  --gradient-dot: linear-gradient(225deg, #00F0FF 0%, #2563EB 45%, #7C3AED 100%);
+  --gradient-night: linear-gradient(100deg, #2C3046 0%, #0F1115 50%, #262A44 100%);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #0F1115; }
+body { display: grid; place-items: center; -webkit-font-smoothing: antialiased; }
+/* Het template vult het venster in de verhouding 16:10 */
+.scr { width: min(100vw, 160vh); }
+
+/* ---------- De mockup zelf: alles schaalt mee met de breedte (cqw) ---------- */
+.scr { container-type: inline-size; aspect-ratio: 16 / 10; overflow: hidden; }
+.s { --c1: #7C3AED; --c2: #2563EB; --c3: #00B8D4; --ok: #10B981; --bad: #EF4444; --warn: #F59E0B;
+  --bg: #F7F8FA; --pn: #FFFFFF; --ln: #E5E7EB; --ink: #0F1115; --mu: #9A9EA8; --sk: #E3E5EA; --sk2: #EEF0F3;
+  display: flex; flex-direction: column; width: 100%; height: 100%; background: var(--bg); color: var(--ink);
+  font-family: var(--font-sans); font-size: 1.55cqw; line-height: 1.35; overflow: hidden; position: relative; }
+.s.dk { --c1: #A07CFF; --c2: #6EA0FF; --c3: #00F0FF; --bg: #0F1115; --pn: #171A22; --ln: #FFFFFF1A; --ink: #F7F8FA; --mu: #7D828E; --sk: #2A2E39; --sk2: #20242D; }
+.s.ac2 { --acc: var(--c2); } .s.ac3 { --acc: var(--c3); } .s { --acc: var(--c1); }
+.s * { box-sizing: border-box; }
+.s b, .s span, .s i { font-style: normal; }
+.r { display: flex; align-items: center; gap: 1cqw; min-width: 0; }
+.c { display: flex; flex-direction: column; gap: 1cqw; min-width: 0; }
+.gr { display: grid; gap: 1.2cqw; min-width: 0; }
+.f1 { flex: 1; min-width: 0; min-height: 0; }
+.p { padding: 2cqw; }
+.pn { background: var(--pn); border: 1px solid var(--ln); border-radius: 1cqw; padding: 1.4cqw; min-width: 0; box-shadow: 0 .15cqw .6cqw #0F11150A; }
+.dk .pn { box-shadow: none; }
+.l { display: block; flex: none; min-width: 0; color: var(--mu); font-size: 1.1cqw; line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.l.lt { color: var(--ink); font-size: 1.25cqw; font-weight: 600; }
+.l.la { color: var(--acc); font-weight: 600; }
+.t { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mu { color: var(--mu); font-weight: 400; }
+.sm { font-size: 1.2cqw; } .xs { font-size: 1cqw; } .lg { font-size: 2.6cqw; letter-spacing: -.02em; } .xl { font-size: 4.4cqw; letter-spacing: -.03em; } .xxl { font-size: 8cqw; letter-spacing: -.04em; font-weight: 500; }
+.av { display: block; flex: none; width: 3cqw; height: 3cqw; border-radius: 50%; background: linear-gradient(135deg, var(--c1), var(--c3)); }
+.av.v2 { background: linear-gradient(135deg, var(--c2), var(--c1)); } .av.v3 { background: linear-gradient(135deg, var(--c3), var(--c2)); } .av.v4 { background: linear-gradient(135deg, #F59E0B, var(--c1)); }
+.im { display: block; min-width: 0; border-radius: .8cqw; background: var(--sk); position: relative; overflow: hidden; }
+.g0 { background: radial-gradient(80% 90% at 80% 10%, #7C3AED, transparent 70%), radial-gradient(70% 80% at 10% 100%, #00F0FF, transparent 70%), #2563EB; }
+.g1 { background: linear-gradient(135deg, #2C3046, #0F1115 50%, #7C3AED); }
+.g2 { background: radial-gradient(60% 60% at 30% 30%, #00F0FFAA, transparent 70%), linear-gradient(160deg, #2563EB, #7C3AED); }
+.g3 { background: linear-gradient(180deg, #A5B4FC, #E0E7FF 60%, #C7D2FE); }
+.g4 { background: radial-gradient(70% 70% at 70% 70%, #F59E0B99, transparent 70%), linear-gradient(135deg, #7C3AED, #EC4899); }
+.g5 { background: linear-gradient(200deg, #00F0FF, #2563EB 55%, #0F1115); }
+.bt { display: inline-flex; align-items: center; justify-content: center; gap: .6cqw; flex: none; height: 3cqw; padding: 0 1.6cqw; border-radius: .7cqw; background: var(--acc); color: #fff; font-weight: 600; font-size: 1.2cqw; white-space: nowrap; }
+.dk .bt { color: #0F1115; }
+.bt.o { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ln); }
+.bt.k { background: var(--ink); color: var(--bg); }
+.bt.rd { border-radius: 3cqw; }
+.in { display: flex; align-items: center; gap: .8cqw; height: 3.4cqw; padding: 0 1.4cqw; border: 1px solid var(--ln); border-radius: .8cqw; background: var(--pn); color: var(--mu); font-size: 1.25cqw; white-space: nowrap; overflow: hidden; min-width: 0; }
+.in.rd { border-radius: 3cqw; }
+.lg-m { display: inline-block; flex: none; width: 2.2cqw; height: 2.2cqw; border-radius: .6cqw; background: var(--gradient-dot); }
+.brand { display: inline-flex; align-items: center; gap: .8cqw; font-weight: 600; white-space: nowrap; }
+.bar { display: flex; align-items: center; gap: 1.4cqw; height: 5.4cqw; padding: 0 2cqw; border-bottom: 1px solid var(--ln); background: var(--pn); flex: none; }
+.side { display: flex; flex-direction: column; gap: 1.1cqw; padding: 1.8cqw; border-right: 1px solid var(--ln); background: var(--pn); flex: none; }
+.dot { display: inline-block; flex: none; width: 1cqw; height: 1cqw; border-radius: 50%; background: var(--acc); }
+.tag { display: inline-flex; align-items: center; height: 2.2cqw; padding: 0 1cqw; border-radius: 2cqw; background: color-mix(in srgb, var(--acc) 14%, transparent); color: var(--acc); font-size: 1cqw; font-weight: 600; white-space: nowrap; }
+.bub { padding: 1cqw 1.4cqw; border-radius: 1.4cqw; background: var(--pn); border: 1px solid var(--ln); max-width: 70%; }
+.bub.me { align-self: flex-end; background: var(--acc); color: #fff; border-color: transparent; }
+.dk .bub.me { color: #0F1115; }
+.ic { display: grid; place-items: center; flex: none; width: 2.2cqw; height: 2.2cqw; border-radius: .6cqw; color: var(--mu); }
+.ic svg { width: 68%; height: 68%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.ic.rd { border-radius: 50%; background: var(--sk2); color: var(--ink); }
+.ic.a { background: var(--acc); color: #fff; }
+.dk .ic.a { color: #0F1115; }
+.ic.cl { color: #fff; }
+.im.ph, .av.ph { background-size: cover; background-position: center; background-repeat: no-repeat; }
+.map { position: absolute; inset: 0; background-color: #E8EEF5;
+  background-image: linear-gradient(90deg, transparent 47%, #FFFFFF 47%, #FFFFFF 50%, transparent 50%), linear-gradient(0deg, transparent 60%, #FFFFFF 60%, #FFFFFF 62.5%, transparent 62.5%), linear-gradient(35deg, transparent 49%, #C7D7EE 49%, #C7D7EE 53%, transparent 53%), linear-gradient(#DCE5EF 1px, transparent 1px), linear-gradient(90deg, #DCE5EF 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 6cqw 6cqw, 6cqw 6cqw; }
+.dk .map { background-color: #1A1E28; background-image: linear-gradient(90deg, transparent 47%, #2A2F3C 47%, #2A2F3C 50%, transparent 50%), linear-gradient(0deg, transparent 60%, #2A2F3C 60%, #2A2F3C 62.5%, transparent 62.5%), linear-gradient(35deg, transparent 49%, #23324A 49%, #23324A 53%, transparent 53%), linear-gradient(#20242E 1px, transparent 1px), linear-gradient(90deg, #20242E 1px, transparent 1px); }
+.pin { position: absolute; width: 2.4cqw; height: 2.4cqw; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--acc); box-shadow: 0 .4cqw 1cqw #0F111540; }
+.price { position: absolute; padding: .3cqw .9cqw; border-radius: 2cqw; background: var(--pn); color: var(--ink); font-weight: 600; font-size: 1.1cqw; box-shadow: 0 .3cqw 1cqw #0F111530; }
+.chk { display: inline-block; flex: none; width: 1.8cqw; height: 1.8cqw; border-radius: 50%; border: .2cqw solid var(--mu); }
+.chk.on { background: var(--acc); border-color: var(--acc); }
+.pill { display: inline-flex; align-items: center; height: 2.6cqw; padding: 0 1.2cqw; border-radius: 3cqw; background: var(--pn); border: 1px solid var(--ln); font-size: 1.15cqw; white-space: nowrap; }
+.pill.on { background: var(--ink); color: var(--bg); border-color: transparent; }
+.prog { height: .8cqw; border-radius: 1cqw; background: var(--sk); overflow: hidden; }
+.prog i { display: block; height: 100%; background: var(--acc); border-radius: inherit; }
+.ov { position: absolute; }
+.sv { display: block; width: 100%; height: 100%; }
+.mono { font-family: var(--font-mono); }
+.live { display: inline-flex; padding: .2cqw .8cqw; border-radius: .4cqw; background: var(--bad); color: #fff; font-weight: 700; font-size: 1cqw; }
+.cell { height: 2.6cqw; border-right: 1px solid var(--ln); border-bottom: 1px solid var(--ln); padding: 0 .6cqw; display: flex; align-items: center; font-size: 1.1cqw; white-space: nowrap; overflow: hidden; }
+.sep { height: 1px; background: var(--ln); flex: none; }
+.tok { display: inline-block; height: 1cqw; border-radius: .3cqw; margin-right: .8cqw; vertical-align: middle; }
+</style>
+</head>
+<body>
+<!-- Hanze Lighthouse (#274) · in de stijl van PageSpeed Insights -->
+<div class="scr"><div class="s dk ac3"><div class="bar"><span class="brand" style=""><i class="lg-m"></i>Hanze Lighthouse</span><div class="in f1" style="max-width:44%;color:var(--ink)">https://markwinters.github.io/templates/</div><span class="pill on">📱 Mobiel</span><span class="pill">🖥 Desktop</span><span class="f1"></span><span class="bt">Opnieuw meten</span></div><div class="r f1" style="align-items:stretch;gap:2cqw;padding:2cqw 2.4cqw;min-height:0"><div class="c f1" style="gap:1.2cqw"><div class="pn r" style="justify-content:space-around;padding:1.6cqw"><div class="c" style="align-items:center;gap:.6cqw"><div style="width:8cqw;height:8cqw;border-radius:50%;background:conic-gradient(var(--ok) 0 92%,color-mix(in srgb,var(--ok) 18%,transparent) 92% 100%);display:grid;place-items:center"><b class="lg" style="width:6.6cqw;height:6.6cqw;border-radius:50%;background:var(--bg);display:grid;place-items:center;color:var(--ok)">92</b></div><span class="xs">Prestaties</span></div><div class="c" style="align-items:center;gap:.6cqw"><div style="width:8cqw;height:8cqw;border-radius:50%;background:conic-gradient(var(--ok) 0 98%,color-mix(in srgb,var(--ok) 18%,transparent) 98% 100%);display:grid;place-items:center"><b class="lg" style="width:6.6cqw;height:6.6cqw;border-radius:50%;background:var(--bg);display:grid;place-items:center;color:var(--ok)">98</b></div><span class="xs">Toegankelijkheid</span></div><div class="c" style="align-items:center;gap:.6cqw"><div style="width:8cqw;height:8cqw;border-radius:50%;background:conic-gradient(var(--ok) 0 100%,color-mix(in srgb,var(--ok) 18%,transparent) 100% 100%);display:grid;place-items:center"><b class="lg" style="width:6.6cqw;height:6.6cqw;border-radius:50%;background:var(--bg);display:grid;place-items:center;color:var(--ok)">100</b></div><span class="xs">Best practices</span></div><div class="c" style="align-items:center;gap:.6cqw"><div style="width:8cqw;height:8cqw;border-radius:50%;background:conic-gradient(var(--warn) 0 83%,color-mix(in srgb,var(--warn) 18%,transparent) 83% 100%);display:grid;place-items:center"><b class="lg" style="width:6.6cqw;height:6.6cqw;border-radius:50%;background:var(--bg);display:grid;place-items:center;color:var(--warn)">83</b></div><span class="xs">SEO</span></div></div><div class="pn c f1" style="gap:.6cqw"><div class="r"><b class="sm f1">Metingen</b><span class="xs mu">gemeten om 05:44 · Moto G Power · 4G</span></div><div class="gr" style="grid-template-columns:1fr 1fr;gap:.6cqw 2cqw"><div class="r sm" style="gap:.8cqw;border-bottom:1px solid var(--ln);padding:.6cqw 0"><i style="display:block;width:1cqw;height:1cqw;border-radius:50%;background:var(--ok)"></i><span class="f1">First Contentful Paint</span><b style="color:var(--ok)">0,9 s</b></div><div class="r sm" style="gap:.8cqw;border-bottom:1px solid var(--ln);padding:.6cqw 0"><i style="display:block;width:1cqw;height:1cqw;border-radius:50%;background:var(--ok)"></i><span class="f1">Largest Contentful Paint</span><b style="color:var(--ok)">1,8 s</b></div><div class="r sm" style="gap:.8cqw;border-bottom:1px solid var(--ln);padding:.6cqw 0"><i style="display:block;width:1cqw;height:1cqw;border-radius:50%;background:var(--ok)"></i><span class="f1">Total Blocking Time</span><b style="color:var(--ok)">120 ms</b></div><div class="r sm" style="gap:.8cqw;border-bottom:1px solid var(--ln);padding:.6cqw 0"><i style="display:block;width:1cqw;height:1cqw;border-radius:.15cqw;background:var(--warn)"></i><span class="f1">Cumulative Layout Shift</span><b style="color:var(--warn)">0,14</b></div><div class="r sm" style="gap:.8cqw;border-bottom:1px solid var(--ln);padding:.6cqw 0"><i style="display:block;width:1cqw;height:1cqw;border-radius:50%;background:var(--ok)"></i><span class="f1">Speed Index</span><b style="color:var(--ok)">1,6 s</b></div><div class="r sm" style="gap:.8cqw;border-bottom:1px solid var(--ln);padding:.6cqw 0"><i style="display:block;width:1cqw;height:1cqw;border-radius:50%;background:var(--ok)"></i><span class="f1">Time to Interactive</span><b style="color:var(--ok)">2,1 s</b></div></div><span class="f1"></span><div class="c" style="gap:.4cqw"><span class="xs mu">Schermafbeeldingen tijdens het laden</span><div class="r" style="gap:.5cqw"><div style="flex:1;aspect-ratio:9/16;max-height:9cqw;border-radius:.4cqw;background:var(--sk);opacity:0.4"></div><div style="flex:1;aspect-ratio:9/16;max-height:9cqw;border-radius:.4cqw;background:var(--sk);opacity:0.5"></div><div style="flex:1;aspect-ratio:9/16;max-height:9cqw;border-radius:.4cqw;background:linear-gradient(180deg,var(--sk2) 18%,var(--pn) 18% 30%,var(--sk) 30%);opacity:0.6000000000000001"></div><div style="flex:1;aspect-ratio:9/16;max-height:9cqw;border-radius:.4cqw;background:linear-gradient(180deg,var(--sk2) 18%,var(--pn) 18% 30%,var(--sk) 30%);opacity:0.7000000000000001"></div><div style="flex:1;aspect-ratio:9/16;max-height:9cqw;border-radius:.4cqw;background:linear-gradient(180deg,var(--sk2) 18%,var(--pn) 18% 30%,var(--sk) 30%);opacity:0.8"></div><div style="flex:1;aspect-ratio:9/16;max-height:9cqw;border-radius:.4cqw;background:linear-gradient(180deg,var(--sk2) 18%,var(--pn) 18% 30%,var(--sk) 30%);opacity:0.9"></div><div style="flex:1;aspect-ratio:9/16;max-height:9cqw;border-radius:.4cqw;background:linear-gradient(180deg,var(--sk2) 18%,var(--pn) 18% 30%,var(--sk) 30%);opacity:1.0"></div></div><div class="r xs mu" style="justify-content:space-between"><span>0 s</span><span>1 s</span><span>2 s</span></div></div></div></div><div class="c" style="width:34%;gap:1cqw"><b class="sm">Kansen om te verbeteren</b><div class="pn c" style="gap:.3cqw;border-left:.4cqw solid var(--warn)"><div class="r"><b class="sm f1">Geef afbeeldingen een vaste breedte en hoogte</b><span class="xs mono" style="color:var(--warn)">CLS</span></div><span class="xs mu">Voorkomt dat de pagina verspringt tijdens het laden.</span></div><div class="pn c" style="gap:.3cqw;border-left:.4cqw solid var(--warn)"><div class="r"><b class="sm f1">Voeg een meta-beschrijving toe aan templates</b><span class="xs mono" style="color:var(--warn)">SEO</span></div><span class="xs mu">18 pagina's missen een beschrijving.</span></div><div class="pn c" style="gap:.3cqw;border-left:.4cqw solid var(--ok)"><div class="r"><b class="sm f1">Laad lettertypen met font-display: swap</b><span class="xs mono" style="color:var(--ok)">0,3 s</span></div><span class="xs mu">Tekst is dan meteen leesbaar.</span></div><div class="pn c f1" style="gap:.4cqw"><b class="sm">Verloop · 30 dagen</b><svg viewBox="0 0 100 30" preserveAspectRatio="none" style="width:100%;flex:1;min-height:4cqw"><polyline points="0,22 15,20 30,18 45,19 60,12 75,10 90,8 100,7" fill="none" stroke="var(--acc)" vector-effect="non-scaling-stroke" style="stroke-width:.3cqw"/></svg><span class="xs mu">Prestatiescore van 74 naar 92</span></div></div></div></div></div>
+</body>
+</html>

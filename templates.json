@@ -2158,5 +2158,85 @@
   "like": "Riverside",
   "file": "templates/270-hanze-podcast-studio.html",
   "dark": true
+ },
+ {
+  "n": 271,
+  "name": "Peperbus Parkeren",
+  "cat": "Reizen",
+  "like": "een parkeergarage-app",
+  "file": "templates/271-peperbus-parkeren.html",
+  "dark": false
+ },
+ {
+  "n": 272,
+  "name": "Sassen Speelgoed",
+  "cat": "Shop",
+  "like": "een speelgoedwinkel",
+  "file": "templates/272-sassen-speelgoed.html",
+  "dark": false
+ },
+ {
+  "n": 273,
+  "name": "IJssel Smaakmaker",
+  "cat": "AI",
+  "like": "een AI-receptenapp",
+  "file": "templates/273-ijssel-smaakmaker.html",
+  "dark": false
+ },
+ {
+  "n": 274,
+  "name": "Hanze Lighthouse",
+  "cat": "Ontwikkelaars",
+  "like": "PageSpeed Insights",
+  "file": "templates/274-hanze-lighthouse.html",
+  "dark": true
+ },
+ {
+  "n": 275,
+  "name": "Zwolle Bijles",
+  "cat": "Leren",
+  "like": "een bijlesplatform",
+  "file": "templates/275-zwolle-bijles.html",
+  "dark": false
+ },
+ {
+  "n": 276,
+  "name": "Vecht Vissen",
+  "cat": "Vrije tijd",
+  "like": "een visapp",
+  "file": "templates/276-vecht-vissen.html",
+  "dark": true
+ },
+ {
+  "n": 277,
+  "name": "IJssel Groepsreis",
+  "cat": "Reizen",
+  "like": "een groepsreisplanner",
+  "file": "templates/277-ijssel-groepsreis.html",
+  "dark": false
+ },
+ {
+  "n": 278,
+  "name": "Thorbecke Thermostaat",
+  "cat": "Overig",
+  "like": "een slimme thermostaat",
+  "file": "templates/278-thorbecke-thermostaat.html",
+  "dark": true
+ },
+ {
+  "n": 279,
+  "name": "Hanze Notulen",
+  "cat": "Productiviteit",
+  "like": "een vergaderapp",
+  "file": "templates/279-hanze-notulen.html",
+  "dark": false
+ },
+ {
+  "n": 280,
+  "name": "Zwolse Buurtradio",
+  "cat": "Muziek",
+  "like": "een lokale radiozender",
+  "file": "templates/280-zwolse-buurtradio.html",
+  "dark": true
  }
 ]

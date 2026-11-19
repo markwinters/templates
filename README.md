@@ -1,6 +1,6 @@
 # templates
 
-280 websitetemplates in één huisstijl.
+290 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -290,3 +290,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 278 | [Thorbecke Thermostaat](templates/278-thorbecke-thermostaat.html) | Overig | een slimme thermostaat |
 | 279 | [Hanze Notulen](templates/279-hanze-notulen.html) | Productiviteit | een vergaderapp |
 | 280 | [Zwolse Buurtradio](templates/280-zwolse-buurtradio.html) | Muziek | een lokale radiozender |
+| 281 | [Buurtapp Assendorp](templates/281-buurtapp-assendorp.html) | Communicatie | een buurtpreventie-app |
+| 282 | [Zwolle Fotoclub](templates/282-zwolle-fotoclub.html) | Sociaal | een fotoclub-community |
+| 283 | [Hanze Onboarding](templates/283-hanze-onboarding.html) | Werk | een onboarding-app |
+| 284 | [Zwolse Krant Digitaal](templates/284-zwolse-krant-digitaal.html) | Media | een digitale krant |
+| 285 | [Peperbus Beleggen](templates/285-peperbus-beleggen.html) | Financiën | een beleggingsapp |
+| 286 | [IJssel Inruil](templates/286-ijssel-inruil.html) | Shop | een inruilsite |
+| 287 | [Hanze Kantine](templates/287-hanze-kantine.html) | Eten | een bedrijfslunch-app |
+| 288 | [Sassen Stem AI](templates/288-sassen-stem-ai.html) | AI | een tekst-naar-spraakdienst |
+| 289 | [Diezer Docs Zoeken](templates/289-diezer-docs-zoeken.html) | Ontwikkelaars | een docs-zoekvenster |
+| 290 | [Zwolle Woordjes](templates/290-zwolle-woordjes.html) | Leren | Anki |

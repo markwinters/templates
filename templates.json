@@ -2238,5 +2238,85 @@
   "like": "een lokale radiozender",
   "file": "templates/280-zwolse-buurtradio.html",
   "dark": true
+ },
+ {
+  "n": 281,
+  "name": "Buurtapp Assendorp",
+  "cat": "Communicatie",
+  "like": "een buurtpreventie-app",
+  "file": "templates/281-buurtapp-assendorp.html",
+  "dark": false
+ },
+ {
+  "n": 282,
+  "name": "Zwolle Fotoclub",
+  "cat": "Sociaal",
+  "like": "een fotoclub-community",
+  "file": "templates/282-zwolle-fotoclub.html",
+  "dark": true
+ },
+ {
+  "n": 283,
+  "name": "Hanze Onboarding",
+  "cat": "Werk",
+  "like": "een onboarding-app",
+  "file": "templates/283-hanze-onboarding.html",
+  "dark": false
+ },
+ {
+  "n": 284,
+  "name": "Zwolse Krant Digitaal",
+  "cat": "Media",
+  "like": "een digitale krant",
+  "file": "templates/284-zwolse-krant-digitaal.html",
+  "dark": false
+ },
+ {
+  "n": 285,
+  "name": "Peperbus Beleggen",
+  "cat": "Financiën",
+  "like": "een beleggingsapp",
+  "file": "templates/285-peperbus-beleggen.html",
+  "dark": true
+ },
+ {
+  "n": 286,
+  "name": "IJssel Inruil",
+  "cat": "Shop",
+  "like": "een inruilsite",
+  "file": "templates/286-ijssel-inruil.html",
+  "dark": false
+ },
+ {
+  "n": 287,
+  "name": "Hanze Kantine",
+  "cat": "Eten",
+  "like": "een bedrijfslunch-app",
+  "file": "templates/287-hanze-kantine.html",
+  "dark": false
+ },
+ {
+  "n": 288,
+  "name": "Sassen Stem AI",
+  "cat": "AI",
+  "like": "een tekst-naar-spraakdienst",
+  "file": "templates/288-sassen-stem-ai.html",
+  "dark": true
+ },
+ {
+  "n": 289,
+  "name": "Diezer Docs Zoeken",
+  "cat": "Ontwikkelaars",
+  "like": "een docs-zoekvenster",
+  "file": "templates/289-diezer-docs-zoeken.html",
+  "dark": true
+ },
+ {
+  "n": 290,
+  "name": "Zwolle Woordjes",
+  "cat": "Leren",
+  "like": "Anki",
+  "file": "templates/290-zwolle-woordjes.html",
+  "dark": false
  }
 ]

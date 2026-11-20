@@ -2318,5 +2318,85 @@
   "like": "Anki",
   "file": "templates/290-zwolle-woordjes.html",
   "dark": false
+ },
+ {
+  "n": 291,
+  "name": "Sassen Spraakmemo",
+  "cat": "Communicatie",
+  "like": "een spraakberichten-app",
+  "file": "templates/291-sassen-spraakmemo.html",
+  "dark": false
+ },
+ {
+  "n": 292,
+  "name": "Zwolle Kookclub",
+  "cat": "Sociaal",
+  "like": "een kookclub-platform",
+  "file": "templates/292-zwolle-kookclub.html",
+  "dark": false
+ },
+ {
+  "n": 293,
+  "name": "Hanze Verlof",
+  "cat": "Werk",
+  "like": "een verlof-app",
+  "file": "templates/293-hanze-verlof.html",
+  "dark": false
+ },
+ {
+  "n": 294,
+  "name": "IJssel Strips",
+  "cat": "Media",
+  "like": "een webcomic-app",
+  "file": "templates/294-ijssel-strips.html",
+  "dark": true
+ },
+ {
+  "n": 295,
+  "name": "Thorbecke Toeslag",
+  "cat": "Financiën",
+  "like": "een rekenhulp voor toeslagen",
+  "file": "templates/295-thorbecke-toeslag.html",
+  "dark": false
+ },
+ {
+  "n": 296,
+  "name": "Diezer Vintage",
+  "cat": "Shop",
+  "like": "een vintagewinkel",
+  "file": "templates/296-diezer-vintage.html",
+  "dark": true
+ },
+ {
+  "n": 297,
+  "name": "Peperbus Patisserie",
+  "cat": "Eten",
+  "like": "een taartenbakker",
+  "file": "templates/297-peperbus-patisserie.html",
+  "dark": false
+ },
+ {
+  "n": 298,
+  "name": "IJssel Agent AI",
+  "cat": "AI",
+  "like": "een AI-agent",
+  "file": "templates/298-ijssel-agent-ai.html",
+  "dark": true
+ },
+ {
+  "n": 299,
+  "name": "Hanze Feedback",
+  "cat": "Ontwikkelaars",
+  "like": "een feedbackbord",
+  "file": "templates/299-hanze-feedback.html",
+  "dark": false
+ },
+ {
+  "n": 300,
+  "name": "Zwolle Dansschool",
+  "cat": "Vrije tijd",
+  "like": "een dansschool-site",
+  "file": "templates/300-zwolle-dansschool.html",
+  "dark": true
  }
 ]

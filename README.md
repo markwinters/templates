@@ -1,6 +1,6 @@
 # templates
 
-290 websitetemplates in één huisstijl.
+300 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -300,3 +300,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 288 | [Sassen Stem AI](templates/288-sassen-stem-ai.html) | AI | een tekst-naar-spraakdienst |
 | 289 | [Diezer Docs Zoeken](templates/289-diezer-docs-zoeken.html) | Ontwikkelaars | een docs-zoekvenster |
 | 290 | [Zwolle Woordjes](templates/290-zwolle-woordjes.html) | Leren | Anki |
+| 291 | [Sassen Spraakmemo](templates/291-sassen-spraakmemo.html) | Communicatie | een spraakberichten-app |
+| 292 | [Zwolle Kookclub](templates/292-zwolle-kookclub.html) | Sociaal | een kookclub-platform |
+| 293 | [Hanze Verlof](templates/293-hanze-verlof.html) | Werk | een verlof-app |
+| 294 | [IJssel Strips](templates/294-ijssel-strips.html) | Media | een webcomic-app |
+| 295 | [Thorbecke Toeslag](templates/295-thorbecke-toeslag.html) | Financiën | een rekenhulp voor toeslagen |
+| 296 | [Diezer Vintage](templates/296-diezer-vintage.html) | Shop | een vintagewinkel |
+| 297 | [Peperbus Patisserie](templates/297-peperbus-patisserie.html) | Eten | een taartenbakker |
+| 298 | [IJssel Agent AI](templates/298-ijssel-agent-ai.html) | AI | een AI-agent |
+| 299 | [Hanze Feedback](templates/299-hanze-feedback.html) | Ontwikkelaars | een feedbackbord |
+| 300 | [Zwolle Dansschool](templates/300-zwolle-dansschool.html) | Vrije tijd | een dansschool-site |

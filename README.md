@@ -1,6 +1,6 @@
 # templates
 
-300 websitetemplates in één huisstijl.
+310 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -310,3 +310,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 298 | [IJssel Agent AI](templates/298-ijssel-agent-ai.html) | AI | een AI-agent |
 | 299 | [Hanze Feedback](templates/299-hanze-feedback.html) | Ontwikkelaars | een feedbackbord |
 | 300 | [Zwolle Dansschool](templates/300-zwolle-dansschool.html) | Vrije tijd | een dansschool-site |
+| 301 | [IJssel Bellen](templates/301-ijssel-bellen.html) | Communicatie | een videobel-app voor familie |
+| 302 | [Zwolle Sportmaatjes](templates/302-zwolle-sportmaatjes.html) | Sociaal | een sportmaatje-app |
+| 303 | [Thorbecke Declaraties](templates/303-thorbecke-declaraties.html) | Werk | een declaratie-app |
+| 304 | [Sassen Fotobank](templates/304-sassen-fotobank.html) | Media | een stockfotosite |
+| 305 | [Hanze Spaarpotjes](templates/305-hanze-spaarpotjes.html) | Financiën | een spaar-app voor stellen |
+| 306 | [IJssel Bouwmarkt](templates/306-ijssel-bouwmarkt.html) | Shop | een bouwmarkt-webshop |
+| 307 | [Blauwvinger Brouwcafé](templates/307-blauwvinger-brouwcafe.html) | Eten | een brouwcafé-menu |
+| 308 | [Peperbus Spreekcoach](templates/308-peperbus-spreekcoach.html) | AI | een AI-spreekcoach |
+| 309 | [Hanze Secrets](templates/309-hanze-secrets.html) | Ontwikkelaars | een secrets-manager |
+| 310 | [Diezer Escape Thuis](templates/310-diezer-escape-thuis.html) | Vrije tijd | een escape-spel voor thuis |

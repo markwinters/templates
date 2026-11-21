@@ -2398,5 +2398,85 @@
   "like": "een dansschool-site",
   "file": "templates/300-zwolle-dansschool.html",
   "dark": true
+ },
+ {
+  "n": 301,
+  "name": "IJssel Bellen",
+  "cat": "Communicatie",
+  "like": "een videobel-app voor familie",
+  "file": "templates/301-ijssel-bellen.html",
+  "dark": true
+ },
+ {
+  "n": 302,
+  "name": "Zwolle Sportmaatjes",
+  "cat": "Sociaal",
+  "like": "een sportmaatje-app",
+  "file": "templates/302-zwolle-sportmaatjes.html",
+  "dark": false
+ },
+ {
+  "n": 303,
+  "name": "Thorbecke Declaraties",
+  "cat": "Werk",
+  "like": "een declaratie-app",
+  "file": "templates/303-thorbecke-declaraties.html",
+  "dark": false
+ },
+ {
+  "n": 304,
+  "name": "Sassen Fotobank",
+  "cat": "Media",
+  "like": "een stockfotosite",
+  "file": "templates/304-sassen-fotobank.html",
+  "dark": true
+ },
+ {
+  "n": 305,
+  "name": "Hanze Spaarpotjes",
+  "cat": "Financiën",
+  "like": "een spaar-app voor stellen",
+  "file": "templates/305-hanze-spaarpotjes.html",
+  "dark": false
+ },
+ {
+  "n": 306,
+  "name": "IJssel Bouwmarkt",
+  "cat": "Shop",
+  "like": "een bouwmarkt-webshop",
+  "file": "templates/306-ijssel-bouwmarkt.html",
+  "dark": false
+ },
+ {
+  "n": 307,
+  "name": "Blauwvinger Brouwcafé",
+  "cat": "Eten",
+  "like": "een brouwcafé-menu",
+  "file": "templates/307-blauwvinger-brouwcafe.html",
+  "dark": true
+ },
+ {
+  "n": 308,
+  "name": "Peperbus Spreekcoach",
+  "cat": "AI",
+  "like": "een AI-spreekcoach",
+  "file": "templates/308-peperbus-spreekcoach.html",
+  "dark": false
+ },
+ {
+  "n": 309,
+  "name": "Hanze Secrets",
+  "cat": "Ontwikkelaars",
+  "like": "een secrets-manager",
+  "file": "templates/309-hanze-secrets.html",
+  "dark": true
+ },
+ {
+  "n": 310,
+  "name": "Diezer Escape Thuis",
+  "cat": "Vrije tijd",
+  "like": "een escape-spel voor thuis",
+  "file": "templates/310-diezer-escape-thuis.html",
+  "dark": true
  }
 ]

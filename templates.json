@@ -2478,5 +2478,85 @@
   "like": "een escape-spel voor thuis",
   "file": "templates/310-diezer-escape-thuis.html",
   "dark": true
+ },
+ {
+  "n": 311,
+  "name": "Hanze Post",
+  "cat": "Communicatie",
+  "like": "een nieuwsbrieflezer",
+  "file": "templates/311-hanze-post.html",
+  "dark": false
+ },
+ {
+  "n": 312,
+  "name": "Zwolle Spelletjesavond",
+  "cat": "Sociaal",
+  "like": "een spelletjesclub",
+  "file": "templates/312-zwolle-spelletjesavond.html",
+  "dark": true
+ },
+ {
+  "n": 313,
+  "name": "IJssel Klantkaart",
+  "cat": "Werk",
+  "like": "een CRM voor zzp'ers",
+  "file": "templates/313-ijssel-klantkaart.html",
+  "dark": false
+ },
+ {
+  "n": 314,
+  "name": "Sassen Luisterboek",
+  "cat": "Media",
+  "like": "een luisterboekenapp",
+  "file": "templates/314-sassen-luisterboek.html",
+  "dark": true
+ },
+ {
+  "n": 315,
+  "name": "Peperbus Boekhouden",
+  "cat": "Financiën",
+  "like": "een boekhoudapp voor zzp'ers",
+  "file": "templates/315-peperbus-boekhouden.html",
+  "dark": false
+ },
+ {
+  "n": 316,
+  "name": "Thorbecke Tickets",
+  "cat": "Shop",
+  "like": "een ticketruilplatform",
+  "file": "templates/316-thorbecke-tickets.html",
+  "dark": true
+ },
+ {
+  "n": 317,
+  "name": "IJssel Groentetas",
+  "cat": "Eten",
+  "like": "een groenteabonnement",
+  "file": "templates/317-ijssel-groentetas.html",
+  "dark": false
+ },
+ {
+  "n": 318,
+  "name": "Hanze Notities",
+  "cat": "AI",
+  "like": "een AI-notitie-app",
+  "file": "templates/318-hanze-notities.html",
+  "dark": true
+ },
+ {
+  "n": 319,
+  "name": "Blauwvinger Branches",
+  "cat": "Ontwikkelaars",
+  "like": "een git-client",
+  "file": "templates/319-blauwvinger-branches.html",
+  "dark": true
+ },
+ {
+  "n": 320,
+  "name": "Zwolle Sterrenkijken",
+  "cat": "Vrije tijd",
+  "like": "een sterrenkijk-app",
+  "file": "templates/320-zwolle-sterrenkijken.html",
+  "dark": true
  }
 ]

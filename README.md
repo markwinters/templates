@@ -1,6 +1,6 @@
 # templates
 
-310 websitetemplates in één huisstijl.
+320 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -320,3 +320,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 308 | [Peperbus Spreekcoach](templates/308-peperbus-spreekcoach.html) | AI | een AI-spreekcoach |
 | 309 | [Hanze Secrets](templates/309-hanze-secrets.html) | Ontwikkelaars | een secrets-manager |
 | 310 | [Diezer Escape Thuis](templates/310-diezer-escape-thuis.html) | Vrije tijd | een escape-spel voor thuis |
+| 311 | [Hanze Post](templates/311-hanze-post.html) | Communicatie | een nieuwsbrieflezer |
+| 312 | [Zwolle Spelletjesavond](templates/312-zwolle-spelletjesavond.html) | Sociaal | een spelletjesclub |
+| 313 | [IJssel Klantkaart](templates/313-ijssel-klantkaart.html) | Werk | een CRM voor zzp'ers |
+| 314 | [Sassen Luisterboek](templates/314-sassen-luisterboek.html) | Media | een luisterboekenapp |
+| 315 | [Peperbus Boekhouden](templates/315-peperbus-boekhouden.html) | Financiën | een boekhoudapp voor zzp'ers |
+| 316 | [Thorbecke Tickets](templates/316-thorbecke-tickets.html) | Shop | een ticketruilplatform |
+| 317 | [IJssel Groentetas](templates/317-ijssel-groentetas.html) | Eten | een groenteabonnement |
+| 318 | [Hanze Notities](templates/318-hanze-notities.html) | AI | een AI-notitie-app |
+| 319 | [Blauwvinger Branches](templates/319-blauwvinger-branches.html) | Ontwikkelaars | een git-client |
+| 320 | [Zwolle Sterrenkijken](templates/320-zwolle-sterrenkijken.html) | Vrije tijd | een sterrenkijk-app |

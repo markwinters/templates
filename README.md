@@ -1,6 +1,6 @@
 # templates
 
-320 websitetemplates in één huisstijl.
+330 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -330,3 +330,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 318 | [Hanze Notities](templates/318-hanze-notities.html) | AI | een AI-notitie-app |
 | 319 | [Blauwvinger Branches](templates/319-blauwvinger-branches.html) | Ontwikkelaars | een git-client |
 | 320 | [Zwolle Sterrenkijken](templates/320-zwolle-sterrenkijken.html) | Vrije tijd | een sterrenkijk-app |
+| 321 | [Sassen Enquête](templates/321-sassen-enquete.html) | Communicatie | een enquêtetool |
+| 322 | [IJssel Vrijwilligers](templates/322-ijssel-vrijwilligers.html) | Sociaal | een vrijwilligersplatform |
+| 323 | [Hanze Werkt](templates/323-hanze-werkt.html) | Werk | een sollicitatieportaal |
+| 324 | [Blauwvinger Magazine](templates/324-blauwvinger-magazine.html) | Media | een lifestylemagazine |
+| 325 | [Diezer Abonnementen](templates/325-diezer-abonnementen.html) | Financiën | een abonnementenoverzicht |
+| 326 | [Peperbus Kerstbomen](templates/326-peperbus-kerstbomen.html) | Shop | een kerstbomenwinkel |
+| 327 | [Sassen Kookles](templates/327-sassen-kookles.html) | Eten | een online kookcursus |
+| 328 | [IJssel Tekenaar AI](templates/328-ijssel-tekenaar-ai.html) | AI | een schets-naar-beeld-tool |
+| 329 | [Thorbecke Toegankelijk](templates/329-thorbecke-toegankelijk.html) | Ontwikkelaars | een toegankelijkheidscheck |
+| 330 | [Zwolle Kaartclub](templates/330-zwolle-kaartclub.html) | Vrije tijd | een bridgeclub-site |

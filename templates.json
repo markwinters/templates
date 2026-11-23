@@ -2558,5 +2558,85 @@
   "like": "een sterrenkijk-app",
   "file": "templates/320-zwolle-sterrenkijken.html",
   "dark": true
+ },
+ {
+  "n": 321,
+  "name": "Sassen Enquête",
+  "cat": "Communicatie",
+  "like": "een enquêtetool",
+  "file": "templates/321-sassen-enquete.html",
+  "dark": false
+ },
+ {
+  "n": 322,
+  "name": "IJssel Vrijwilligers",
+  "cat": "Sociaal",
+  "like": "een vrijwilligersplatform",
+  "file": "templates/322-ijssel-vrijwilligers.html",
+  "dark": false
+ },
+ {
+  "n": 323,
+  "name": "Hanze Werkt",
+  "cat": "Werk",
+  "like": "een sollicitatieportaal",
+  "file": "templates/323-hanze-werkt.html",
+  "dark": true
+ },
+ {
+  "n": 324,
+  "name": "Blauwvinger Magazine",
+  "cat": "Media",
+  "like": "een lifestylemagazine",
+  "file": "templates/324-blauwvinger-magazine.html",
+  "dark": false
+ },
+ {
+  "n": 325,
+  "name": "Diezer Abonnementen",
+  "cat": "Financiën",
+  "like": "een abonnementenoverzicht",
+  "file": "templates/325-diezer-abonnementen.html",
+  "dark": true
+ },
+ {
+  "n": 326,
+  "name": "Peperbus Kerstbomen",
+  "cat": "Shop",
+  "like": "een kerstbomenwinkel",
+  "file": "templates/326-peperbus-kerstbomen.html",
+  "dark": false
+ },
+ {
+  "n": 327,
+  "name": "Sassen Kookles",
+  "cat": "Eten",
+  "like": "een online kookcursus",
+  "file": "templates/327-sassen-kookles.html",
+  "dark": false
+ },
+ {
+  "n": 328,
+  "name": "IJssel Tekenaar AI",
+  "cat": "AI",
+  "like": "een schets-naar-beeld-tool",
+  "file": "templates/328-ijssel-tekenaar-ai.html",
+  "dark": true
+ },
+ {
+  "n": 329,
+  "name": "Thorbecke Toegankelijk",
+  "cat": "Ontwikkelaars",
+  "like": "een toegankelijkheidscheck",
+  "file": "templates/329-thorbecke-toegankelijk.html",
+  "dark": true
+ },
+ {
+  "n": 330,
+  "name": "Zwolle Kaartclub",
+  "cat": "Vrije tijd",
+  "like": "een bridgeclub-site",
+  "file": "templates/330-zwolle-kaartclub.html",
+  "dark": false
  }
 ]

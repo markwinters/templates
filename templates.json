@@ -2638,5 +2638,85 @@
   "like": "een bridgeclub-site",
   "file": "templates/330-zwolle-kaartclub.html",
   "dark": false
+ },
+ {
+  "n": 331,
+  "name": "Schoolbord Thorbecke",
+  "cat": "Communicatie",
+  "like": "een schoolapp voor ouders",
+  "file": "templates/331-schoolbord-thorbecke.html",
+  "dark": false
+ },
+ {
+  "n": 332,
+  "name": "Zwolse Wandelclub",
+  "cat": "Sociaal",
+  "like": "een wandelclub-app",
+  "file": "templates/332-zwolse-wandelclub.html",
+  "dark": false
+ },
+ {
+  "n": 333,
+  "name": "Hanze Werkbonnen",
+  "cat": "Werk",
+  "like": "een werkbonnen-app",
+  "file": "templates/333-hanze-werkbonnen.html",
+  "dark": true
+ },
+ {
+  "n": 334,
+  "name": "Sassen Kids",
+  "cat": "Media",
+  "like": "een kinderzender-app",
+  "file": "templates/334-sassen-kids.html",
+  "dark": false
+ },
+ {
+  "n": 335,
+  "name": "IJssel Nalatenschap",
+  "cat": "Financiën",
+  "like": "een nalatenschapsplanner",
+  "file": "templates/335-ijssel-nalatenschap.html",
+  "dark": false
+ },
+ {
+  "n": 336,
+  "name": "Diezer Fietsen",
+  "cat": "Shop",
+  "like": "een fietsenwinkel",
+  "file": "templates/336-diezer-fietsen.html",
+  "dark": true
+ },
+ {
+  "n": 337,
+  "name": "Peperbus Koffiebar",
+  "cat": "Eten",
+  "like": "een koffie-bestelapp",
+  "file": "templates/337-peperbus-koffiebar.html",
+  "dark": false
+ },
+ {
+  "n": 338,
+  "name": "Hanze Leeshulp",
+  "cat": "AI",
+  "like": "een AI-leeshulp",
+  "file": "templates/338-hanze-leeshulp.html",
+  "dark": false
+ },
+ {
+  "n": 339,
+  "name": "Sassen Formulieren",
+  "cat": "Ontwikkelaars",
+  "like": "een formulier-backend",
+  "file": "templates/339-sassen-formulieren.html",
+  "dark": true
+ },
+ {
+  "n": 340,
+  "name": "IJssel Schaatsen",
+  "cat": "Vrije tijd",
+  "like": "een natuurijs-app",
+  "file": "templates/340-ijssel-schaatsen.html",
+  "dark": false
  }
 ]

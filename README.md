@@ -1,6 +1,6 @@
 # templates
 
-330 websitetemplates in één huisstijl.
+340 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -340,3 +340,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 328 | [IJssel Tekenaar AI](templates/328-ijssel-tekenaar-ai.html) | AI | een schets-naar-beeld-tool |
 | 329 | [Thorbecke Toegankelijk](templates/329-thorbecke-toegankelijk.html) | Ontwikkelaars | een toegankelijkheidscheck |
 | 330 | [Zwolle Kaartclub](templates/330-zwolle-kaartclub.html) | Vrije tijd | een bridgeclub-site |
+| 331 | [Schoolbord Thorbecke](templates/331-schoolbord-thorbecke.html) | Communicatie | een schoolapp voor ouders |
+| 332 | [Zwolse Wandelclub](templates/332-zwolse-wandelclub.html) | Sociaal | een wandelclub-app |
+| 333 | [Hanze Werkbonnen](templates/333-hanze-werkbonnen.html) | Werk | een werkbonnen-app |
+| 334 | [Sassen Kids](templates/334-sassen-kids.html) | Media | een kinderzender-app |
+| 335 | [IJssel Nalatenschap](templates/335-ijssel-nalatenschap.html) | Financiën | een nalatenschapsplanner |
+| 336 | [Diezer Fietsen](templates/336-diezer-fietsen.html) | Shop | een fietsenwinkel |
+| 337 | [Peperbus Koffiebar](templates/337-peperbus-koffiebar.html) | Eten | een koffie-bestelapp |
+| 338 | [Hanze Leeshulp](templates/338-hanze-leeshulp.html) | AI | een AI-leeshulp |
+| 339 | [Sassen Formulieren](templates/339-sassen-formulieren.html) | Ontwikkelaars | een formulier-backend |
+| 340 | [IJssel Schaatsen](templates/340-ijssel-schaatsen.html) | Vrije tijd | een natuurijs-app |

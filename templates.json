@@ -2718,5 +2718,85 @@
   "like": "een natuurijs-app",
   "file": "templates/340-ijssel-schaatsen.html",
   "dark": false
+ },
+ {
+  "n": 341,
+  "name": "Peperbus Gastenboek",
+  "cat": "Communicatie",
+  "like": "een digitaal gastenboek",
+  "file": "templates/341-peperbus-gastenboek.html",
+  "dark": false
+ },
+ {
+  "n": 342,
+  "name": "IJssel Repaircafé",
+  "cat": "Sociaal",
+  "like": "een repaircafé-site",
+  "file": "templates/342-ijssel-repaircafe.html",
+  "dark": true
+ },
+ {
+  "n": 343,
+  "name": "Thorbecke Doelen",
+  "cat": "Werk",
+  "like": "een OKR-tool",
+  "file": "templates/343-thorbecke-doelen.html",
+  "dark": false
+ },
+ {
+  "n": 344,
+  "name": "Hanze Archief",
+  "cat": "Media",
+  "like": "een historisch fotoarchief",
+  "file": "templates/344-hanze-archief.html",
+  "dark": true
+ },
+ {
+  "n": 345,
+  "name": "Sassen Zakgeld",
+  "cat": "Financiën",
+  "like": "een zakgeld-app",
+  "file": "templates/345-sassen-zakgeld.html",
+  "dark": false
+ },
+ {
+  "n": 346,
+  "name": "Blauwvinger Boeken",
+  "cat": "Shop",
+  "like": "een tweedehands boekwinkel",
+  "file": "templates/346-blauwvinger-boeken.html",
+  "dark": false
+ },
+ {
+  "n": 347,
+  "name": "Diezer Tafel",
+  "cat": "Eten",
+  "like": "een dieetplanner voor etentjes",
+  "file": "templates/347-diezer-tafel.html",
+  "dark": true
+ },
+ {
+  "n": 348,
+  "name": "Thorbecke Tolk",
+  "cat": "AI",
+  "like": "een AI-tolk",
+  "file": "templates/348-thorbecke-tolk.html",
+  "dark": false
+ },
+ {
+  "n": 349,
+  "name": "Hanze Schema",
+  "cat": "Ontwikkelaars",
+  "like": "een ERD-tool",
+  "file": "templates/349-hanze-schema.html",
+  "dark": true
+ },
+ {
+  "n": 350,
+  "name": "Zwolle Zwemmen",
+  "cat": "Vrije tijd",
+  "like": "een zwembad-app",
+  "file": "templates/350-zwolle-zwemmen.html",
+  "dark": false
  }
 ]

@@ -1,6 +1,6 @@
 # templates
 
-340 websitetemplates in één huisstijl.
+350 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -350,3 +350,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 338 | [Hanze Leeshulp](templates/338-hanze-leeshulp.html) | AI | een AI-leeshulp |
 | 339 | [Sassen Formulieren](templates/339-sassen-formulieren.html) | Ontwikkelaars | een formulier-backend |
 | 340 | [IJssel Schaatsen](templates/340-ijssel-schaatsen.html) | Vrije tijd | een natuurijs-app |
+| 341 | [Peperbus Gastenboek](templates/341-peperbus-gastenboek.html) | Communicatie | een digitaal gastenboek |
+| 342 | [IJssel Repaircafé](templates/342-ijssel-repaircafe.html) | Sociaal | een repaircafé-site |
+| 343 | [Thorbecke Doelen](templates/343-thorbecke-doelen.html) | Werk | een OKR-tool |
+| 344 | [Hanze Archief](templates/344-hanze-archief.html) | Media | een historisch fotoarchief |
+| 345 | [Sassen Zakgeld](templates/345-sassen-zakgeld.html) | Financiën | een zakgeld-app |
+| 346 | [Blauwvinger Boeken](templates/346-blauwvinger-boeken.html) | Shop | een tweedehands boekwinkel |
+| 347 | [Diezer Tafel](templates/347-diezer-tafel.html) | Eten | een dieetplanner voor etentjes |
+| 348 | [Thorbecke Tolk](templates/348-thorbecke-tolk.html) | AI | een AI-tolk |
+| 349 | [Hanze Schema](templates/349-hanze-schema.html) | Ontwikkelaars | een ERD-tool |
+| 350 | [Zwolle Zwemmen](templates/350-zwolle-zwemmen.html) | Vrije tijd | een zwembad-app |

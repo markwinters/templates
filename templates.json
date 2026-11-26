@@ -2798,5 +2798,85 @@
   "like": "een zwembad-app",
   "file": "templates/350-zwolle-zwemmen.html",
   "dark": false
+ },
+ {
+  "n": 351,
+  "name": "IJssel Raad Live",
+  "cat": "Video",
+  "like": "een raadsvergadering-livestream",
+  "file": "templates/351-ijssel-raad-live.html",
+  "dark": true
+ },
+ {
+  "n": 352,
+  "name": "Blauwvinger Kenteken",
+  "cat": "Zoeken",
+  "like": "een kentekencheck",
+  "file": "templates/352-blauwvinger-kenteken.html",
+  "dark": false
+ },
+ {
+  "n": 353,
+  "name": "Sassen Karaoke",
+  "cat": "Muziek",
+  "like": "een karaoke-app",
+  "file": "templates/353-sassen-karaoke.html",
+  "dark": true
+ },
+ {
+  "n": 354,
+  "name": "Hanze Codeklas",
+  "cat": "Leren",
+  "like": "een programmeercursus voor kinderen",
+  "file": "templates/354-hanze-codeklas.html",
+  "dark": false
+ },
+ {
+  "n": 355,
+  "name": "IJssel Air",
+  "cat": "Reizen",
+  "like": "een stoelkeuze-scherm",
+  "file": "templates/355-ijssel-air.html",
+  "dark": true
+ },
+ {
+  "n": 356,
+  "name": "Sassen Verhuisplanner",
+  "cat": "Productiviteit",
+  "like": "een verhuisplanner",
+  "file": "templates/356-sassen-verhuisplanner.html",
+  "dark": false
+ },
+ {
+  "n": 357,
+  "name": "Diezer Lucht",
+  "cat": "Overig",
+  "like": "een luchtkwaliteitsmonitor",
+  "file": "templates/357-diezer-lucht.html",
+  "dark": true
+ },
+ {
+  "n": 358,
+  "name": "Thorbecke Loon",
+  "cat": "Werk",
+  "like": "een loonstrook-app",
+  "file": "templates/358-thorbecke-loon.html",
+  "dark": false
+ },
+ {
+  "n": 359,
+  "name": "Peperbus Crowdfunding",
+  "cat": "Financiën",
+  "like": "een crowdfundingplatform",
+  "file": "templates/359-peperbus-crowdfunding.html",
+  "dark": true
+ },
+ {
+  "n": 360,
+  "name": "Peperbus Recensies",
+  "cat": "Media",
+  "like": "een filmrecensiesite",
+  "file": "templates/360-peperbus-recensies.html",
+  "dark": false
  }
 ]

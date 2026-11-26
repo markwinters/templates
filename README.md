@@ -1,6 +1,6 @@
 # templates
 
-350 websitetemplates in één huisstijl.
+360 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -360,3 +360,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 348 | [Thorbecke Tolk](templates/348-thorbecke-tolk.html) | AI | een AI-tolk |
 | 349 | [Hanze Schema](templates/349-hanze-schema.html) | Ontwikkelaars | een ERD-tool |
 | 350 | [Zwolle Zwemmen](templates/350-zwolle-zwemmen.html) | Vrije tijd | een zwembad-app |
+| 351 | [IJssel Raad Live](templates/351-ijssel-raad-live.html) | Video | een raadsvergadering-livestream |
+| 352 | [Blauwvinger Kenteken](templates/352-blauwvinger-kenteken.html) | Zoeken | een kentekencheck |
+| 353 | [Sassen Karaoke](templates/353-sassen-karaoke.html) | Muziek | een karaoke-app |
+| 354 | [Hanze Codeklas](templates/354-hanze-codeklas.html) | Leren | een programmeercursus voor kinderen |
+| 355 | [IJssel Air](templates/355-ijssel-air.html) | Reizen | een stoelkeuze-scherm |
+| 356 | [Sassen Verhuisplanner](templates/356-sassen-verhuisplanner.html) | Productiviteit | een verhuisplanner |
+| 357 | [Diezer Lucht](templates/357-diezer-lucht.html) | Overig | een luchtkwaliteitsmonitor |
+| 358 | [Thorbecke Loon](templates/358-thorbecke-loon.html) | Werk | een loonstrook-app |
+| 359 | [Peperbus Crowdfunding](templates/359-peperbus-crowdfunding.html) | Financiën | een crowdfundingplatform |
+| 360 | [Peperbus Recensies](templates/360-peperbus-recensies.html) | Media | een filmrecensiesite |

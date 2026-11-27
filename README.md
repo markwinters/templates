@@ -1,6 +1,6 @@
 # templates
 
-360 websitetemplates in één huisstijl.
+370 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -370,3 +370,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 358 | [Thorbecke Loon](templates/358-thorbecke-loon.html) | Werk | een loonstrook-app |
 | 359 | [Peperbus Crowdfunding](templates/359-peperbus-crowdfunding.html) | Financiën | een crowdfundingplatform |
 | 360 | [Peperbus Recensies](templates/360-peperbus-recensies.html) | Media | een filmrecensiesite |
+| 361 | [Blauwvinger Apotheek](templates/361-blauwvinger-apotheek.html) | Overig | een apotheek-app |
+| 362 | [IJssel Loopt](templates/362-ijssel-loopt.html) | Vrije tijd | een hardloopschema |
+| 363 | [Sassen Veilinghuis](templates/363-sassen-veilinghuis.html) | Shop | een online veilinghuis |
+| 364 | [Peperbus Lootjes](templates/364-peperbus-lootjes.html) | Sociaal | een lootjes-app |
+| 365 | [Thorbecke Flags](templates/365-thorbecke-flags.html) | Ontwikkelaars | een feature-flag-dashboard |
+| 366 | [Diezer Foodtrucks](templates/366-diezer-foodtrucks.html) | Eten | een foodtruck-kaart |
+| 367 | [IJssel Bios](templates/367-ijssel-bios.html) | Video | een bioscoop-app |
+| 368 | [Sassen Zon](templates/368-sassen-zon.html) | Financiën | een zonnepanelen-app |
+| 369 | [Hanze Portofoon](templates/369-hanze-portofoon.html) | Communicatie | een portofoon-app |
+| 370 | [Thorbecke Taalmaatje](templates/370-thorbecke-taalmaatje.html) | Leren | een taalmaatje-app |

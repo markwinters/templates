@@ -1,6 +1,6 @@
 # templates
 
-370 websitetemplates in één huisstijl.
+380 websitetemplates in één huisstijl.
 
 - `templates/` bevat elk template als los HTML-bestand (`<nummer>-<naam>.html`) met alle CSS erin. Open een bestand direct in de browser. De verhouding is 16:10.
 - `index.html` is de galerij: een raster met voorbeelden, filters per categorie, zoeken en een groot voorbeeld met de knoppen *Openen* en *Kopieer HTML*. De pagina staat op https://markwinters.github.io/templates/.
@@ -380,3 +380,13 @@ De foto's komen van [Unsplash](https://unsplash.com) en worden geladen vanaf `im
 | 368 | [Sassen Zon](templates/368-sassen-zon.html) | Financiën | een zonnepanelen-app |
 | 369 | [Hanze Portofoon](templates/369-hanze-portofoon.html) | Communicatie | een portofoon-app |
 | 370 | [Thorbecke Taalmaatje](templates/370-thorbecke-taalmaatje.html) | Leren | een taalmaatje-app |
+| 371 | [Sassen Koor](templates/371-sassen-koor.html) | Muziek | een koor-oefenapp |
+| 372 | [Hanze Monumenten](templates/372-hanze-monumenten.html) | Zoeken | een monumentenzoeker |
+| 373 | [Diezer Schermtijd](templates/373-diezer-schermtijd.html) | Productiviteit | een schermtijd-app |
+| 374 | [IJssel Huisruil](templates/374-ijssel-huisruil.html) | Reizen | een huizenruilsite |
+| 375 | [Thorbecke Gesprek](templates/375-thorbecke-gesprek.html) | Werk | een app voor jaargesprekken |
+| 376 | [Sassen Kerstpakket](templates/376-sassen-kerstpakket.html) | Shop | een kerstpakket-samensteller |
+| 377 | [Peperbus Plantdokter](templates/377-peperbus-plantdokter.html) | AI | een AI-plantendokter |
+| 378 | [IJssel Belcirkel](templates/378-ijssel-belcirkel.html) | Sociaal | een belcirkel voor ouderen |
+| 379 | [Blauwvinger Portfolio](templates/379-blauwvinger-portfolio.html) | Media | een fotoportfolio |
+| 380 | [Hanze Donor](templates/380-hanze-donor.html) | Overig | een bloeddonor-app |

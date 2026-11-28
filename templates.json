@@ -2958,5 +2958,85 @@
   "like": "een taalmaatje-app",
   "file": "templates/370-thorbecke-taalmaatje.html",
   "dark": false
+ },
+ {
+  "n": 371,
+  "name": "Sassen Koor",
+  "cat": "Muziek",
+  "like": "een koor-oefenapp",
+  "file": "templates/371-sassen-koor.html",
+  "dark": true
+ },
+ {
+  "n": 372,
+  "name": "Hanze Monumenten",
+  "cat": "Zoeken",
+  "like": "een monumentenzoeker",
+  "file": "templates/372-hanze-monumenten.html",
+  "dark": false
+ },
+ {
+  "n": 373,
+  "name": "Diezer Schermtijd",
+  "cat": "Productiviteit",
+  "like": "een schermtijd-app",
+  "file": "templates/373-diezer-schermtijd.html",
+  "dark": true
+ },
+ {
+  "n": 374,
+  "name": "IJssel Huisruil",
+  "cat": "Reizen",
+  "like": "een huizenruilsite",
+  "file": "templates/374-ijssel-huisruil.html",
+  "dark": false
+ },
+ {
+  "n": 375,
+  "name": "Thorbecke Gesprek",
+  "cat": "Werk",
+  "like": "een app voor jaargesprekken",
+  "file": "templates/375-thorbecke-gesprek.html",
+  "dark": true
+ },
+ {
+  "n": 376,
+  "name": "Sassen Kerstpakket",
+  "cat": "Shop",
+  "like": "een kerstpakket-samensteller",
+  "file": "templates/376-sassen-kerstpakket.html",
+  "dark": false
+ },
+ {
+  "n": 377,
+  "name": "Peperbus Plantdokter",
+  "cat": "AI",
+  "like": "een AI-plantendokter",
+  "file": "templates/377-peperbus-plantdokter.html",
+  "dark": true
+ },
+ {
+  "n": 378,
+  "name": "IJssel Belcirkel",
+  "cat": "Sociaal",
+  "like": "een belcirkel voor ouderen",
+  "file": "templates/378-ijssel-belcirkel.html",
+  "dark": false
+ },
+ {
+  "n": 379,
+  "name": "Blauwvinger Portfolio",
+  "cat": "Media",
+  "like": "een fotoportfolio",
+  "file": "templates/379-blauwvinger-portfolio.html",
+  "dark": true
+ },
+ {
+  "n": 380,
+  "name": "Hanze Donor",
+  "cat": "Overig",
+  "like": "een bloeddonor-app",
+  "file": "templates/380-hanze-donor.html",
+  "dark": false
  }
 ]
